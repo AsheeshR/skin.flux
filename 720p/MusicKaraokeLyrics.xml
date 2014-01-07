@@ -1,0 +1,19 @@
+<window>
+	<controls>
+		<control type="image" id="2">
+			<description>fullscreen image</description>
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>1280</width>
+			<height>720</height>
+		</control>
+		<control type="karvisualisation" id="1">
+			<description>visualisation</description>
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>1280</width>
+			<height>720</height> 
+			<colordiffuse>osd-background</colordiffuse>
+		</control>
+	</controls>
+</window>

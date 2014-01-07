@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addon id="skin.flux" version="0.1" name="Flux"	provider-name="LumenEd">
+	<requires>
+		<import addon="xbmc.gui" version="5.0.0"/>
+		<import addon="script.xbmc.debug.log" version="11.0.6"/>
+		<import addon="script.favourites" version="4.0.8"/>
+		<import addon="script.artwork.downloader" version="12.0.11"/>
+		<import addon="script.globalsearch" version="1.1.0"/>
+	</requires>
+	<extension point="xbmc.gui.skin" defaultthemename="Textures.xbt" effectslowdown="1" debugging="false">
+		<res width="1280" height="720" aspect="16:9" default="true" folder="720p"/>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">A work in progress skin for LumenEd devices. It is a derivative of XTV-SAF by Wyrm.</summary>
+
+		<description lang="en">To be completed.</description>
+
+		<platform>all</platform>
+	</extension>
+</addon>

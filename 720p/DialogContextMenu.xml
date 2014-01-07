@@ -1,0 +1,44 @@
+<window>
+	<defaultcontrol always="true">1000</defaultcontrol>
+	<coordinates>
+		<origin x="0" y="0"/>
+	</coordinates>
+	<controls>
+		<include>shutdown-ani</include>
+		<include>fadebackground</include>
+		<control type="group">
+			<posx>384</posx>
+			<posy>116</posy>
+			<control type="image" id="999">
+				<description>background image</description>
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>512</width>
+				<height>544</height>
+				<texture border="8">button-menu-background.png</texture>
+				<colordiffuse>dialog-background</colordiffuse>
+			</control>
+			<control type="grouplist" id="996">
+				<description>grouplist for context buttons</description>
+				<posx>8</posx>
+				<posy>8</posy>
+				<width>496</width>
+				<height min="10" max="528">auto</height>
+				<onup>996</onup>
+				<itemgap>0</itemgap>
+				<control type="button" id="1000">
+					<description>button template</description>
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>496</width>
+					<height>48</height>
+					<textoffsety>6</textoffsety>
+					<align>center</align>
+					<aligny>top</aligny>
+					<onleft>Close</onleft>
+					<onright>Close</onright>
+				</control>
+			</control>
+		</control>	
+	</controls>
+</window>

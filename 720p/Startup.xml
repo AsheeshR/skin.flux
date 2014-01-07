@@ -26,13 +26,13 @@
 			<visible>!Skin.HasSetting(intro-vid)</visible>
 			<animation effect="fade" end="0" delay="1600" time="400">WindowClose</animation>
 			<control type="image">
-				<description>Xtv Logo</description>
+				<description>LumenEd Flow Logo</description>
 				<posx>384</posx>
 				<posy>200</posy>
 				<width>512</width>
 				<height>256</height>
 				<aspectratio>keep</aspectratio>
-				<texture>xtv-logo-big.png</texture>
+				<texture>flux-logo-big.png</texture>
 			</control>
 		</control>
 	</controls>

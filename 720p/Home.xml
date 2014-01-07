@@ -6,9 +6,10 @@
 	<allowoverlay>yes</allowoverlay>
 	<animation effect="fade" start="0" end="0" time="10000" condition="Window.Previous(Startup) + Skin.HasSetting(intro-vid)">WindowOpen</animation>
 	<controls>
-		<!-- Use Vertical Home menu-->
+	        <include>HorzHomeMenu</include>
+	<!--
 		<include condition="Skin.HasSetting(homemenu-vertical)">VertHomeMenu</include>
-		<!-- Use Horizontal Home menu-->
 		<include condition="Skin.HasSetting(homemenu-horizontal) | !Skin.HasSetting(homemenu-vertical)">HorzHomeMenu</include>
+	-->
 	</controls>
 </window>

@@ -42,6 +42,35 @@
 			<onfocus>noop</onfocus>
 			<onfocus condition="![Window.Previous(settings) | Window.Previous(systeminfo)]">Control.SetFocus(9000)</onfocus>
 		</control>
+
+		<control type="group">
+		<!-- Show lumined logo -->
+			<control type="image">
+				<description>Lumened logo</description>
+				<posx>15</posx>
+				<posy>10</posy>
+				<width>50</width>
+				<height>50</height>
+				<texture>flux-logo-big.png</texture>
+				<align>left</align>
+				<font>font18</font>
+	<!--			<visible>!Skin.HasSetting(home-time)</visible>-->
+			</control>
+	
+			<control type="label">
+				<description>Lumened icon</description>
+				<posx>70</posx>
+				<posy>10</posy>
+				<width>566</width>
+				<height>50</height>
+				<label>LumenED</label>
+				<align>left</align>
+				<font>font18</font>
+				<visible>true</visible>
+	<!--			<visible>!Skin.HasSetting(home-time)</visible> -->
+			</control>
+		</control>
+
 		<!-- Show time on home screen -->
 		<control type="label">
 			<description>Time and Date</description>
@@ -826,8 +855,8 @@
 				</focusedlayout>
 				<content>
 					<item id="1">
-						<description>Video Menu</description>
-						<label>3</label>
+						<description>English</description>
+						<label>31040</label>
 						<onclick>Control.SetFocus(9100)</onclick>
 						<visible>!Skin.HasSetting(home-video)</visible>
 					</item>

@@ -89,7 +89,7 @@
 		<include>page-info</include>
 		<!-- Shelf icons-->
 		<control type="group">
-			<!-- Video icons -->
+			<!-- English menu -->
 			<control type="group">
 				<visible>ControlGroup(9100).HasFocus()</visible>
 				<control type="image">
@@ -97,17 +97,19 @@
 					<posy>55</posy>
 					<width>160</width>
 					<height>160</height>
-					<texture>icon-video.png</texture>
+<!--					<texture>icon-video.png</texture>-->
+					<texture>english.jpeg</texture>			
 				</control>
 				<control type="image">
 					<posx>560</posx>
 					<posy>215</posy>
 					<width>160</width>
 					<height>160</height>
-					<texture flipy="true" diffuse="mask-fade.png">icon-video.png</texture>
+<!--					<texture flipy="true" diffuse="mask-fade.png">icon-video.png</texture>-->
+					<texture flipy="true" diffuse="mask-fade.png">english.jpeg</texture>
 				</control>
 			</control>
-			<!-- Movie icons -->
+			<!-- Hindi menu -->
 			<control type="group" id="9155">
 				<visible>ControlGroup(9150).HasFocus() | Control.HasFocus(9160)</visible>
 				<control type="group">
@@ -117,19 +119,19 @@
 						<posy>55</posy>
 						<width>160</width>
 						<height>160</height>
-						<texture>icon-video.png</texture>
+						<texture>hindi.jpeg</texture>
 					</control>
 					<control type="image">
 						<posx>560</posx>
 						<posy>215</posy>
 						<width>160</width>
 						<height>160</height>
-						<texture flipy="true" diffuse="mask-fade.png">icon-video.png</texture>
+						<texture flipy="true" diffuse="mask-fade.png">hindi.jpeg</texture>
 					</control>
 				</control>
 				<control type="group">
 					<visible>!IsEmpty(Window.Property(LatestMovie.1.Title))</visible>
-					<control type="label">
+<!--					<control type="label">
 						<description>Recently added Movies label</description>
 						<posx>55</posx>
 						<posy>10</posy>
@@ -140,6 +142,7 @@
 						<aligny>center</aligny>
 						<font>font13</font>
 					</control>
+-->
 					<control type="list" id="9160">
 						<posx>10</posx>
 						<posy>60</posy>
@@ -291,10 +294,10 @@
 					</control>
 				</control>
 			</control>
-			<!-- TV Shows icons -->
+			<!-- Maths menu -->
 			<control type="group" id="9205">
 				<visible>ControlGroup(9200).HasFocus() | Control.HasFocus(9210)</visible>
-				<control type="label">
+<!--				<control type="label">
 					<description>Header label</description>
 					<posx>55</posx>
 					<posy>10</posy>
@@ -306,6 +309,7 @@
 					<font>font13</font>
 					<visible>!IsEmpty(Window.Property(LatestEpisode.1.ShowTitle))</visible>
 				</control>
+-->
 				<control type="group">
 					<visible>IsEmpty(Window.Property(LatestEpisode.1.ShowTitle))</visible>
 					<control type="image">
@@ -313,14 +317,14 @@
 						<posy>55</posy>
 						<width>160</width>
 						<height>160</height>
-						<texture>icon-tv.png</texture>
+						<texture>maths.jpeg</texture>
 					</control>
 					<control type="image">
 						<posx>560</posx>
 						<posy>215</posy>
 						<width>160</width>
 						<height>160</height>
-						<texture flipy="true" diffuse="mask-fade.png">icon-tv.png</texture>
+						<texture flipy="true" diffuse="mask-fade.png">maths.jpeg</texture>
 					</control>
 				</control>
 				<control type="list" id="9210">
@@ -508,10 +512,11 @@
 					</content>
 				</control>
 			</control>
-			<!-- Music icons -->
+
+			<!-- Science menu -->
 			<control type="group" id="9255">
 				<visible>ControlGroup(9250).HasFocus() | Control.HasFocus(9260)</visible>
-				<control type="label">
+<!--				<control type="label">
 					<description>Header label</description>
 					<posx>55</posx>
 					<posy>10</posy>
@@ -523,6 +528,7 @@
 					<font>font13</font>
 					<visible>!IsEmpty(Window.Property(LatestAlbum.1.Title))</visible>
 				</control>
+-->
 				<control type="group">
 					<visible>IsEmpty(Window.Property(LatestAlbum.1.Title))</visible>
 					<control type="image">
@@ -530,14 +536,14 @@
 						<posy>55</posy>
 						<width>160</width>
 						<height>160</height>
-						<texture>icon-music.png</texture>
+						<texture>science.jpeg</texture>
 					</control>
 					<control type="image">
 						<posx>560</posx>
 						<posy>215</posy>
 						<width>160</width>
 						<height>160</height>
-						<texture flipy="true" diffuse="mask-fade.png">icon-music.png</texture>
+						<texture flipy="true" diffuse="mask-fade.png">science.jpeg</texture>
 					</control>
 				</control>
 				<control type="list" id="9260">
@@ -861,20 +867,20 @@
 						<visible>!Skin.HasSetting(home-video)</visible>
 					</item>
 					<item id="2">
-						<description>Movie Menu</description>
-						<label>20338</label>
+						<description>Hindi</description>
+						<label>31041</label>
 						<onclick>Control.SetFocus(9150)</onclick>
 						<visible>!Skin.HasSetting(home-movie) | !IsEmpty(Skin.String(CustomMovies.1.Path)) | !IsEmpty(Skin.String(CustomMovies.2.Path)) | !IsEmpty(Skin.String(CustomMovies.3.Path)) | !IsEmpty(Skin.String(CustomMovies.4.Path)) | !IsEmpty(Skin.String(CustomMovies.5.Path))</visible>
 					</item>
 					<item id="3">
-						<description>TV Menu</description>
-						<label>19020</label>
+						<description>Maths</description>
+						<label>31042</label>
 						<onclick>Control.SetFocus(9200)</onclick>
 						<visible>System.GetBool(pvrmanager.enabled) | !Skin.HasSetting(home-tv) | !IsEmpty(Skin.String(CustomTVShow.1.Path)) | !IsEmpty(Skin.String(CustomTVShow.2.Path)) | !IsEmpty(Skin.String(CustomTVShow.3.Path)) | !IsEmpty(Skin.String(CustomTVShow.4.Path)) | !IsEmpty(Skin.String(CustomTVShow.5.Path))</visible>
 					</item>
 					<item id="4">
-						<description>Music Menu</description>
-						<label>2</label>
+						<description>Science</description>
+						<label>31043</label>
 						<onclick>Control.SetFocus(9250)</onclick>
 						<visible>!Skin.HasSetting(home-music) | Skin.HasSetting(home-musicvideo) | !IsEmpty(Skin.String(CustomMusic.1.Path)) | !IsEmpty(Skin.String(CustomMusic.2.Path)) | !IsEmpty(Skin.String(CustomMusic.3.Path)) | !IsEmpty(Skin.String(CustomMusic.4.Path)) | !IsEmpty(Skin.String(CustomMusic.5.Path))</visible>
 					</item>

@@ -69,6 +69,33 @@ msgid "Quit"
 msgstr ""
 
 #empty strings from id 31039 to 31125
+#Custom Menu Strings to be defined here
+
+msgctxt "#31040"
+msgid "English"
+msgstr ""
+
+msgctxt "#31041"
+msgid "Hindi"
+msgstr ""
+
+msgctxt "#31042"
+msgid "Maths"
+msgstr ""
+
+msgctxt "#31043"
+msgid "Science"
+msgstr ""
+
+msgctxt "#31044"
+msgid "Settings"
+msgstr ""
+
+
+
+
+#End of custom menu options
+
 #End home strings
 #Start video strings 31126 - 31225
 

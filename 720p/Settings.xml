@@ -5,7 +5,7 @@
 	<previouswindow>Home</previouswindow>
 	<controls>
 		<include>background</include>
-		<include>xtv-box</include>
+		<include>flux-logo</include>
 		<include>Fake-Overlay</include>
 		<control type="image">
 			<description>Settings Logo</description>

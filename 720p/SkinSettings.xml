@@ -1369,13 +1369,13 @@
 			<control type="group" id="700">
 				<visible>Skin.String(skinsettingmenu,custom)</visible>
 				<control type="image">
-					<description>Xtv Logo</description>
+					<description>Flux Logo</description>
 					<posx>150</posx>
 					<posy>150</posy>
 					<width>512</width>
 					<height>256</height>
 					<aspectratio>keep</aspectratio>
-					<texture>xtv-logo-big.png</texture>
+					<texture>flux-logo-big.png</texture>
 				</control>
 			</control>
 			<!--Support Settings-->

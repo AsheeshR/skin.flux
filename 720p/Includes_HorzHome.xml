@@ -329,7 +329,7 @@
 						<onclick>Control.SetFocus(9250)</onclick>
 						<visible>!Skin.HasSetting(home-music) | Skin.HasSetting(home-musicvideo) | !IsEmpty(Skin.String(CustomMusic.1.Path)) | !IsEmpty(Skin.String(CustomMusic.2.Path)) | !IsEmpty(Skin.String(CustomMusic.3.Path)) | !IsEmpty(Skin.String(CustomMusic.4.Path)) | !IsEmpty(Skin.String(CustomMusic.5.Path))</visible>
 					</item>
-<!--					<item id="5">
+					<item id="5">
 						<description>Pictures Menu</description>
 						<label>1</label>
 						<onclick>Control.SetFocus(9300)</onclick>
@@ -341,7 +341,7 @@
 						<onclick>Control.SetFocus(9350)</onclick>
 						<visible>!Skin.HasSetting(home-programs)</visible>
 					</item>
--->
+
 					<!--
 					<item id="7">
 						<description>Weather Menu</description>
@@ -350,7 +350,7 @@
 						<visible>Skin.HasSetting(home-weather) | Skin.HasSetting(home-currentweather)</visible>
 					</item>
 					-->
-					<item id="8">
+					<item id="7">
 						<description>System Menu</description>
 						<label>13000</label>
 						<onclick>Control.SetFocus(9450)</onclick>
@@ -1061,7 +1061,7 @@
 				</control>
 			</control>
 			<!-- Weather Sub menu -->
-			<control type="grouplist" id="9400">
+		<!--	<control type="grouplist" id="9400">
 				<visible>Skin.HasSetting(home-weather) | Skin.HasSetting(home-currentweather)</visible>
 				<animation condition="!ControlGroup(9400).HasFocus()" effect="fade" start="100" end="0">Conditional</animation>
 				<width>210</width>
@@ -1084,7 +1084,8 @@
 					<aligny>top</aligny>
 				</control>
 			</control>
-			<!-- Settings Sub menu -->
+		
+	 		<!-- Settings Sub menu -->
 			<control type="grouplist" id="9450">
 				<animation condition="!ControlGroup(9450).HasFocus()" effect="fade" start="100" end="0">Conditional</animation>
 				<width>210</width>

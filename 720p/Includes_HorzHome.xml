@@ -9,7 +9,7 @@
 			<width>1280</width>
 			<height>192</height>
 			<texture>white.png</texture>
-			<colordiffuse>FF606060</colordiffuse>
+<!--			<colordiffuse>FF606060</colordiffuse>-->
 		</control>
 		<control type="image">
 			<posx>0</posx>
@@ -17,7 +17,7 @@
 			<width>1280</width>
 			<height>106</height>
 			<texture>white.png</texture>
-			<colordiffuse>FF404040</colordiffuse>
+<!--			<colordiffuse>FF404040</colordiffuse>-->
 		</control>
 		<control type="image">
 			<posx>-100</posx>
@@ -37,7 +37,7 @@
 			<onfocus condition="Skin.HasSetting(startup-playlist) + Window.Previous(startup)">PlayMedia($ESCINFO[Skin.String(Startup_Playlist_Path)],isdir)</onfocus>
 			<onfocus condition="Window.Previous(settings) | Window.Previous(systeminfo)">Control.SetFocus(9900,8)</onfocus>
 			<onfocus>noop</onfocus>
-			<onfocus condition="Window.Previous(settings) | Window.Previous(systeminfo)">Control.SetFocus(9450)</onfocus>
+			<onfocus condition="Window.Previous(settings) | Window.Previous(systeminfo)">Control.SetFocus(9300)</onfocus>
 			<onfocus condition="![Window.Previous(settings) | Window.Previous(systeminfo)]">Control.SetFocus(9900)</onfocus>
 			<onfocus>noop</onfocus>
 			<onfocus condition="![Window.Previous(settings) | Window.Previous(systeminfo)]">Control.SetFocus(9000)</onfocus>
@@ -193,7 +193,7 @@
 			<width>1280</width>
 			<height>430</height>
 			<colordiffuse>solid-background</colordiffuse>
-			<texture>black.png</texture>
+			<texture>dark-red.png</texture>
 		</control>
 		<control type="image">
 			<posx>0</posx>

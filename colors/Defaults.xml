@@ -7,6 +7,10 @@ FFFFFF - FFE6B3
 000000 - FF3300
 
 0066CC - FF9900
+AA0000 - (Warning)
+FF0000 - ()
+00AAFF - 
+A0A0A0 - Thumbs
 -->
 
 
@@ -23,7 +27,7 @@ FFFFFF - FFE6B3
 	<color name="button-text">FFFFE6B3</color>
 	<color name="shutdown-text">FFFFE6B3</color>
 	<color name="shadow-text">FFFF3300</color>
-	<color name="warning-text">FFAA0000</color> <!-- -->
+	<color name="warning-text">FFAA0000</color> <!--Warning color-->
 	<color name="rss-headline-text">FFFFE6B3</color>
 	<color name="rss-title-text">FFFF9900</color>
 	<color name="listselectedtext">FFFF9900</color>

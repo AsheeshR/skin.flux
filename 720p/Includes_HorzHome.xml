@@ -44,9 +44,9 @@
 		</control>
 
 		<control type="group">
-		<!-- Show lumined logo -->
+		<!-- Show LumenEd logo -->
 			<control type="image">
-				<description>Lumened logo</description>
+				<description>LumenEd logo</description>
 				<posx>15</posx>
 				<posy>10</posy>
 				<width>50</width>
@@ -58,12 +58,12 @@
 			</control>
 	
 			<control type="label">
-				<description>Lumened icon</description>
+				<description>LumenEd icon</description>
 				<posx>70</posx>
 				<posy>10</posy>
 				<width>566</width>
 				<height>50</height>
-				<label>LumenED</label>
+				<label>LumenEd</label>
 				<align>left</align>
 				<font>font18</font>
 				<visible>true</visible>
@@ -83,10 +83,6 @@
 			<font>font18</font>
 			<visible>!Skin.HasSetting(home-time)</visible>
 		</control>
-		<!-- Low memory warning -->
-<!--		<include>memory-low</include>-->
-		<!-- RSS info -->
-<!--		<include>page-info</include>-->
 
 		<!-- Shelf icons-->
 		<control type="group">
@@ -98,7 +94,6 @@
 					<posy>55</posy>
 					<width>160</width>
 					<height>160</height>
-<!--					<texture>icon-video.png</texture>-->
 					<texture>english.jpeg</texture>			
 				</control>
 				<control type="image">
@@ -106,7 +101,6 @@
 					<posy>215</posy>
 					<width>160</width>
 					<height>160</height>
-<!--					<texture flipy="true" diffuse="mask-fade.png">icon-video.png</texture>-->
 					<texture flipy="true" diffuse="mask-fade.png">english.jpeg</texture>
 				</control>
 			</control>
@@ -114,7 +108,6 @@
 			<control type="group" id="9155">
 				<visible>ControlGroup(9150).HasFocus() | Control.HasFocus(9160)</visible>
 				<control type="group">
-					<visible>IsEmpty(Window.Property(LatestMovie.1.Title))</visible>
 					<control type="image">
 						<posx>560</posx>
 						<posy>55</posy>
@@ -130,40 +123,12 @@
 						<texture flipy="true" diffuse="mask-fade.png">hindi.jpeg</texture>
 					</control>
 				</control>
-				<control type="group">
-					<visible>!IsEmpty(Window.Property(LatestMovie.1.Title))</visible>
-<!--					<control type="label">
-						<description>Recently added Movies label</description>
-						<posx>55</posx>
-						<posy>10</posy>
-						<height>50</height>
-						<width>400</width>
-						<label>$LOCALIZE[20386]</label>
-						<align>left</align>
-						<aligny>center</aligny>
-						<font>font13</font>
-					</control>
--->
-				</control>
 			</control>
+
 			<!-- Maths menu -->
 			<control type="group" id="9205">
 				<visible>ControlGroup(9200).HasFocus() | Control.HasFocus(9210)</visible>
-<!--				<control type="label">
-					<description>Header label</description>
-					<posx>55</posx>
-					<posy>10</posy>
-					<height>50</height>
-					<width>400</width>
-					<label>$LOCALIZE[20387]</label>
-					<align>left</align>
-					<aligny>center</aligny>
-					<font>font13</font>
-					<visible>!IsEmpty(Window.Property(LatestEpisode.1.ShowTitle))</visible>
-				</control>
--->
 				<control type="group">
-				<!--	<visible>IsEmpty(Window.Property(LatestEpisode.1.ShowTitle))</visible>-->
 					<control type="image">
 						<posx>560</posx>
 						<posy>55</posy>
@@ -184,21 +149,7 @@
 			<!-- Science menu -->
 			<control type="group" id="9255">
 				<visible>ControlGroup(9250).HasFocus() | Control.HasFocus(9260)</visible>
-<!--				<control type="label">
-					<description>Header label</description>
-					<posx>55</posx>
-					<posy>10</posy>
-					<height>50</height>
-					<width>400</width>
-					<label>$LOCALIZE[359]</label>
-					<align>left</align>
-					<aligny>center</aligny>
-					<font>font13</font>
-					<visible>!IsEmpty(Window.Property(LatestAlbum.1.Title))</visible>
-				</control>
--->
 				<control type="group">
-					<visible>IsEmpty(Window.Property(LatestAlbum.1.Title))</visible>
 					<control type="image">
 						<posx>560</posx>
 						<posy>55</posy>
@@ -235,6 +186,7 @@
 				</control>
 			</control>
 		</control>
+
 		<!-- Main Horizontal menu bar -->
 		<control type="image">
 			<description>solid background</description>
@@ -259,6 +211,7 @@
 			<height>6</height>
 			<texture>separator.png</texture>
 		</control>
+
 		<!--Home NavBar-->
 		<control type="group">
 			<include>horizontalhome-center</include>
@@ -272,7 +225,7 @@
 				<itemgap>0</itemgap>
 				<viewtype label="List">List</viewtype>
 				<orientation>horizontal</orientation>
-				<itemlayout height="66" width="210">
+				<itemlayout height="66" width="210"> <!-- This defines the overall menu-->
 					<control type="label">
 						<posx>105</posx>
 						<posy>17</posy>
@@ -284,7 +237,7 @@
 						<label>$INFO[ListItem.Label]</label>
 					</control>
 				</itemlayout>
-				<focusedlayout height="66" width="210">
+				<focusedlayout height="66" width="210"> <!-- This defines the menu highlighting-->
 					<control type="image">
 						<posx>0</posx>
 						<posy>0</posy>
@@ -309,48 +262,23 @@
 						<description>English</description>
 						<label>31040</label>
 						<onclick>Control.SetFocus(9100)</onclick>
-						<visible>!Skin.HasSetting(home-video)</visible>
 					</item>
 					<item id="2">
 						<description>Hindi</description>
 						<label>31041</label>
 						<onclick>Control.SetFocus(9150)</onclick>
-						<visible>!Skin.HasSetting(home-movie) | !IsEmpty(Skin.String(CustomMovies.1.Path)) | !IsEmpty(Skin.String(CustomMovies.2.Path)) | !IsEmpty(Skin.String(CustomMovies.3.Path)) | !IsEmpty(Skin.String(CustomMovies.4.Path)) | !IsEmpty(Skin.String(CustomMovies.5.Path))</visible>
 					</item>
 					<item id="3">
 						<description>Maths</description>
 						<label>31042</label>
 						<onclick>Control.SetFocus(9200)</onclick>
-						<visible>System.GetBool(pvrmanager.enabled) | !Skin.HasSetting(home-tv) | !IsEmpty(Skin.String(CustomTVShow.1.Path)) | !IsEmpty(Skin.String(CustomTVShow.2.Path)) | !IsEmpty(Skin.String(CustomTVShow.3.Path)) | !IsEmpty(Skin.String(CustomTVShow.4.Path)) | !IsEmpty(Skin.String(CustomTVShow.5.Path))</visible>
 					</item>
 					<item id="4">
 						<description>Science</description>
 						<label>31043</label>
 						<onclick>Control.SetFocus(9250)</onclick>
-						<visible>!Skin.HasSetting(home-music) | Skin.HasSetting(home-musicvideo) | !IsEmpty(Skin.String(CustomMusic.1.Path)) | !IsEmpty(Skin.String(CustomMusic.2.Path)) | !IsEmpty(Skin.String(CustomMusic.3.Path)) | !IsEmpty(Skin.String(CustomMusic.4.Path)) | !IsEmpty(Skin.String(CustomMusic.5.Path))</visible>
 					</item>
 					<item id="5">
-						<description>Pictures Menu</description>
-						<label>1</label>
-						<onclick>Control.SetFocus(9300)</onclick>
-						<visible>Skin.HasSetting(home-photos)</visible>
-					</item>
-					<item id="6">
-						<description>Addon Menu</description>
-						<label>24001</label>
-						<onclick>Control.SetFocus(9350)</onclick>
-						<visible>!Skin.HasSetting(home-programs)</visible>
-					</item>
-
-					<!--
-					<item id="7">
-						<description>Weather Menu</description>
-						<label>8</label>
-						<onclick>Control.SetFocus(9400)</onclick>
-						<visible>Skin.HasSetting(home-weather) | Skin.HasSetting(home-currentweather)</visible>
-					</item>
-					-->
-					<item id="7">
 						<description>System Menu</description>
 						<label>13000</label>
 						<onclick>Control.SetFocus(9450)</onclick>
@@ -358,6 +286,7 @@
 				</content>
 			</control>
 		</control>
+
 		<!-- Home Sub menus -->
 		<control type="grouplist" id="9000">
 			<include>horizontalhome-center</include>
@@ -857,234 +786,7 @@
 					<aligny>top</aligny>
 				</control>
 			</control>
-			<!-- Pictures Sub menu -->
-			<control type="grouplist" id="9300">
-				<visible>Skin.HasSetting(home-photos)</visible>
-				<animation condition="!ControlGroup(9300).HasFocus()" effect="fade" start="100" end="0">Conditional</animation>
-				<width>210</width>
-				<height>306</height>
-				<onup>noop</onup>
-				<ondown>noop</ondown>
-				<control type="button" id="9320">
-					<width>210</width>
-					<height>46</height>
-					<font>font11</font>
-					<label>1</label>
-					<onclick>ActivateWindow(Pictures,,return)</onclick>
-					<textoffsetx>10</textoffsetx>
-					<textoffsety>8</textoffsety>
-					<onleft>Control.Move(9900,-1)</onleft>
-					<onleft>9250</onleft>
-					<onright>Control.Move(9900,1)</onright>
-					<onright>9350</onright>
-					<align>center</align>
-					<aligny>top</aligny>
-				</control>
-				<control type="button" id="9322">
-					<width>210</width>
-					<height>46</height>
-					<font>font11</font>
-					<label>24001</label>
-					<onclick>XBMC.ActivateWindow(Pictures,Addons,return)</onclick>
-					<textoffsetx>10</textoffsetx>
-					<textoffsety>8</textoffsety>
-					<onleft>Control.Move(9900,-1)</onleft>
-					<onleft>9250</onleft>
-					<onright>Control.Move(9900,1)</onright>
-					<onright>9350</onright>
-					<align>center</align>
-					<aligny>top</aligny>
-				</control>
-			</control>
-			<!-- Addons Sub menu -->
-			<control type="grouplist" id="9350">
-				<visible>!Skin.HasSetting(home-programs)</visible>
-				<animation condition="!ControlGroup(9350).HasFocus()" effect="fade" start="100" end="0">Conditional</animation>
-				<width>210</width>
-				<height>306</height>
-				<onup>noop</onup>
-				<ondown>noop</ondown>
-				<control type="button" id="9370">
-					<width>210</width>
-					<height>46</height>
-					<font>font11</font>
-					<label>$INFO[Skin.String(CustomAddon.1.Label)]</label>
-					<onclick>$INFO[Skin.String(CustomAddon.1.Path)]</onclick>
-					<textoffsetx>10</textoffsetx>
-					<textoffsety>8</textoffsety>
-					<onleft>Control.Move(9900,-1)</onleft>
-					<onleft>9300</onleft>
-					<onright>Control.Move(9900,1)</onright>
-					<onright>9400</onright>
-					<align>center</align>
-					<aligny>top</aligny>
-					<visible>!IsEmpty(Skin.String(CustomAddon.1.Path))</visible>
-				</control>
-				<control type="button" id="9372">
-					<width>210</width>
-					<height>46</height>
-					<font>font11</font>
-					<label>$INFO[Skin.String(CustomAddon.2.Label)]</label>
-					<onclick>$INFO[Skin.String(CustomAddon.2.Path)]</onclick>
-					<textoffsetx>10</textoffsetx>
-					<textoffsety>8</textoffsety>
-					<onleft>Control.Move(9900,-1)</onleft>
-					<onleft>9300</onleft>
-					<onright>Control.Move(9900,1)</onright>
-					<onright>9400</onright>
-					<align>center</align>
-					<aligny>top</aligny>
-					<visible>!IsEmpty(Skin.String(CustomAddon.2.Path))</visible>
-				</control>
-				<control type="button" id="9374">
-					<width>210</width>
-					<height>46</height>
-					<font>font11</font>
-					<label>$INFO[Skin.String(CustomAddon.3.Label)]</label>
-					<onclick>$INFO[Skin.String(CustomAddon.3.Path)]</onclick>
-					<textoffsetx>10</textoffsetx>
-					<textoffsety>8</textoffsety>
-					<onleft>Control.Move(9900,-1)</onleft>
-					<onleft>9300</onleft>
-					<onright>Control.Move(9900,1)</onright>
-					<onright>9400</onright>
-					<align>center</align>
-					<aligny>top</aligny>
-					<visible>!IsEmpty(Skin.String(CustomAddon.3.Path))</visible>
-				</control>
-				<control type="button" id="9376">
-					<width>210</width>
-					<height>46</height>
-					<font>font11</font>
-					<label>$INFO[Skin.String(CustomAddon.4.Label)]</label>
-					<onclick>$INFO[Skin.String(CustomAddon.4.Path)]</onclick>
-					<textoffsetx>10</textoffsetx>
-					<textoffsety>8</textoffsety>
-					<onleft>Control.Move(9900,-1)</onleft>
-					<onleft>9300</onleft>
-					<onright>Control.Move(9900,1)</onright>
-					<onright>9400</onright>
-					<align>center</align>
-					<aligny>top</aligny>
-					<visible>!IsEmpty(Skin.String(CustomAddon.4.Path))</visible>
-				</control>
-				<control type="button" id="9378">
-					<width>210</width>
-					<height>46</height>
-					<font>font11</font>
-					<label>$INFO[Skin.String(CustomAddon.5.Label)] </label>
-					<onclick>$INFO[Skin.String(CustomAddon.5.Path)]</onclick>
-					<textoffsetx>10</textoffsetx>
-					<textoffsety>8</textoffsety>
-					<onleft>Control.Move(9900,-1)</onleft>
-					<onleft>9300</onleft>
-					<onright>Control.Move(9900,1)</onright>
-					<onright>9400</onright>
-					<align>center</align>
-					<aligny>top</aligny>
-					<visible>!IsEmpty(Skin.String(CustomAddon.5.Path))</visible>
-				</control>
-				<control type="button" id="9380">
-					<width>210</width>
-					<height>46</height>
-					<font>font11</font>
-					<label>157</label>
-					<onclick>ActivateWindow(Videos,Addons,return)</onclick>
-					<textoffsetx>10</textoffsetx>
-					<textoffsety>8</textoffsety>
-					<onleft>Control.Move(9900,-1)</onleft>
-					<onleft>9300</onleft>
-					<onright>Control.Move(9900,1)</onright>
-					<onright>9400</onright>
-					<align>center</align>
-					<aligny>top</aligny>
-				</control>
-				<control type="button" id="9382">
-					<width>210</width>
-					<height>46</height>
-					<font>font11</font>
-					<label>2</label>
-					<onclick>$VAR[MusicAddonEntry]</onclick>
-					<textoffsetx>10</textoffsetx>
-					<textoffsety>8</textoffsety>
-					<onleft>Control.Move(9900,-1)</onleft>
-					<onleft>9300</onleft>
-					<onright>Control.Move(9900,1)</onright>
-					<onright>9400</onright>
-					<align>center</align>
-					<aligny>top</aligny>
-				</control>
-				<control type="button" id="9384">
-					<width>210</width>
-					<height>46</height>
-					<font>font11</font>
-					<label>1</label>
-					<onclick>XBMC.ActivateWindow(Pictures,Addons,return)</onclick>
-					<textoffsetx>10</textoffsetx>
-					<textoffsety>8</textoffsety>
-					<onleft>Control.Move(9900,-1)</onleft>
-					<onleft>9300</onleft>
-					<onright>Control.Move(9900,1)</onright>
-					<onright>9400</onright>
-					<align>center</align>
-					<aligny>top</aligny>
-				</control>
-				<control type="button" id="9386">
-					<width>210</width>
-					<height>46</height>
-					<font>font11</font>
-					<label>0</label>
-					<onclick>ActivateWindow(Programs,Addons,return)</onclick>
-					<textoffsetx>10</textoffsetx>
-					<textoffsety>8</textoffsety>
-					<onleft>Control.Move(9900,-1)</onleft>
-					<onleft>9300</onleft>
-					<onright>Control.Move(9900,1)</onright>
-					<onright>9400</onright>
-					<align>center</align>
-					<aligny>top</aligny>
-				</control>
-				<control type="button" id="9388">
-					<width>210</width>
-					<height>46</height>
-					<font>font11</font>
-					<label>21452</label>
-					<onclick>ActivateWindow(AddonBrowser,,return)</onclick>
-					<textoffsetx>10</textoffsetx>
-					<textoffsety>8</textoffsety>
-					<onleft>Control.Move(9900,-1)</onleft>
-					<onleft>9300</onleft>
-					<onright>Control.Move(9900,1)</onright>
-					<onright>9400</onright>
-					<align>center</align>
-					<aligny>top</aligny>
-				</control>
-			</control>
-			<!-- Weather Sub menu -->
-		<!--	<control type="grouplist" id="9400">
-				<visible>Skin.HasSetting(home-weather) | Skin.HasSetting(home-currentweather)</visible>
-				<animation condition="!ControlGroup(9400).HasFocus()" effect="fade" start="100" end="0">Conditional</animation>
-				<width>210</width>
-				<height>306</height>
-				<onup>noop</onup>
-				<ondown>noop</ondown>
-				<control type="button" id="9420">
-					<width>210</width>
-					<height>46</height>
-					<font>font11</font>
-					<label>8</label>
-					<onclick>ActivateWindow(Weather,,return)</onclick>
-					<textoffsetx>10</textoffsetx>
-					<textoffsety>8</textoffsety>
-					<onleft>Control.Move(9900,-1)</onleft>
-					<onleft>9350</onleft>
-					<onright>Control.Move(9900,1)</onright>
-					<onright>9450</onright>
-					<align>center</align>
-					<aligny>top</aligny>
-				</control>
-			</control>
-		
+			
 	 		<!-- Settings Sub menu -->
 			<control type="grouplist" id="9450">
 				<animation condition="!ControlGroup(9450).HasFocus()" effect="fade" start="100" end="0">Conditional</animation>
@@ -1221,6 +923,7 @@
 				</control>
 			</control>
 		</control>
+
 		<!-- Mask controls if more item top or bottom of displayed list -->
 		<control type="group">
 			<!-- Movie Sub menu -->
@@ -1302,6 +1005,7 @@
 				<visible>Container(9450).HasNext</visible>
 			</control>
 		</control>
+		
 		<!-- Horizontal Home menu logo -->
 		<control type="image">
 			<posx>1150</posx>

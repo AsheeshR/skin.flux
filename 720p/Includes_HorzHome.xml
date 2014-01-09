@@ -92,14 +92,14 @@
 					<posy>55</posy>
 					<width>160</width>
 					<height>160</height>
-					<texture>english.jpeg</texture>			
+					<texture>english.png</texture>			
 				</control>
 				<control type="image">
 					<posx>560</posx>
 					<posy>215</posy>
 					<width>160</width>
 					<height>160</height>
-					<texture flipy="true" diffuse="mask-fade.png">english.jpeg</texture>
+					<texture flipy="true" diffuse="mask-fade.png">english.png</texture>
 				</control>
 			</control>
 			<!-- Hindi menu -->
@@ -111,19 +111,19 @@
 						<posy>55</posy>
 						<width>160</width>
 						<height>160</height>
-						<texture>hindi.jpeg</texture>
+						<texture>hindi.png</texture>
 					</control>
 					<control type="image">
 						<posx>560</posx>
 						<posy>215</posy>
 						<width>160</width>
 						<height>160</height>
-						<texture flipy="true" diffuse="mask-fade.png">hindi.jpeg</texture>
+						<texture flipy="true" diffuse="mask-fade.png">hindi.png</texture>
 					</control>
 				</control>
 			</control>
 
-			<!-- Maths menu -->
+			<!-- Math menu -->
 			<control type="group" id="9205">
 				<visible>ControlGroup(9200).HasFocus() | Control.HasFocus(9210)</visible>
 				<control type="group">
@@ -132,14 +132,14 @@
 						<posy>55</posy>
 						<width>160</width>
 						<height>160</height>
-						<texture>maths.jpeg</texture>
+						<texture>math.png</texture>
 					</control>
 					<control type="image">
 						<posx>560</posx>
 						<posy>215</posy>
 						<width>160</width>
 						<height>160</height>
-						<texture flipy="true" diffuse="mask-fade.png">maths.jpeg</texture>
+						<texture flipy="true" diffuse="mask-fade.png">math.png</texture>
 					</control>
 				</control>
 			</control>
@@ -153,14 +153,14 @@
 						<posy>55</posy>
 						<width>160</width>
 						<height>160</height>
-						<texture>science.jpeg</texture>
+						<texture>computers.png</texture>
 					</control>
 					<control type="image">
 						<posx>560</posx>
 						<posy>215</posy>
 						<width>160</width>
 						<height>160</height>
-						<texture flipy="true" diffuse="mask-fade.png">science.jpeg</texture>
+						<texture flipy="true" diffuse="mask-fade.png">computers.png</texture>
 					</control>
 				</control>
 			</control>

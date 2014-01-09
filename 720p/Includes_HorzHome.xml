@@ -166,7 +166,7 @@
 			</control>
 
 			<!-- Settings icons -->
-			<control type="group" id="9300"> <!--Changed-->
+			<control type="group" id="9305"> <!--Changed-->
 				<visible>ControlGroup(9300).HasFocus()</visible> <!--Changed-->
 				<control type="image">
 					<posx>560</posx>
@@ -300,9 +300,59 @@
 				<animation condition="!ControlGroup(9100).HasFocus()" effect="fade" start="100" end="0">Conditional</animation>
 				<width>210</width>
 				<height>306</height>
-				<onup>noop</onup>
+<!--				<onup>noop</onup>-->
+				<onup>9105</onup>	
 				<ondown>noop</ondown>
+
 				<control type="button" id="9120">
+					<width>210</width>
+					<height>46</height>
+					<font>font11</font>
+					<label>31045</label>
+					<onclick>ActivateWindow(Videos,Files,return)</onclick>
+					<textoffsetx>10</textoffsetx>
+					<textoffsety>8</textoffsety>
+					<onleft>Control.Move(9900,-1)</onleft>
+					<onleft>9300</onleft>
+					<onright>Control.Move(9900,1)</onright>
+					<onright>9150</onright>
+
+					<align>center</align>
+					<aligny>top</aligny>
+				</control>
+				<control type="button" id="9122">
+					<width>210</width>
+					<height>46</height>
+					<font>font11</font>
+					<label>31046</label>
+					<onclick>ActivateWindow(Videos,Files,return)</onclick>
+					<textoffsetx>10</textoffsetx>
+					<textoffsety>8</textoffsety>
+					<onleft>Control.Move(9900,-1)</onleft>
+					<onleft>9300</onleft>
+					<onright>Control.Move(9900,1)</onright>
+					<onright>9150</onright>
+
+					<align>center</align>
+					<aligny>top</aligny>
+				</control>
+				<control type="button" id="9124">
+					<width>210</width>
+					<height>46</height>
+					<font>font11</font>
+					<label>31047</label>
+					<onclick>ActivateWindow(Videos,Files,return)</onclick>
+					<textoffsetx>10</textoffsetx>
+					<textoffsety>8</textoffsety>
+					<onleft>Control.Move(9900,-1)</onleft>
+					<onleft>9300</onleft>
+					<onright>Control.Move(9900,1)</onright>
+					<onright>9150</onright>
+
+					<align>center</align>
+					<aligny>top</aligny>
+				</control>
+<!--				<control type="button" id="9120">
 					<width>210</width>
 					<height>46</height>
 					<font>font11</font>
@@ -318,7 +368,7 @@
 					<align>center</align>
 					<aligny>top</aligny>
 				</control>
-				<control type="button" id="9122">
+				<control type="button" id="9 122">
 					<width>210</width>
 					<height>46</height>
 					<font>font11</font>
@@ -403,6 +453,7 @@
 					<align>center</align>
 					<aligny>top</aligny>
 				</control>
+-->
 			</control>
 
 			<!-- Hindi Sub Menu -->
@@ -412,7 +463,62 @@
 				<height>306</height>
 				<onup>9155</onup>
 				<ondown>noop</ondown>
+				
 				<control type="button" id="9170">
+					<width>210</width>
+					<height>46</height>
+					<font>font11</font>
+					<label>31045</label>
+					<onclick>$VAR[MovieLibEntry]</onclick>
+					<textoffsetx>10</textoffsetx>
+					<textoffsety>8</textoffsety>
+
+					<onleft>Control.Move(9900,-1)</onleft>
+					<onleft>9100</onleft>
+					<onright>Control.Move(9900,1)</onright>
+					<onright>9200</onright>
+
+					<align>center</align>
+					<aligny>top</aligny>
+				</control>
+
+				<control type="button" id="9172">
+					<width>210</width>
+					<height>46</height>
+					<font>font11</font>
+					<label>31046</label>
+					<onclick>$VAR[MovieLibEntry]</onclick>
+					<textoffsetx>10</textoffsetx>
+					<textoffsety>8</textoffsety>
+
+					<onleft>Control.Move(9900,-1)</onleft>
+					<onleft>9100</onleft>
+					<onright>Control.Move(9900,1)</onright>
+					<onright>9200</onright>
+
+					<align>center</align>
+					<aligny>top</aligny>
+				</control>
+
+				<control type="button" id="9174">
+					<width>210</width>
+					<height>46</height>
+					<font>font11</font>
+					<label>31047</label>
+					<onclick>$VAR[MovieLibEntry]</onclick>
+					<textoffsetx>10</textoffsetx>
+					<textoffsety>8</textoffsety>
+
+					<onleft>Control.Move(9900,-1)</onleft>
+					<onleft>9100</onleft>
+					<onright>Control.Move(9900,1)</onright>
+					<onright>9200</onright>
+
+					<align>center</align>
+					<aligny>top</aligny>
+				</control>
+
+<!--				<control type="button" id="9170">
 					<width>210</width>
 					<height>46</height>
 					<font>font11</font>
@@ -536,6 +642,7 @@
 					<align>center</align>
 					<aligny>top</aligny>
 				</control>
+-->
 			</control>
 			<!-- Maths Sub Menu -->
 			<control type="grouplist" id="9200">
@@ -545,6 +652,59 @@
 				<onup>9205</onup>
 				<ondown>noop</ondown>
 				<control type="button" id="9220">
+					<width>210</width>
+					<height>46</height>
+					<font>font11</font>
+					<label>31045</label>
+					<onclick>ActivateWindow(PVR)</onclick>
+					<textoffsetx>10</textoffsetx>
+					<textoffsety>8</textoffsety>
+					<onleft>Control.Move(9900,-1)</onleft>
+					<onleft>9150</onleft>
+					<onright>Control.Move(9900,1)</onright>
+					<onright>9250</onright>
+					<align>center</align>
+					<aligny>top</aligny>
+<!--					<visible>System.GetBool(pvrmanager.enabled)</visible>-->
+					<visible>true</visible>
+				</control>
+
+				<control type="button" id="9222">
+					<width>210</width>
+					<height>46</height>
+					<font>font11</font>
+					<label>31046</label>
+					<onclick>ActivateWindow(PVR)</onclick>
+					<textoffsetx>10</textoffsetx>
+					<textoffsety>8</textoffsety>
+					<onleft>Control.Move(9900,-1)</onleft>
+					<onleft>9150</onleft>
+					<onright>Control.Move(9900,1)</onright>
+					<onright>9250</onright>
+					<align>center</align>
+					<aligny>top</aligny>
+<!--					<visible>System.GetBool(pvrmanager.enabled)</visible>-->
+					<visible>true</visible>
+				</control>
+
+				<control type="button" id="9224">
+					<width>210</width>
+					<height>46</height>
+					<font>font11</font>
+					<label>31047</label>
+					<onclick>ActivateWindow(PVR)</onclick>
+					<textoffsetx>10</textoffsetx>
+					<textoffsety>8</textoffsety>
+					<onleft>Control.Move(9900,-1)</onleft>
+					<onleft>9150</onleft>
+					<onright>Control.Move(9900,1)</onright>
+					<onright>9250</onright>
+					<align>center</align>
+					<aligny>top</aligny>
+<!--					<visible>System.GetBool(pvrmanager.enabled)</visible>-->
+					<visible>true</visible>
+				</control>
+<!--				<control type="button" id="9220">
 					<width>210</width>
 					<height>46</height>
 					<font>font11</font>
@@ -670,6 +830,7 @@
 					<align>center</align>
 					<aligny>top</aligny>
 				</control>
+-->
 			</control>
 			<!-- Science Sub menu -->
 			<control type="grouplist" id="9250">
@@ -678,7 +839,58 @@
 				<height>306</height>
 				<onup>9255</onup>
 				<ondown>noop</ondown>
+				
 				<control type="button" id="9270">
+					<width>210</width>
+					<height>46</height>
+					<font>font11</font>
+					<label>31045</label>
+					<onclick>$VAR[MusicLibEntry]</onclick>
+					<textoffsetx>10</textoffsetx>
+					<textoffsety>8</textoffsety>
+					<onleft>Control.Move(9900,-1)</onleft>
+					<onleft>9200</onleft>
+					<onright>Control.Move(9900,1)</onright>
+					<onright>9300</onright>
+					<align>center</align>
+					<aligny>top</aligny>
+					<visible>!Skin.HasSetting(home-music)</visible>
+				</control>
+
+				<control type="button" id="9272">
+					<width>210</width>
+					<height>46</height>
+					<font>font11</font>
+					<label>31046</label>
+					<onclick>$VAR[MusicLibEntry]</onclick>
+					<textoffsetx>10</textoffsetx>
+					<textoffsety>8</textoffsety>
+					<onleft>Control.Move(9900,-1)</onleft>
+					<onleft>9200</onleft>
+					<onright>Control.Move(9900,1)</onright>
+					<onright>9300</onright>
+					<align>center</align>
+					<aligny>top</aligny>
+					<visible>!Skin.HasSetting(home-music)</visible>
+				</control>	
+
+				<control type="button" id="9274">
+					<width>210</width>
+					<height>46</height>
+					<font>font11</font>
+					<label>31047</label>
+					<onclick>$VAR[MusicLibEntry]</onclick>
+					<textoffsetx>10</textoffsetx>
+					<textoffsety>8</textoffsety>
+					<onleft>Control.Move(9900,-1)</onleft>
+					<onleft>9200</onleft>
+					<onright>Control.Move(9900,1)</onright>
+					<onright>9300</onright>
+					<align>center</align>
+					<aligny>top</aligny>
+					<visible>!Skin.HasSetting(home-music)</visible>
+				</control>
+<!--				<control type="button" id="9270">
 					<width>210</width>
 					<height>46</height>
 					<font>font11</font>
@@ -805,6 +1017,7 @@
 					<align>center</align>
 					<aligny>top</aligny>
 				</control>
+-->
 			</control>
 			
 	 		<!-- Settings Sub menu -->
@@ -812,7 +1025,7 @@
 				<animation condition="!ControlGroup(9300).HasFocus()" effect="fade" start="100" end="0">Conditional</animation>
 				<width>210</width>
 				<height>306</height>
-				<onup>noop</onup>
+				<onup>9305</onup>
 				<ondown>noop</ondown>
 				<control type="button" id="9320">
 					<width>210</width>

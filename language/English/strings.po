@@ -84,13 +84,24 @@ msgid "Maths"
 msgstr ""
 
 msgctxt "#31043"
-msgid "Science"
+msgid "Computers"
 msgstr ""
 
 msgctxt "#31044"
 msgid "Settings"
 msgstr ""
 
+msgctxt "#31045"
+msgid "Class 3"
+msgstr ""
+
+msgctxt "#31046"
+msgid "Class 4"
+msgstr ""
+
+msgctxt "#31047"
+msgid "Class 5"
+msgstr ""
 
 
 

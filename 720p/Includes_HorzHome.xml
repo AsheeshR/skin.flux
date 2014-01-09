@@ -19,14 +19,14 @@
 			<texture>white.png</texture>
 <!--			<colordiffuse>FF404040</colordiffuse>-->
 		</control>
-		<control type="image">
+<!--		<control type="image">
 			<posx>-100</posx>
 			<posy>-20</posy>
 			<width>1480</width>
 			<height>310</height>
 			<texture>menu-mask.png</texture>
 			<colordiffuse>BBF9F9F9</colordiffuse>
-		</control>
+		</control> -->
 		<!-- Hidden button to startup startup-playlist and resync home menu items if they get out of sync -->
 		<control type="button" id="420">
 			<description>trigger playlist if selected</description>
@@ -242,7 +242,7 @@
 						<width>210</width>
 						<height>66</height>
 						<align>center</align>
-						<texture>menu-focus.png</texture>
+						<texture>menu-focussed.png</texture> <!-- Not changing. Changed file name. -->
 					</control>
 					<control type="label">
 						<posx>105</posx>

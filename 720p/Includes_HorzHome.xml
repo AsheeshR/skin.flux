@@ -44,7 +44,7 @@
 		</control>
 
 		<control type="group">
-		<!-- Show LumenEd logo -->
+		<!-- Show LumenEd logo : Always present -->
 			<control type="image">
 				<description>LumenEd logo</description>
 				<posx>15</posx>
@@ -54,7 +54,6 @@
 				<texture>flux-logo-big.png</texture>
 				<align>left</align>
 				<font>font18</font>
-	<!--			<visible>!Skin.HasSetting(home-time)</visible>-->
 			</control>
 	
 			<control type="label">
@@ -67,7 +66,6 @@
 				<align>left</align>
 				<font>font18</font>
 				<visible>true</visible>
-	<!--			<visible>!Skin.HasSetting(home-time)</visible> -->
 			</control>
 		</control>
 
@@ -168,8 +166,8 @@
 			</control>
 
 			<!-- Settings icons -->
-			<control type="group">
-				<visible>ControlGroup(9450).HasFocus()</visible>
+			<control type="group" id="9300"> <!--Changed-->
+				<visible>ControlGroup(9300).HasFocus()</visible> <!--Changed-->
 				<control type="image">
 					<posx>560</posx>
 					<posy>55</posy>
@@ -281,7 +279,7 @@
 					<item id="5">
 						<description>System Menu</description>
 						<label>13000</label>
-						<onclick>Control.SetFocus(9450)</onclick>
+						<onclick>Control.SetFocus(9300)</onclick>
 					</item>
 				</content>
 			</control>
@@ -311,10 +309,12 @@
 					<onclick>ActivateWindow(Videos,Files,return)</onclick>
 					<textoffsetx>10</textoffsetx>
 					<textoffsety>8</textoffsety>
+					<!--Problematic Area-->
 					<onleft>Control.Move(9900,-1)</onleft>
-					<onleft>9450</onleft>
+					<onleft>9300</onleft>
 					<onright>Control.Move(9900,1)</onright>
 					<onright>9150</onright>
+
 					<align>center</align>
 					<aligny>top</aligny>
 				</control>
@@ -326,10 +326,12 @@
 					<onclick>ActivateWindow(Videolibrary,root,return)</onclick>
 					<textoffsetx>10</textoffsetx>
 					<textoffsety>8</textoffsety>
+
 					<onleft>Control.Move(9900,-1)</onleft>
-					<onleft>9450</onleft>
+					<onleft>9300</onleft>
 					<onright>Control.Move(9900,1)</onright>
 					<onright>9150</onright>
+
 					<align>center</align>
 					<aligny>top</aligny>
 				</control>
@@ -341,10 +343,12 @@
 					<onclick>ActivateWindow(Videos,Movies,return)</onclick>
 					<textoffsetx>10</textoffsetx>
 					<textoffsety>8</textoffsety>
+
 					<onleft>Control.Move(9900,-1)</onleft>
-					<onleft>9450</onleft>
+					<onleft>9300</onleft>
 					<onright>Control.Move(9900,1)</onright>
 					<onright>9150</onright>
+
 					<align>center</align>
 					<aligny>top</aligny>
 					<visible>Library.HasContent(Movies)</visible>
@@ -357,10 +361,12 @@
 					<onclick>ActivateWindow(Videos,TvShows,return)</onclick>
 					<textoffsetx>10</textoffsetx>
 					<textoffsety>8</textoffsety>
+					
 					<onleft>Control.Move(9900,-1)</onleft>
-					<onleft>9450</onleft>
+					<onleft>9300</onleft>
 					<onright>Control.Move(9900,1)</onright>
 					<onright>9150</onright>
+					
 					<align>center</align>
 					<aligny>top</aligny>
 					<visible>Library.HasContent(TVShows)</visible>
@@ -373,10 +379,12 @@
 					<onclick>ActivateWindow(Videos,MusicVideos,return)</onclick>
 					<textoffsetx>10</textoffsetx>
 					<textoffsety>8</textoffsety>
+
 					<onleft>Control.Move(9900,-1)</onleft>
-					<onleft>9450</onleft>
+					<onleft>9300</onleft>
 					<onright>Control.Move(9900,1)</onright>
 					<onright>9150</onright>
+
 					<align>center</align>
 					<aligny>top</aligny>
 					<visible>Library.HasContent(MusicVideos)</visible>
@@ -389,10 +397,12 @@
 					<onclick>ActivateWindow(Videos,Addons,return)</onclick>
 					<textoffsetx>10</textoffsetx>
 					<textoffsety>8</textoffsety>
+
 					<onleft>Control.Move(9900,-1)</onleft>
-					<onleft>9450</onleft>
+					<onleft>9300</onleft>
 					<onright>Control.Move(9900,1)</onright>
 					<onright>9150</onright>
+
 					<align>center</align>
 					<aligny>top</aligny>
 				</control>
@@ -412,10 +422,12 @@
 					<onclick>$VAR[MovieLibEntry]</onclick>
 					<textoffsetx>10</textoffsetx>
 					<textoffsety>8</textoffsety>
+
 					<onleft>Control.Move(9900,-1)</onleft>
 					<onleft>9100</onleft>
 					<onright>Control.Move(9900,1)</onright>
 					<onright>9200</onright>
+
 					<align>center</align>
 					<aligny>top</aligny>
 				</control>
@@ -427,10 +439,12 @@
 					<onclick>$INFO[Skin.String(CustomMovies.1.Path)]</onclick>
 					<textoffsetx>10</textoffsetx>
 					<textoffsety>8</textoffsety>
+
 					<onleft>Control.Move(9900,-1)</onleft>
 					<onleft>9100</onleft>
 					<onright>Control.Move(9900,1)</onright>
 					<onright>9200</onright>
+
 					<align>center</align>
 					<aligny>top</aligny>
 					<visible>!IsEmpty(Skin.String(CustomMovies.1.Path))</visible>
@@ -443,10 +457,12 @@
 					<onclick>$INFO[Skin.String(CustomMovies.2.Path)]</onclick>
 					<textoffsetx>10</textoffsetx>
 					<textoffsety>8</textoffsety>
+
 					<onleft>Control.Move(9900,-1)</onleft>
 					<onleft>9100</onleft>
 					<onright>Control.Move(9900,1)</onright>
 					<onright>9200</onright>
+
 					<align>center</align>
 					<aligny>top</aligny>
 					<visible>!IsEmpty(Skin.String(CustomMovies.2.Path))</visible>
@@ -459,10 +475,12 @@
 					<onclick>$INFO[Skin.String(CustomMovies.3.Path)]</onclick>
 					<textoffsetx>10</textoffsetx>
 					<textoffsety>8</textoffsety>
+
 					<onleft>Control.Move(9900,-1)</onleft>
 					<onleft>9100</onleft>
 					<onright>Control.Move(9900,1)</onright>
 					<onright>9200</onright>
+
 					<align>center</align>
 					<aligny>top</aligny>
 					<visible>!IsEmpty(Skin.String(CustomMovies.3.Path))</visible>
@@ -475,10 +493,12 @@
 					<onclick>$INFO[Skin.String(CustomMovies.4.Path)]</onclick>
 					<textoffsetx>10</textoffsetx>
 					<textoffsety>8</textoffsety>
+
 					<onleft>Control.Move(9900,-1)</onleft>
 					<onleft>9100</onleft>
 					<onright>Control.Move(9900,1)</onright>
 					<onright>9200</onright>
+
 					<align>center</align>
 					<aligny>top</aligny>
 					<visible>!IsEmpty(Skin.String(CustomMovies.4.Path))</visible>
@@ -491,10 +511,12 @@
 					<onclick>$INFO[Skin.String(CustomMovies.5.Path)]</onclick>
 					<textoffsetx>10</textoffsetx>
 					<textoffsety>8</textoffsety>
+
 					<onleft>Control.Move(9900,-1)</onleft>
 					<onleft>9100</onleft>
 					<onright>Control.Move(9900,1)</onright>
 					<onright>9200</onright>
+
 					<align>center</align>
 					<aligny>top</aligny>
 					<visible>!IsEmpty(Skin.String(CustomMovies.5.Path))</visible>
@@ -508,9 +530,11 @@
 					<textoffsetx>10</textoffsetx>
 					<textoffsety>8</textoffsety>
 					<onleft>Control.Move(9900,-1)</onleft>
+
 					<onleft>9100</onleft>
 					<onright>Control.Move(9900,1)</onright>
 					<onright>9200</onright>
+
 					<align>center</align>
 					<aligny>top</aligny>
 				</control>
@@ -788,13 +812,13 @@
 			</control>
 			
 	 		<!-- Settings Sub menu -->
-			<control type="grouplist" id="9450">
-				<animation condition="!ControlGroup(9450).HasFocus()" effect="fade" start="100" end="0">Conditional</animation>
+			<control type="grouplist" id="9300">
+				<animation condition="!ControlGroup(9300).HasFocus()" effect="fade" start="100" end="0">Conditional</animation>
 				<width>210</width>
 				<height>306</height>
 				<onup>noop</onup>
 				<ondown>noop</ondown>
-				<control type="button" id="9470">
+				<control type="button" id="9320">
 					<width>210</width>
 					<height>46</height>
 					<font>font11</font>
@@ -803,13 +827,13 @@
 					<textoffsetx>10</textoffsetx>
 					<textoffsety>8</textoffsety>
 					<onleft>Control.Move(9900,-1)</onleft>
-					<onleft>9400</onleft>
+					<onleft>9250</onleft>
 					<onright>Control.Move(9900,1)</onright>
 					<onright>9100</onright>
 					<align>center</align>
 					<aligny>top</aligny>
 				</control>
-				<control type="button" id="9472">
+				<control type="button" id="9322">
 					<width>210</width>
 					<height>46</height>
 					<font>font11</font>
@@ -818,13 +842,13 @@
 					<textoffsetx>10</textoffsetx>
 					<textoffsety>8</textoffsety>
 					<onleft>Control.Move(9900,-1)</onleft>
-					<onleft>9400</onleft>
+					<onleft>9250</onleft>
 					<onright>Control.Move(9900,1)</onright>
 					<onright>9100</onright>
 					<align>center</align>
 					<aligny>top</aligny>
 				</control>
-				<control type="button" id="9474">
+				<control type="button" id="9324">
 					<width>210</width>
 					<height>46</height>
 					<font>font11</font>
@@ -833,14 +857,14 @@
 					<textoffsetx>10</textoffsetx>
 					<textoffsety>8</textoffsety>
 					<onleft>Control.Move(9900,-1)</onleft>
-					<onleft>9400</onleft>
+					<onleft>9250</onleft>
 					<onright>Control.Move(9900,1)</onright>
 					<onright>9100</onright>
 					<align>center</align>
 					<aligny>top</aligny>
 					<visible>Skin.HasSetting(home-favorites)</visible>
 				</control>
-				<control type="button" id="9476">
+				<control type="button" id="9326">
 					<width>210</width>
 					<height>46</height>
 					<font>font11</font>
@@ -849,14 +873,14 @@
 					<textoffsetx>10</textoffsetx>
 					<textoffsety>8</textoffsety>
 					<onleft>Control.Move(9900,-1)</onleft>
-					<onleft>9400</onleft>
+					<onleft>9250</onleft>
 					<onright>Control.Move(9900,1)</onright>
 					<onright>9100</onright>
 					<align>center</align>
 					<aligny>top</aligny>
 					<visible>Skin.HasSetting(home-profile)</visible>
 				</control>
-				<control type="button" id="9478">
+				<control type="button" id="9328">
 					<width>210</width>
 					<height>46</height>
 					<font>font11</font>
@@ -865,14 +889,14 @@
 					<textoffsetx>10</textoffsetx>
 					<textoffsety>8</textoffsety>
 					<onleft>Control.Move(9900,-1)</onleft>
-					<onleft>9400</onleft>
+					<onleft>9250</onleft>
 					<onright>Control.Move(9900,1)</onright>
 					<onright>9100</onright>
 					<align>center</align>
 					<aligny>top</aligny>
 					<visible>Skin.HasSetting(home-search)</visible>
 				</control>
-				<control type="button" id="9480">
+				<control type="button" id="9330">
 					<width>210</width>
 					<height>46</height>
 					<font>font11</font>
@@ -881,14 +905,14 @@
 					<textoffsetx>10</textoffsetx>
 					<textoffsety>8</textoffsety>
 					<onleft>Control.Move(9900,-1)</onleft>
-					<onleft>9400</onleft>
+					<onleft>9250</onleft>
 					<onright>Control.Move(9900,1)</onright>
 					<onright>9100</onright>
 					<align>center</align>
 					<aligny>top</aligny>
 					<visible>System.HasMediadvd + Skin.HasSetting(home-playdisc)</visible>
 				</control>
-				<control type="button" id="9482">
+				<control type="button" id="9332">
 					<width>210</width>
 					<height>46</height>
 					<font>font11</font>
@@ -898,14 +922,14 @@
 					<textoffsetx>10</textoffsetx>
 					<textoffsety>8</textoffsety>
 					<onleft>Control.Move(9900,-1)</onleft>
-					<onleft>9400</onleft>
+					<onleft>9250</onleft>
 					<onright>Control.Move(9900,1)</onright>
 					<onright>9100</onright>
 					<align>center</align>
 					<aligny>top</aligny>
 					<visible>Player.HasAudio | Player.HasVideo</visible>
 				</control>
-				<control type="button" id="9484">
+				<control type="button" id="9334">
 					<width>210</width>
 					<height>46</height>
 					<font>font11</font>
@@ -914,7 +938,7 @@
 					<textoffsetx>10</textoffsetx>
 					<textoffsety>8</textoffsety>
 					<onleft>Control.Move(9900,-1)</onleft>
-					<onleft>9400</onleft>
+					<onleft>9250</onleft>
 					<onright>Control.Move(9900,1)</onright>
 					<onright>9100</onright>
 					<align>center</align>
@@ -987,14 +1011,14 @@
 		</control>
 		<control type="group">
 			<!-- Settings Sub menu -->
-			<visible>ControlGroup(9450).HasFocus()</visible>
+			<visible>ControlGroup(9300).HasFocus()</visible>
 			<control type="image">
 				<posx>10</posx>
 				<posy>365</posy>
 				<height>48</height>
 				<width>1260</width>
 				<texture>mask-menu.png</texture>
-				<visible>Container(9450).HasPrevious</visible>
+				<visible>Container(9300).HasPrevious</visible>
 			</control>
 			<control type="image">
 				<posx>10</posx>
@@ -1002,7 +1026,7 @@
 				<height>48</height>
 				<width>1260</width>
 				<texture flipy="true">mask-menu.png</texture>
-				<visible>Container(9450).HasNext</visible>
+				<visible>Container(9300).HasNext</visible>
 			</control>
 		</control>
 		

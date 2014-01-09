@@ -745,3 +745,8 @@ msgstr ""
 msgctxt "#31953"
 msgid "Icon"
 msgstr ""
+
+#for power!no idea why?
+msgctxt "#31003"
+msgid "Power Options"
+msgstr ""

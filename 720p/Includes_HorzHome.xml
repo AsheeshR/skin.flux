@@ -302,7 +302,7 @@
 				<height>306</height>
 <!--				<onup>noop</onup>-->
 				<onup>9105</onup>	
-				<ondown>noop</ondown>
+				<ondown>20</ondown>
 
 				<control type="button" id="9120">
 					<width>210</width>
@@ -462,7 +462,7 @@
 				<width>210</width>
 				<height>306</height>
 				<onup>9155</onup>
-				<ondown>noop</ondown>
+				<ondown>20</ondown>
 				
 				<control type="button" id="9170">
 					<width>210</width>
@@ -650,7 +650,7 @@
 				<width>210</width>
 				<height>306</height>
 				<onup>9205</onup>
-				<ondown>noop</ondown>
+				<ondown>20</ondown>
 				<control type="button" id="9220">
 					<width>210</width>
 					<height>46</height>
@@ -832,13 +832,13 @@
 				</control>
 -->
 			</control>
-			<!-- Science Sub menu -->
+			<!-- Computers Sub menu -->
 			<control type="grouplist" id="9250">
 				<animation condition="!ControlGroup(9250).HasFocus() + !Control.HasFocus(9260)" effect="fade" start="100" end="0">Conditional</animation>
 				<width>210</width>
 				<height>306</height>
 				<onup>9255</onup>
-				<ondown>noop</ondown>
+				<ondown>20</ondown>
 				
 				<control type="button" id="9270">
 					<width>210</width>
@@ -1026,7 +1026,7 @@
 				<width>210</width>
 				<height>306</height>
 				<onup>9305</onup>
-				<ondown>noop</ondown>
+				<ondown>20</ondown>
 				<control type="button" id="9320">
 					<width>210</width>
 					<height>46</height>
@@ -1352,6 +1352,38 @@
 				<align>left</align>
 				<font>font12</font>
 				<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
+			</control>
+		</control>
+		<!--Power button-->
+		<control type="group" id="10">
+			<posx>10</posx>
+			<posy>55r</posy>
+			<include>Window_OpenClose_Animation</include>
+			<control type="button" id="20">
+				<description>Power push button</description>
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>45</width>
+				<height>45</height>
+				<label>31003</label>
+				<font>-</font>
+				<aligny>-</aligny>
+				<onclick>ActivateWindow(ShutdownMenu)</onclick>
+				<texturefocus border="5">white.png</texturefocus>
+				<texturenofocus border="5">darkred.png</texturenofocus>
+				<!--<onleft>21</onleft>
+				<onright>21</onright>-->
+				<onup>9100</onup>
+				<ondown>9100</ondown>
+			</control>
+			<control type="image">
+				<description>Power Icon</description>
+				<posx>5</posx>
+				<posy>5</posy>
+				<width>35</width>
+				<height>35</height>
+				<aspectratio>keep</aspectratio>
+				<texture>icon_power.png</texture>
 			</control>
 		</control>
 	</include>

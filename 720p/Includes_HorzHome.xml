@@ -1373,8 +1373,8 @@
 				<texturenofocus border="5">darkred.png</texturenofocus>
 				<!--<onleft>21</onleft>
 				<onright>21</onright>-->
-				<onup>9100</onup>
-				<ondown>9100</ondown>
+				<onup>9000</onup>
+				<ondown>9000</ondown>
 			</control>
 			<control type="image">
 				<description>Power Icon</description>

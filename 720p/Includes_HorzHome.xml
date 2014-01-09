@@ -144,7 +144,7 @@
 				</control>
 			</control>
 
-			<!-- Science menu -->
+			<!-- Computers menu -->
 			<control type="group" id="9255">
 				<visible>ControlGroup(9250).HasFocus() | Control.HasFocus(9260)</visible>
 				<control type="group">
@@ -267,12 +267,12 @@
 						<onclick>Control.SetFocus(9150)</onclick>
 					</item>
 					<item id="3">
-						<description>Maths</description>
+						<description>Math</description>
 						<label>31042</label>
 						<onclick>Control.SetFocus(9200)</onclick>
 					</item>
 					<item id="4">
-						<description>Science</description>
+						<description>Computers</description>
 						<label>31043</label>
 						<onclick>Control.SetFocus(9250)</onclick>
 					</item>
@@ -819,7 +819,7 @@
 					<height>46</height>
 					<font>font11</font>
 					<label>5</label>
-					<onclick>ActivateWindow(Settings)</onclick>
+					<onclick>ActivateWindow(Settings,,return)</onclick>
 					<textoffsetx>10</textoffsetx>
 					<textoffsety>8</textoffsety>
 					<onleft>Control.Move(9900,-1)</onleft>

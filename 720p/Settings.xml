@@ -2,7 +2,7 @@
 	<defaultcontrol>8999</defaultcontrol>
 	<backgroundcolor>0</backgroundcolor>
 	<allowoverlay>yes</allowoverlay>
-	<previouswindow>Home</previouswindow>
+	<!--<previouswindow>Home</previouswindow>-->
 	<controls>
 		<include>background</include>
 		<include>flux-logo</include>

@@ -294,8 +294,9 @@
 			<height>306</height>
 			<itemgap>0</itemgap>
 			<orientation>horizontal</orientation>
+			
+			<!-- English Sub Menu -->
 			<control type="grouplist" id="9100">
-				<visible>!Skin.HasSetting(home-video)</visible>
 				<animation condition="!ControlGroup(9100).HasFocus()" effect="fade" start="100" end="0">Conditional</animation>
 				<width>210</width>
 				<height>306</height>
@@ -309,7 +310,6 @@
 					<onclick>ActivateWindow(Videos,Files,return)</onclick>
 					<textoffsetx>10</textoffsetx>
 					<textoffsety>8</textoffsety>
-					<!--Problematic Area-->
 					<onleft>Control.Move(9900,-1)</onleft>
 					<onleft>9300</onleft>
 					<onright>Control.Move(9900,1)</onright>
@@ -351,7 +351,6 @@
 
 					<align>center</align>
 					<aligny>top</aligny>
-					<visible>Library.HasContent(Movies)</visible>
 				</control>
 				<control type="button" id="9126">
 					<width>210</width>
@@ -369,7 +368,6 @@
 					
 					<align>center</align>
 					<aligny>top</aligny>
-					<visible>Library.HasContent(TVShows)</visible>
 				</control>
 				<control type="button" id="9128">
 					<width>210</width>
@@ -387,7 +385,6 @@
 
 					<align>center</align>
 					<aligny>top</aligny>
-					<visible>Library.HasContent(MusicVideos)</visible>
 				</control>
 				<control type="button" id="9130">
 					<width>210</width>
@@ -407,8 +404,9 @@
 					<aligny>top</aligny>
 				</control>
 			</control>
+
+			<!-- Hindi Sub Menu -->
 			<control type="grouplist" id="9150">
-				<visible>!Skin.HasSetting(home-movie) | !IsEmpty(Skin.String(CustomMovies.1.Path)) | !IsEmpty(Skin.String(CustomMovies.2.Path)) | !IsEmpty(Skin.String(CustomMovies.3.Path)) | !IsEmpty(Skin.String(CustomMovies.4.Path)) | !IsEmpty(Skin.String(CustomMovies.5.Path))</visible>
 				<animation condition="!ControlGroup(9150).HasFocus() + !Control.HasFocus(9160)" effect="fade" start="100" end="0">Conditional</animation>
 				<width>210</width>
 				<height>306</height>
@@ -539,9 +537,8 @@
 					<aligny>top</aligny>
 				</control>
 			</control>
-			<!-- TV Sub Menu -->
+			<!-- Maths Sub Menu -->
 			<control type="grouplist" id="9200">
-				<visible>System.GetBool(pvrmanager.enabled) | !Skin.HasSetting(home-tv) | !IsEmpty(Skin.String(CustomTVShow.1.Path)) | !IsEmpty(Skin.String(CustomTVShow.2.Path)) | !IsEmpty(Skin.String(CustomTVShow.3.Path)) | !IsEmpty(Skin.String(CustomTVShow.4.Path)) | !IsEmpty(Skin.String(CustomTVShow.5.Path))</visible>
 				<animation condition="!ControlGroup(9200).HasFocus() + !Control.HasFocus(9210)" effect="fade" start="100" end="0">Conditional</animation>
 				<width>210</width>
 				<height>306</height>
@@ -674,9 +671,8 @@
 					<aligny>top</aligny>
 				</control>
 			</control>
-			<!-- Music Sub menu -->
+			<!-- Science Sub menu -->
 			<control type="grouplist" id="9250">
-				<visible>!Skin.HasSetting(home-music) | Skin.HasSetting(home-musicvideo) | !IsEmpty(Skin.String(CustomMusic.1.Path)) | !IsEmpty(Skin.String(CustomMusic.2.Path)) | !IsEmpty(Skin.String(CustomMusic.3.Path)) | !IsEmpty(Skin.String(CustomMusic.4.Path)) | !IsEmpty(Skin.String(CustomMusic.5.Path))</visible>
 				<animation condition="!ControlGroup(9250).HasFocus() + !Control.HasFocus(9260)" effect="fade" start="100" end="0">Conditional</animation>
 				<width>210</width>
 				<height>306</height>
@@ -823,7 +819,7 @@
 					<height>46</height>
 					<font>font11</font>
 					<label>5</label>
-					<onclick>ActivateWindow(Settings,,return)</onclick>
+					<onclick>ActivateWindow(Settings)</onclick>
 					<textoffsetx>10</textoffsetx>
 					<textoffsety>8</textoffsety>
 					<onleft>Control.Move(9900,-1)</onleft>

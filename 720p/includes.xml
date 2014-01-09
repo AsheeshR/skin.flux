@@ -954,4 +954,10 @@
 		<visible allowhiddenfocus="true">ControlGroup(9000).HasFocus()</visible>
 	</include>
 	<!-- End Visibility Includes -->
+	
+	<!-- used in power button-->
+	<include name="Window_OpenClose_Animation">
+		<animation effect="fade" time="250">WindowOpen</animation>
+		<animation effect="fade" time="250">WindowClose</animation>
+	</include>
 </includes>

@@ -5,15 +5,15 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: XBMC Skins\n"
-"Report-Msgid-Bugs-To: https://github.com/AsheeshR/skin.flux/issues\n"
+"Report-Msgid-Bugs-To: http://github.com/AsheeshR/skin.flux/issues\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: XBMC Translation Team\n"
-"Language-Team: English (http://www.transifex.com/projects/p/xbmc-skins/language/en/)\n"
+"Last-Translator: \n"
+"Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: en\n"
+"Language: hi\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #Start startup strings 31001 - 31025
@@ -74,39 +74,41 @@ msgstr ""
 
 msgctxt "#31040"
 msgid "English"
-msgstr ""
+msgstr "अंग्रेज़ी"
 
 msgctxt "#31041"
 msgid "Hindi"
-msgstr ""
+msgstr "हिंदी"
 
 msgctxt "#31042"
 msgid "Math"
-msgstr ""
+msgstr "गणित"
 
 msgctxt "#31043"
 msgid "Computers"
-msgstr ""
+msgstr "कंप्यूटर्स"
 
 msgctxt "#31044"
 msgid "Settings"
-msgstr ""
+msgstr "सेटिंग्स"
 
 msgctxt "#31045"
 msgid "Class 3"
-msgstr ""
+msgstr "कक्षा 3"
 
 msgctxt "#31046"
 msgid "Class 4"
-msgstr ""
+msgstr "कक्षा 4"
 
 msgctxt "#31047"
 msgid "Class 5"
-msgstr ""
+msgstr "कक्षा 5"
 
 
 
 #End of custom menu options
+################################
+
 
 #End home strings
 #Start video strings 31126 - 31225

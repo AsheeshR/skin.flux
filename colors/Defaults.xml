@@ -43,12 +43,12 @@ A0A0A0 - Thumbs
 	<color name="StudioShadow">FFFF3300</color>
 
 			<!-- Icon/Thumb -->
-	<color name="UnFocusedPosters">A0A0A0A0</color> <!-- -->
-	<color name="UnFocusedCovers">A0A0A0A0</color> <!-- -->
+	<color name="UnFocusedPosters">A0FF8200</color> <!-- -->
+	<color name="UnFocusedCovers">A0FF8200</color> <!-- -->
 	<color name="IconGlow">A0FFE6B3</color> 
 	
 			<!-- GUI elements -->
-	<color name="ScrollBarColor">FF00AAFF</color> <!-- -->
-	<color name="ProgressBarColor">FF00AAFF</color> <!-- -->
+	<color name="ScrollBarColor">FFA62300</color> <!-- -->
+	<color name="ProgressBarColor">FFA62300</color> <!-- -->
 
 </colors>

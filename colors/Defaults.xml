@@ -30,10 +30,10 @@ A0A0A0 - Thumbs
 	<color name="warning-text">FFAA0000</color> <!--Warning color-->
 	<color name="rss-headline-text">FFFFE6B3</color>
 	<color name="rss-title-text">FFFF9900</color>
-	<color name="listselectedtext">FFFF9900</color>
+	<color name="listselectedtext">FFFF9900</color> <!-- ? -->
 	<color name="kai-text-alpha">55FFE6B3</color>
 	<color name="kai-text">FFFF0000</color> <!-- --> 
-	<color name="listselectedcolor">FFFF9900</color>
+	<color name="listselectedcolor">FFFF9900</color> <!-- ? -->
 
 			<!-- Media Flags -->
 	<color name="FlagDiffuse">FFFFE6B3</color>
@@ -47,7 +47,7 @@ A0A0A0 - Thumbs
 	<color name="UnFocusedCovers">A0FF8200</color> <!-- -->
 	<color name="IconGlow">A0FFE6B3</color> 
 	
-			<!-- GUI elements -->
+	<!-- GUI elements -->
 	<color name="ScrollBarColor">FFA62300</color> <!-- -->
 	<color name="ProgressBarColor">FFA62300</color> <!-- -->
 

@@ -13,7 +13,8 @@
 			<posy>0</posy>
 			<width>1280</width>
 			<height>720</height>
-			<texture>black.png</texture>
+			<!--<texture>black.png</texture>-->
+			<texture>maroon.png</texture>
 			<colordiffuse>osd-background</colordiffuse>
 		</control>
 		<control type="image">
@@ -22,7 +23,8 @@
 			<posy>102</posy>
 			<width>380</width>
 			<height>500</height>
-			<texture border="8" diffuse="mask-squ.png">button-menu-background.png</texture>
+			<!--<texture border="8" diffuse="mask-squ.png">button-menu-background.png</texture>-->
+			<texture border="7" colordiffuse="maroon.png">dark-red.png</texture>
 		</control>
 		<control type="label">
 			<description>Power menu heading</description>
@@ -35,7 +37,7 @@
 			<font>font13</font>
 		</control>
 		<control type="image">
-			<description>seperator</description>
+			<description>separator</description>
 			<posx>450</posx>
 			<posy>144</posy>
 			<width>360</width>
@@ -79,7 +81,7 @@
 				<font>font13</font>
 				<label>13016</label>
 			</control>
-			<control type="button" id="4">
+			<!--<control type="button" id="4">
 				<description>Custom Shutdown Timer</description>
 				<width>360</width>
 				<height>50</height>
@@ -92,8 +94,8 @@
 				<label>20150</label>
 				<visible>!System.HasAlarm(shutdowntimer)</visible>
 				<visible>System.CanPowerDown | System.CanSuspend | System.CanHibernate</visible>
-			</control>
-			<control type="button" id="5">
+			</control>-->
+			<!--<control type="button" id="5">
 				<description>Cancel Shutdown Timer</description>
 				<width>360</width>
 				<height>50</height>
@@ -105,7 +107,7 @@
 				<font>font13</font>
 				<label>20151</label>
 				<visible>System.HasAlarm(shutdowntimer)</visible>
-			</control>
+			</control>-->
 			<control type="button" id="6">
 				<description>Suspend button</description>
 				<width>360</width>
@@ -145,7 +147,7 @@
 				<font>font13</font>
 				<label>13013</label>
 			</control>
-			<control type="button" id="9">
+			<!--<control type="button" id="9">
 				<description>Logoff button</description>
 				<width>360</width>
 				<height>50</height>
@@ -159,7 +161,7 @@
 				<label>$LOCALIZE[20126] $INFO[system.profilename]</label>
 				<visible>System.HasLoginScreen | IntegerGreaterThan(System.ProfileCount,1)</visible>
 				<visible>System.Loggedon</visible>
-			</control>
+			</control>-->
 			<control type="togglebutton" id="10">
 				<description>Master mode button</description>
 				<width>360</width>
@@ -175,7 +177,7 @@
 				<font>font13</font>
 				<visible>System.HasLocks</visible>
 			</control>
-			<control type="group" id="11">
+			<!--<control type="group" id="11">
 				<width>360</width>
 				<height>70</height>
 				<visible>System.HasAlarm(shutdowntimer)</visible>
@@ -189,7 +191,7 @@
 					<aligny>top</aligny>
 					<label>$LOCALIZE[31329] [B]$INFO[System.Alarmpos][/B]</label>
 				</control>
-			</control>
+			</control>-->
 			<control type="button" id="12">
 				<description>Inhibit idle shutdown</description>
 				<width>360</width>

@@ -1356,8 +1356,8 @@
 				<onclick>ActivateWindow(ShutdownMenu)</onclick>
 				<texturefocus>button-focussed.png</texturefocus>
 				<texturenofocus border="5">darkred.png</texturenofocus>
-				<onleft>9000</onleft>
-				<onright>9000</onright>
+				<onleft>9400</onleft>
+				<onright>9400</onright>
 				<onup>9000</onup>
 				<ondown>9000</ondown>
 			</control>
@@ -1371,5 +1371,45 @@
 				<texture>icon_power.png</texture>
 			</control>
 		</control>
+		
+		<!--Language Toggle : Will allow switching between English and local language-->
+		<control type="group" id="9400">
+			<posx>1160</posx>
+			<posy>55r</posy>
+			<include>Window_OpenClose_Animation</include>
+			<control type="togglebutton" id="9410">
+			  <description>Language Toggle</description>
+			  <posx>0</posx>
+			  <posy>0</posy>
+			  <width>100</width>
+			  <height>30</height>
+			  <visible>true</visible>
+			  <!--
+			  <texturefocus>myfocustexture.png</texturefocus>
+			  <texturenofocus>mynormaltexture.png</texturenofocus>
+			  <alttexturefocus>myselectedTexture.png</alttexturefocus>
+			  <alttexturenofocus>myselectedTexture_nf.png</alttexturenofocus>
+			  -->
+			  <!--<usealttexture>!Player.IsPaused</usealttexture>-->
+			  <label>English</label>
+			  <altlabel>Hindi</altlabel>
+			  <font>font12</font>
+			  <textcolor>FFFFFFFF</textcolor>
+			  <disabledcolor>80FFFFFF</disabledcolor>
+			  <align>left</align>
+			  <aligny>center</aligny>
+			  <textoffsetx>4</textoffsetx>
+			  <textoffsety>5</textoffsety>
+			  <pulseonselect>false</pulseonselect>
+			  <!--<onclick>Player.Pause</onclick>-->
+			  <onfocus>-</onfocus>
+			  <onunfocus>-</onunfocus>
+			  <onup>9000</onup>
+			  <ondown>9000</ondown>
+			  <onleft>10</onleft>
+			  <onright>10</onright>
+			</control>
+		</control>
+
 	</include>
 </includes>

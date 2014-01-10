@@ -8,7 +8,7 @@
 			<posy>0</posy>
 			<width>1280</width>
 			<height>720</height>
-			<texture>background.png</texture>
+			<texture>dark-red.png</texture>
 		</control>
 		<control type="button" id="10">
 			<description>Play the startup video if required</description>

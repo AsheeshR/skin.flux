@@ -7,26 +7,11 @@
 			<posx>0</posx>
 			<posy>0</posy>
 			<width>1280</width>
-			<height>192</height>
-			<texture>white.png</texture>
+			<height>298</height>
+			<texture>mid-orange.png</texture>
 <!--			<colordiffuse>FF606060</colordiffuse>-->
 		</control>
-		<control type="image">
-			<posx>0</posx>
-			<posy>192</posy>
-			<width>1280</width>
-			<height>106</height>
-			<texture>white.png</texture>
-<!--			<colordiffuse>FF404040</colordiffuse>-->
-		</control>
-<!--		<control type="image">
-			<posx>-100</posx>
-			<posy>-20</posy>
-			<width>1480</width>
-			<height>310</height>
-			<texture>menu-mask.png</texture>
-			<colordiffuse>BBF9F9F9</colordiffuse>
-		</control> -->
+
 		<!-- Hidden button to startup startup-playlist and resync home menu items if they get out of sync -->
 		<control type="button" id="420">
 			<description>trigger playlist if selected</description>

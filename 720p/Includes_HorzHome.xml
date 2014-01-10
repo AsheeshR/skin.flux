@@ -839,7 +839,7 @@
 					<onright>9300</onright>
 					<align>center</align>
 					<aligny>top</aligny>
-					<visible>!Skin.HasSetting(home-music)</visible>
+					<visible>true</visible>
 				</control>
 
 				<control type="button" id="9272">
@@ -856,7 +856,7 @@
 					<onright>9300</onright>
 					<align>center</align>
 					<aligny>top</aligny>
-					<visible>!Skin.HasSetting(home-music)</visible>
+					<visible>true</visible>
 				</control>	
 
 				<control type="button" id="9274">
@@ -873,7 +873,7 @@
 					<onright>9300</onright>
 					<align>center</align>
 					<aligny>top</aligny>
-					<visible>!Skin.HasSetting(home-music)</visible>
+					<visible>true</visible>
 				</control>
 <!--				<control type="button" id="9270">
 					<width>210</width>
@@ -1354,10 +1354,10 @@
 				<font>-</font>
 				<aligny>-</aligny>
 				<onclick>ActivateWindow(ShutdownMenu)</onclick>
-				<texturefocus border="5">white.png</texturefocus>
+				<texturefocus>button-focussed.png</texturefocus>
 				<texturenofocus border="5">darkred.png</texturenofocus>
-				<!--<onleft>21</onleft>
-				<onright>21</onright>-->
+				<onleft>9000</onleft>
+				<onright>9000</onright>
 				<onup>9000</onup>
 				<ondown>9000</ondown>
 			</control>

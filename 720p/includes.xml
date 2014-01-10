@@ -38,8 +38,9 @@
 	<include file="View-VideoWall.xml" />
 	<include file="View-VideoWrap.xml" />
 	<include file="Includes_Weather.xml" />
-	<include file="Includes_VertHome.xml" />
+	<!--<include file="Includes_VertHome.xml" />-->
 	<include file="Includes_HorzHome.xml" />
+
 	<!-- Begin fade background image include -->
 	<include name="fadebackground">
 		<control type="image">
@@ -47,12 +48,14 @@
 			<posy>0</posy>
 			<width>1280</width>
 			<height>720</height>
-			<texture>black.png</texture>
+<!--			<texture>black.png</texture>-->
+                        <texture>dark-red.png</texture>
 			<aspectratio>scale</aspectratio>
 			<colordiffuse>mask-background</colordiffuse>
 		</control>
 	</include>
-	<!-- Begin background image include -->
+
+	<!-- Begin background image include : Why? -->
 	<include name="background">
 		<control type="image">
 			<description>solid background</description>
@@ -60,19 +63,9 @@
 			<posy>0</posy>
 			<width>1280</width>
 			<height>720</height>
-			<texture>background.png</texture>
+			<!-- <texture>background.png</texture> -->
+			<texture>dark-red.png</texture>
 			<aspectratio>stretch</aspectratio>
-			<visible>IsEmpty(Skin.String(custom-background))</visible>
-		</control>
-		<control type="image">
-			<description>custom background</description>
-			<posx>0</posx>
-			<posy>0</posy>
-			<width>1280</width>
-			<height>720</height>
-			<texture>$INFO[Skin.String(custom-background)]</texture>
-			<aspectratio>stretch</aspectratio>
-			<visible>!IsEmpty(Skin.String(custom-background))</visible>
 		</control>
 		<control type="group">
 			<visible>!Container().Scrolling</visible>
@@ -91,18 +84,6 @@
 					<timeperimage>5000</timeperimage>
 					<randomize>true</randomize>
 					<fadetime>400</fadetime>
-				</control>
-			</control>
-			<control type="group">
-				<visible>Skin.HasSetting(background-fanart) + ![Skin.HasSetting(HomeViewToggle) + Player.HasVideo]</visible>
-				<control type="image">
-					<posx>0</posx>
-					<posy>0</posy>
-					<width>1280</width>
-					<height>720</height>
-					<texture background="true">$INFO[ListItem.Property(Fanart_Image)]</texture>
-					<fadetime>400</fadetime>
-					<visible>!IsEmpty(ListItem.Property(Fanart_Image))</visible>
 				</control>
 			</control>
 			<control type="group">
@@ -167,7 +148,8 @@
 			<width>1280</width>
 			<height>720</height>
 			<colordiffuse>mask-background</colordiffuse>
-			<texture background="true">black.png</texture>
+			<!--<texture background="true">black.png</texture>-->
+			<texture background="true">dark-red.png</texture>
 			<animation effect="fade" start="100" end="80" condition="Skin.HasSetting(background-visibiltyhigh)">Conditional</animation>
 			<animation effect="fade" start="100" end="90" condition="Skin.HasSetting(background-visibiltymed)">Conditional</animation>
 			<aspectratio>stretch</aspectratio>
@@ -181,19 +163,9 @@
 			<posy>0</posy>
 			<width>1280</width>
 			<height>720</height>
-			<texture>background.png</texture>
+			<!--<texture>background.png</texture>-->
+			<texture>dark-red.png</texture>
 			<aspectratio>stretch</aspectratio>
-			<visible>IsEmpty(Skin.String(custom-background))</visible>
-		</control>
-		<control type="image">
-			<description>custom background</description>
-			<posx>0</posx>
-			<posy>0</posy>
-			<width>1280</width>
-			<height>720</height>
-			<texture>$INFO[Skin.String(custom-background)]</texture>
-			<aspectratio>stretch</aspectratio>
-			<visible>!IsEmpty(Skin.String(custom-background))</visible>
 		</control>
 		<control type="group">
 			<visible>!Container().Scrolling</visible>
@@ -497,52 +469,7 @@
 			<animation effect="fade" start="10" time="0" condition="Window.Next(Home)">WindowClose</animation>
 		</control>
 	</include>
-	<!-- Begin Page info Includes -->
-	<include name="page-info">
-		<control type="group">
-			<visible>system.getbool(lookandfeel.enablerssfeeds)</visible>
-			<control type="image">
-				<description>RSS Logo</description>
-				<posx>5</posx>
-				<posy>680</posy>
-				<width>32</width>
-				<height>32</height>
-				<aspectratio>keep</aspectratio>
-				<texture>rss.png</texture>
-			</control>
-			<control type="rss">
-				<description>rss feed</description>
-				<posx>40</posx>
-				<posy>680</posy>
-				<width>1240</width>
-				<height>22</height>
-				<font>rss20</font>
-				<urlset>1</urlset>
-				<textcolor>info-text</textcolor>
-				<titlecolor>rss-title-text</titlecolor>
-				<headlinecolor>rss-headline-text</headlinecolor>
-			</control>
-		</control>
-	</include>
-	<!-- Begin Low free memory include -->
-	<include name="memory-low">
-		<control type="group">
-			<visible>!Skin.HasSetting(hidememwarning)</visible>
-			<control type="label">
-				<description>low free memory label</description>
-				<posx>354</posx>
-				<posy>75</posy>
-				<width>566</width>
-				<height>37</height>
-				<align>center</align>
-				<aligny>center</aligny>
-				<font>font18</font>
-				<textcolor>warning-text</textcolor>
-				<label>[B]$LOCALIZE[31572][/B] $INFO[System.FreeMemory]</label>
-				<visible>IntegerGreaterThan(system.memory(used.percent),95)</visible>
-			</control>
-		</control>
-	</include>
+
 	<!-- Start Number of Files Include -->
 	<include name="#files">
 		<control type="label" id="12">
@@ -556,6 +483,7 @@
 			<visible>Skin.HasSetting(homemenu-vertical)</visible>
 		</control>
 	</include>
+
 	<!-- Start Current Sort Letter -->
 	<include name="SortLetterNotification">
 		<control type="group">

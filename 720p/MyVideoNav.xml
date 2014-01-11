@@ -5,6 +5,7 @@
 	<previouswindow>Home</previouswindow>
 	<views>50,52,54,57,58,59,560</views>
 	<onload condition="Skin.HasSetting(tv_theme) + !SubString(Window(Videos).Property(CinemaExperienceRunning),True)">RunScript(script.tvtunes,backend=True&amp;loop=False)</onload>
+
 	<controls>
 		<include>backgroundvideo</include>
 		<include>Fake-Overlay</include>
@@ -55,9 +56,7 @@
 				<label>$INFO[Container.NumItems,(,)]</label>
 			</control>
 		</control>
-		<!-- Display warning if free memory is low -->
-		<include>memory-low</include>
-
+		
 		<!-- Various Views of Video library node -->
 		<control type="group">
 			<visible>![IsEmpty(ListItem.Label) + IsEmpty(Container().ListItem(1).Label)]</visible>

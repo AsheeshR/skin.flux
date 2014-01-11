@@ -49,7 +49,7 @@
 			<width>1280</width>
 			<height>720</height>
 <!--			<texture>black.png</texture>-->
-                        <texture>dark-red.png</texture>
+                        <texture>maroon.png</texture>
 			<aspectratio>scale</aspectratio>
 			<colordiffuse>mask-background</colordiffuse>
 		</control>
@@ -480,7 +480,7 @@
 			<height>37</height>
 			<align>left</align>
 			<font>font13</font>
-			<visible>Skin.HasSetting(homemenu-vertical)</visible>
+			<!--<visible>Skin.HasSetting(homemenu-vertical)</visible>-->
 		</control>
 	</include>
 

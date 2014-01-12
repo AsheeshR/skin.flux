@@ -827,7 +827,7 @@
 			  <label>English</label>
 			  <altlabel>Hindi</altlabel>
 			  <font>font12</font>
-			  <textcolor>FFFFFFFF</textcolor>
+			  <textcolor>button-text</textcolor>
 			  <disabledcolor>80FFFFFF</disabledcolor>
 			  <align>left</align>
 			  <aligny>center</aligny>

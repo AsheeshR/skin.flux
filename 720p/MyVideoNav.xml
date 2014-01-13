@@ -1,3 +1,4 @@
+<!-- specifies the windows that pops up in the videos page -->
 <window>
 	<defaultcontrol always="true">50</defaultcontrol>
 	<backgroundcolor>0</backgroundcolor>
@@ -13,24 +14,27 @@
 		<control type="image">
 			<description>Movies/Video Logo</description>
 			<include>icon-header-commons</include>
-			<texture>icon-video-sml.png</texture>
+			<!--<texture>icon-video-sml.png</texture>-->
+			<texture>flux-logo-big.png</texture>			
 			<visible>!Container.Content(tvshows) + !Container.Content(seasons) + !Container.Content(episodes) + !Container.Content(musicvideos)</visible>
 		</control>
 		<control type="image">
 			<description>TV Logo</description>
 			<include>icon-header-commons</include>
-			<texture>icon-tv.png</texture>
+			<!--<texture>icon-tv.png</texture>-->
+			<texture>flux-logo-big.png</texture>
 			<visible>Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)</visible>
 		</control>
 		<control type="image">
 			<description>Music Videos Logo</description>
 			<include>icon-header-commons</include>
-			<texture>icon-musicvideo-sml.png</texture>
+			<!--<texture>icon-musicvideo-sml.png</texture>-->
+			<texture>flux-logo-big.png</texture>
 			<visible>Container.Content(musicvideos)</visible>
 		</control>
 		<control type="grouplist">
 			<posx>946</posx>
-			<posy>35</posy>
+			<posy>35</posy>		<!--to display info abt the folder in the videos window at the top right corner-->
 			<width>365</width>
 			<height>72</height>
 			<align>left</align>
@@ -39,7 +43,7 @@
 			<control type="label">
 				<description>Video screen headings</description>
 				<width min="60" max="275">auto</width>
-				<height>72</height>
+				<height>72</height>			
 				<label>$VAR[VideoHeadings]</label>
 				<font>font18</font>
 				<wrapmultiline>true</wrapmultiline>
@@ -48,7 +52,7 @@
 			<control type="label">
 				<description>Number of files</description>
 				<visible>Skin.HasSetting(homemenu-horizontal) | [!Skin.HasSetting(homemenu-vertical) + !Skin.HasSetting(homemenu-horizontal)]</visible>
-				<posy>13</posy>
+				<posy>13</posy>				<!--prints "(no of files)"-->
 				<width min="40" max="90">auto</width>
 				<height>38</height>
 				<font>font13</font>
@@ -88,23 +92,27 @@
 			<posy>720</posy>
 			<include>View-as</include>
 			<control type="group" id="9000">
+				<include>fadebackground</include>
 				<visible>!Skin.HasSetting(view-as-lock)</visible>
-				<control type="image">
+				<!--<control type="image">
 					<description>Background shadow</description>
 					<posx>0</posx>
 					<posy>0</posy>
 					<width>1280</width>
 					<height>720</height>
-					<texture>black.png</texture>
-					<colordiffuse>osd-background</colordiffuse>
+					<texture>dark-red.png</texture>
+					<colordiffuse>fade-background</colordiffuse>
 					<visible>!Skin.HasSetting(view-as-lock)</visible>
-				</control>
+				</control>-->
 				<control type="image">
 					<description>Button Background</description>
 					<posx>440</posx>
 					<posy>82</posy>
 					<width>396</width>
 					<height>572</height>
+					<!--<texture>dark-red.png</texture>-->
+					<aspectratio>scale</aspectratio>
+					<colordiffuse>mask-background</colordiffuse>
 					<texture border="8" diffuse="mask-squ.png">button-menu-background.png</texture>
 				</control>
 				<control type="button" id="2">

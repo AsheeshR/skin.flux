@@ -1,5 +1,35 @@
 <includes>
 	<include name="VideoListView">
+		<control type="group">
+			<posy>66</posy>
+			<visible>Control.IsVisible(50)</visible>
+			<control type="group">
+				<control type="image">
+					<description>Slider</description>
+					<posx>706</posx>
+					<posy>352</posy>
+					<width>528</width>
+					<height>76</height>
+					<texture border="8">default-button.png</texture>
+					<aspectratio>stretch</aspectratio>
+				</control>
+				<animation condition="Container(50).Position(0)" effect="slide" start="0,0" end="0,-304"
+					time="0" easing="inout" reversible="true">Conditional</animation>
+				<animation condition="Container(50).Position(1)" effect="slide" start="0,0" end="0,-228"
+					time="0" easing="inout" reversible="true">Conditional</animation>
+				<animation condition="Container(50).Position(2)" effect="slide" start="0,0" end="0,-152"
+					time="0" easing="inout" reversible="true">Conditional</animation>
+				<animation condition="Container(50).Position(3)" effect="slide" start="0,0" end="0,-76"
+					time="0" easing="inout" reversible="true">Conditional</animation>
+				<!-- Animation for postion 4 does nothing, so removed-->
+				<animation condition="Container(50).Position(5)" effect="slide" start="0,0" end="0,76"
+					time="0" easing="inout" reversible="true">Conditional</animation>
+				<animation condition="Container(50).Position(6)" effect="slide" start="0,0" end="0,152"
+					time="0" easing="inout" reversible="true">Conditional</animation>
+			</control>
+		</control>
+
+		
 		<control type="fixedlist" id="50">
 			<viewtype label="31941">List</viewtype>
 			<posx>668</posx>
@@ -34,6 +64,7 @@
 						<font>font12</font>
 						<align>left</align>
 						<aligny>center</aligny>
+						<textcolor>white</textcolor>	
 						<label>$INFO[ListItem.Label]</label>
 						<visible>IsEmpty(ListItem.Label2)</visible>
 					</control>
@@ -71,6 +102,7 @@
 						<height>28</height>
 						<font>font12</font>
 						<align>left</align>
+						<textcolor>white</textcolor>
 						<aligny>center</aligny>
 						<label>$INFO[ListItem.Label]</label>
 						<visible>IsEmpty(ListItem.Property(Addon.Description))</visible>
@@ -109,6 +141,7 @@
 						<height>28</height>
 						<font>font12</font>
 						<align>left</align>
+						<textcolor>white</textcolor>
 						<aligny>center</aligny>
 						<label>$INFO[ListItem.Label]</label>
 						<visible>IsEmpty(ListItem.PlotOutline)</visible>
@@ -147,6 +180,7 @@
 						<height>28</height>
 						<font>font12</font>
 						<align>left</align>
+						<textcolor>white</textcolor>
 						<aligny>center</aligny>
 						<label>$INFO[ListItem.Label]</label>
 						<visible>IsEmpty(ListItem.Duration)</visible>
@@ -197,6 +231,7 @@
 						<align>left</align>
 						<aligny>center</aligny>
 						<label>$INFO[ListItem.Label]</label>
+						<textcolor>white</textcolor>
 						<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 						<visible>IsEmpty(ListItem.Label2)</visible>
 					</control>
@@ -237,6 +272,7 @@
 						<font>font12</font>
 						<align>left</align>
 						<aligny>center</aligny>
+						<textcolor>white</textcolor>
 						<selectedcolor>listselectedtext</selectedcolor>
 						<label>$INFO[ListItem.Label]</label>
 						<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
@@ -280,6 +316,7 @@
 						<font>font12</font>
 						<align>left</align>
 						<aligny>center</aligny>
+						<textcolor>white</textcolor>
 						<label>$INFO[ListItem.Label]</label>
 						<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 						<visible>IsEmpty(ListItem.PlotOutline)</visible>
@@ -321,6 +358,7 @@
 						<font>font12</font>
 						<align>left</align>
 						<aligny>center</aligny>
+						<textcolor>white</textcolor>
 						<label>$INFO[ListItem.Label]</label>
 						<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 						<visible>IsEmpty(ListItem.Duration)</visible>
@@ -354,34 +392,7 @@
 				</control>
 			</focusedlayout>
 		</control>
-		<control type="group">
-			<posy>66</posy>
-			<visible>Control.IsVisible(50)</visible>
-			<control type="group">
-				<control type="image">
-					<description>Slider</description>
-					<posx>706</posx>
-					<posy>352</posy>
-					<width>528</width>
-					<height>76</height>
-					<texture border="8">default-button.png</texture>
-					<aspectratio>stretch</aspectratio>
-				</control>
-				<animation condition="Container(50).Position(0)" effect="slide" start="0,0" end="0,-304"
-					time="0" easing="inout" reversible="true">Conditional</animation>
-				<animation condition="Container(50).Position(1)" effect="slide" start="0,0" end="0,-228"
-					time="0" easing="inout" reversible="true">Conditional</animation>
-				<animation condition="Container(50).Position(2)" effect="slide" start="0,0" end="0,-152"
-					time="0" easing="inout" reversible="true">Conditional</animation>
-				<animation condition="Container(50).Position(3)" effect="slide" start="0,0" end="0,-76"
-					time="0" easing="inout" reversible="true">Conditional</animation>
-				<!-- Animation for postion 4 does nothing, so removed-->
-				<animation condition="Container(50).Position(5)" effect="slide" start="0,0" end="0,76"
-					time="0" easing="inout" reversible="true">Conditional</animation>
-				<animation condition="Container(50).Position(6)" effect="slide" start="0,0" end="0,152"
-					time="0" easing="inout" reversible="true">Conditional</animation>
-			</control>
-		</control>
+		
 		<control type="group">
 			<visible>Control.IsVisible(50)</visible>
 			<control type="group">
@@ -399,7 +410,8 @@
 							<posy>120</posy>
 							<width>318</width>
 							<height>318</height>
-							<texture fallback="DefaultVideo.png" background="true" diffuse="mask-rect.png">$INFO[ListItem.Icon]</texture>
+			<!--				<texture fallback="DefaultVideo.png" background="true" diffuse="mask-rect.png">$INFO[ListItem.Icon]</texture>-->
+							<texture fallback="DefaultVideo.png" background="true" diffuse="dark-red.png">flux-logo-big.png</texture>
 							<aspectratio>keep</aspectratio>
 						</control>
 						<control type="image">
@@ -408,7 +420,8 @@
 							<posy>438</posy>
 							<width>318</width>
 							<height>318</height>
-							<texture fallback="DefaultVideo.png" background="true" flipy="true" diffuse="mask-fade.png">$INFO[ListItem.Icon]</texture>
+							<!--<texture fallback="DefaultVideo.png" background="true" flipy="true" diffuse="mask-fade.png">$INFO[ListItem.Icon]</texture>-->
+							<texture fallback="DefaultVideo.png" background="true" flipy="true" diffuse="dark-red.png">flux-logo-big.png</texture>
 							<aspectratio>keep</aspectratio>
 						</control>
 					</control>
@@ -420,7 +433,8 @@
 							<posy>120</posy>
 							<width>318</width>
 							<height>318</height>
-							<texture>DefaultVideo.png</texture>
+							<!--<texture>DefaultVideo.png</texture>-->
+							<texture>flux-logo-big.png</texture>
 							<aspectratio>keep</aspectratio>
 						</control>
 						<control type="image">
@@ -429,7 +443,8 @@
 							<posy>438</posy>
 							<width>318</width>
 							<height>318</height>
-							<texture flipy="true" diffuse="mask-fade.png">DefaultVideo.png</texture>
+							<!--<texture flipy="true" diffuse="mask-fade.png">DefaultVideo.png</texture>-->
+							<texture flipy="true" diffuse="mask-fade.png">flux-logo-big.png</texture>
 							<aspectratio>keep</aspectratio>
 						</control>
 					</control>

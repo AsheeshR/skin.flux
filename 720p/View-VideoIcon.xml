@@ -30,7 +30,8 @@
 					<height>168</height>
 					<aspectratio align="center" aligny="center">keep</aspectratio>
 					<colordiffuse>UnFocusedPosters</colordiffuse>
-					<texture background="true" diffuse="mask-rect.png">$VAR[IconPoster]</texture>
+<!--					<texture background="true" diffuse="mask-rect.png">$VAR[IconPoster]</texture>-->
+					<texture background="true" diffuse="mask-rect.png">flux-logo-big.png</texture>				
 					<visible>!SubString(ListItem.Icon,DefaultFolder.png,Left)</visible>
 				</control>
 				<control type="image">
@@ -58,8 +59,9 @@
 					<width>120</width>
 					<height>168</height>
 					<aspectratio align="center" aligny="center">keep</aspectratio>
-					<animation effect="zoom" start="100" end="124" center="auto" time="600" tween="back" easing="out" reversible="false">focus</animation>
-					<texture background="true" diffuse="mask-rect.png">$VAR[IconPoster]</texture>
+					<animation effect="zoom" start="100" end="124" center="auto" time="600" tween="back" easing="out" reversible="false">focus</animation>ListItem.Icon
+<!--					<texture background="true" diffuse="mask-rect.png">$VAR[IconPoster]</texture>-->
+					<texture background="true" diffuse="mask-rect.png">flux-logo-big.png</texture>				
 					<visible>SubString(ListItem.Icon,Default,Left) + !SubString(ListItem.Icon,DefaultFolder.png,Left)</visible>
 				</control>
 				<control type="image">
@@ -99,6 +101,7 @@
 					<height>22</height>
 					<font>font11</font>
 					<align>center</align>
+					<textcolor>white</textcolor>
 					<include condition="Skin.HasSetting(autoscroll)">scrolltext</include>
 					<label>$INFO[ListItem.Label]</label>
 					<textoffsetx>0</textoffsetx>

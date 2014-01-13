@@ -10,10 +10,10 @@
 		<control type="image" id="1">
 			<description>File Browser background image</description>
 			<posx>-26</posx>
-			<posy>-18</posy>
+			<posy>-18</posy>		<!--background image-->
 			<width>1168</width>
 			<height>530</height>
-			<texture border="8" diffuse="mask-squ.png">button-menu-background.png</texture>
+			<texture border="8" diffuse="mask-squ.png">floor_buttonFO.png</texture>
 			<colordiffuse>dialog-background</colordiffuse>
 		</control>
 		<control type="label" id="411">
@@ -21,7 +21,7 @@
 			<posx>16</posx>
 			<posy>-2</posy>
 			<width>1080</width>
-			<font>font13</font>
+			<font>font13</font>		<!--browse for new share-->
 			<label>1023</label>
 			<align>center</align>
 		</control>
@@ -102,7 +102,7 @@
 				<description>OK button</description>
 				<posx>0</posx>
 				<posy>0</posy>
-				<width>318</width>
+				<width>318</width>			<!-- ok -->
 				<height>45</height>
 				<align>center</align>
 				<label>186</label>
@@ -116,7 +116,7 @@
 				<description>Cancel button</description>
 				<posx>0</posx>
 				<posy>46</posy>
-				<width>318</width>
+				<width>318</width>			<!--create -->
 				<height>45</height>
 				<align>center</align>
 				<label>222</label>
@@ -131,7 +131,7 @@
 				<posx>0</posx>
 				<posy>92</posy>
 				<width>318</width>
-				<height>45</height>
+				<height>45</height>			<!--new folder-->
 				<align>center</align>
 				<label>119</label>
 				<font>font12</font>

@@ -5,15 +5,15 @@
 	<allowoverlay>yes</allowoverlay>
 	<previouswindow>Home</previouswindow>
 	<views>50,52,54,57,58,59,560</views>
-	<onload condition="Skin.HasSetting(tv_theme) + !SubString(Window(Videos).Property(CinemaExperienceRunning),True)">RunScript(script.tvtunes,backend=True&amp;loop=False)</onload>
-
+	
 	<controls>
 		<include>backgroundvideo</include>
 		<include>Fake-Overlay</include>
 		<include>#files</include>
-		<control type="image">
+		<control type="image"> <!-- Show subject image here -->
 			<description>Movies/Video Logo</description>
 			<include>icon-header-commons</include>
+<<<<<<< HEAD
 			<!--<texture>icon-video-sml.png</texture>-->
 			<texture>flux-logo-big.png</texture>			
 			<visible>!Container.Content(tvshows) + !Container.Content(seasons) + !Container.Content(episodes) + !Container.Content(musicvideos)</visible>
@@ -31,7 +31,12 @@
 			<!--<texture>icon-musicvideo-sml.png</texture>-->
 			<texture>flux-logo-big.png</texture>
 			<visible>Container.Content(musicvideos)</visible>
+=======
+			<texture>icon-video-sml.png</texture>
+>>>>>>> 987433c381cd8b8b459c569712c282f94dd430db
 		</control>
+
+		
 		<control type="grouplist">
 			<posx>946</posx>
 			<posy>35</posy>		<!--to display info abt the folder in the videos window at the top right corner-->
@@ -51,8 +56,12 @@
 			</control>
 			<control type="label">
 				<description>Number of files</description>
+<<<<<<< HEAD
 				<visible>Skin.HasSetting(homemenu-horizontal) | [!Skin.HasSetting(homemenu-vertical) + !Skin.HasSetting(homemenu-horizontal)]</visible>
 				<posy>13</posy>				<!--prints "(no of files)"-->
+=======
+				<posy>13</posy>
+>>>>>>> 987433c381cd8b8b459c569712c282f94dd430db
 				<width min="40" max="90">auto</width>
 				<height>38</height>
 				<font>font13</font>

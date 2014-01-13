@@ -207,7 +207,7 @@
 			<height>3</height>
 			<texture>separator.png</texture>
 		</control>
-
+-->
 		<!--Home NavBar-->
 		<control type="group">
 			<include>horizontalhome-center</include>
@@ -307,7 +307,7 @@
 					<height>46</height>
 					<font>font11</font>
 					<label>31045</label>
-					<onclick>ActivateWindow(Videos,content,return)</onclick>
+					<onclick>ActivateWindow(Videos,Files,return)</onclick>
 					<textoffsetx>10</textoffsetx>
 					<textoffsety>8</textoffsety>
 					<onleft>Control.Move(9900,-1)</onleft>

@@ -1,0 +1,1 @@
+/home/varun/.xbmc/addons/skin.flux

@@ -307,7 +307,7 @@
 					<height>46</height>
 					<font>font11</font>
 					<label>31045</label>
-					<onclick>ActivateWindow(Videos,Files,return)</onclick>
+					<onclick>ActivateWindow(Videos,Class3)</onclick>
 					<textoffsetx>10</textoffsetx>
 					<textoffsety>8</textoffsety>
 					<onleft>Control.Move(9900,-1)</onleft>
@@ -323,7 +323,7 @@
 					<height>46</height>
 					<font>font11</font>
 					<label>31046</label>
-					<onclick>ActivateWindow(Videos,Files,return)</onclick>
+					<onclick>ActivateWindow(Videos,Class4)</onclick>
 					<textoffsetx>10</textoffsetx>
 					<textoffsety>8</textoffsety>
 					<onleft>Control.Move(9900,-1)</onleft>
@@ -339,7 +339,7 @@
 					<height>46</height>
 					<font>font11</font>
 					<label>31047</label>
-					<onclick>ActivateWindow(Videos,Files,return)</onclick>
+					<onclick>ActivateWindow(Videos,Class5)</onclick>
 					<textoffsetx>10</textoffsetx>
 					<textoffsety>8</textoffsety>
 					<onleft>Control.Move(9900,-1)</onleft>

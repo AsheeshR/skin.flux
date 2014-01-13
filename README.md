@@ -21,8 +21,7 @@ For RaspBMC installed on a SD card:
 - Download the zip file or clone the repository (approximately 15 MB)
 - Extract the contents and change the folder name to `skin.flux`
 - Mount the SD card partitions
-- Paste the folder `skin.flux` in `~/usr/share/xbmc/addons` where `*` will be either 1 or 2 and `~` refers to mount point of RaspBMC, usually of the form `/media/<username>/mmc<>`.
+- Paste the folder `skin.flux` in `~/usr/share/xbmc/addons` where `~` refers to mount point of RaspBMC, usually of the form `/media/<username>/mmc<>`.
 - Start RaspBMC and select Flux from Settings > Appearance
 
 For any feedback and problems, please post on https://github.com/AsheeshR/skin.flux/issues
-

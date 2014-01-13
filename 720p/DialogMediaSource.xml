@@ -8,18 +8,18 @@
 	<controls>
 		<control type="image">
 			<description>Media Source background image</description>
-			<posx>-26</posx>
+			<posx>-26</posx>			<!--specifyng the  background image for the dialog-->
 			<posy>-18</posy>
 			<width>920</width>
 			<height>418</height>
-			<texture border="8" diffuse="mask-squ.png">button-menu-background.png</texture>
+			<texture border="8" diffuse="mask-squ.png">floor_buttonFO.png</texture>
 			<colordiffuse>dialog-background</colordiffuse>
 		</control>
 		<control type="label" id="2">
 			<description>Heading Label</description>
 			<posx>17</posx>
 			<posy>-2</posy>
-			<width>743</width>
+			<width>743</width>		<!--add video source-->
 			<height>46</height>
 			<align>left</align>
 			<label>-</label>
@@ -38,7 +38,7 @@
 			<posx>17</posx>
 			<posy>43</posy>
 			<width>743</width>
-			<height>46</height>
+			<height>46</height>		<!--enter the paths and...-->
 			<align>left</align>
 			<font>font12</font>
 			<label>1021</label>
@@ -68,7 +68,8 @@
 					<font>font12</font>
 					<align>left</align>
 					<aligny>center</aligny>
-					<selectedcolor>listselectedtext</selectedcolor>
+					<textcolor>white</textcolor>
+<!--					<selectedcolor>listselectedtext</selectedcolor>-->
 					<info>ListItem.Label</info>
 				</control>
 			</itemlayout>
@@ -88,7 +89,8 @@
 					<font>font12</font>
 					<align>left</align>
 					<aligny>center</aligny>
-					<selectedcolor>listselectedtext</selectedcolor>
+					<textcolor>white</textcolor>
+					<!--<selectedcolor>listselectedtext</selectedcolor>-->
 					<info>ListItem.Label</info>
 				</control>
 			</focusedlayout>
@@ -97,7 +99,7 @@
 			<control type="button" id="11">
 				<description>Browse Button</description>
 				<posx>589</posx>
-				<posy>75</posy>
+				<posy>75</posy>			<!--browse-->
 				<width>283</width>
 				<height>46</height>
 				<font>font12</font>
@@ -115,7 +117,7 @@
 				<posx>589</posx>
 				<posy>125</posy>
 				<width>283</width>
-				<height>46</height>
+				<height>46</height>		<!--add-->
 				<font>font12</font>
 				<textoffsetx>12</textoffsetx>
 				<label>15019</label>
@@ -132,7 +134,7 @@
 				<posy>175</posy>
 				<width>283</width>
 				<height>46</height>
-				<font>font12</font>
+				<font>font12</font>		<!--remove-->
 				<textoffsetx>12</textoffsetx>
 				<label>1210</label>
 				<align>center</align>
@@ -146,7 +148,7 @@
 		<control type="label">
 			<description>Name Label</description>
 			<posx>17</posx>
-			<posy>231</posy>
+			<posy>231</posy>		<!--enter a name for this media source-->
 			<width>743</width>
 			<height>46</height>
 			<font>font12</font>
@@ -155,7 +157,7 @@
 		<control type="button" id="12">
 			<description>Name Button</description>
 			<posx>17</posx>
-			<posy>262</posy>
+			<posy>262</posy>		<!--asks you to enter a name for the media file entered-->	
 			<width>566</width>
 			<height>46</height>
 			<font>font12</font>

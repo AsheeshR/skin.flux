@@ -195,16 +195,16 @@
 		</control>
 		<!--<control type="image">
 			<posx>0</posx>
-			<posy>290</posy>
+			<posy>291</posy>
 			<width>1280</width>
-			<height>6</height>
+			<height>3</height>
 			<texture>separator.png</texture>
 		</control>
 		<control type="image">
 			<posx>0</posx>
-			<posy>360</posy>
+			<posy>361</posy>
 			<width>1280</width>
-			<height>6</height>
+			<height>3</height>
 			<texture>separator.png</texture>
 		</control>
 
@@ -307,7 +307,7 @@
 					<height>46</height>
 					<font>font11</font>
 					<label>31045</label>
-					<onclick>ActivateWindow(Videos,Files,return)</onclick>
+					<onclick>ActivateWindow(Videos,content,return)</onclick>
 					<textoffsetx>10</textoffsetx>
 					<textoffsety>8</textoffsety>
 					<onleft>Control.Move(9900,-1)</onleft>

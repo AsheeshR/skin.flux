@@ -90,7 +90,7 @@
 					<posy>55</posy>
 					<width>160</width>
 					<height>160</height>
-					<texture>test.png</texture>			
+					<texture>english.png</texture>			
 				</control>
 				<!--<control type="image">
 					<posx>560</posx>

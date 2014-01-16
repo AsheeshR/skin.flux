@@ -206,7 +206,7 @@
 			<width>1280</width>
 			<height>3</height>
 			<texture>separator.png</texture>
-		</control>
+		</control>-->
 
 		<!--Home NavBar-->
 		<control type="group">
@@ -307,7 +307,7 @@
 					<height>46</height>
 					<font>font11</font>
 					<label>31045</label>
-					<onclick>ActivateWindow(Videos,content,return)</onclick>
+					<onclick>ActivateWindow(Videos,eclass3)</onclick>
 					<textoffsetx>10</textoffsetx>
 					<textoffsety>8</textoffsety>
 					<onleft>Control.Move(9900,-1)</onleft>
@@ -323,7 +323,7 @@
 					<height>46</height>
 					<font>font11</font>
 					<label>31046</label>
-					<onclick>ActivateWindow(Videos,Files,return)</onclick>
+					<onclick>ActivateWindow(Videos,eclass4)</onclick>
 					<textoffsetx>10</textoffsetx>
 					<textoffsety>8</textoffsety>
 					<onleft>Control.Move(9900,-1)</onleft>
@@ -339,7 +339,7 @@
 					<height>46</height>
 					<font>font11</font>
 					<label>31047</label>
-					<onclick>ActivateWindow(Videos,Files,return)</onclick>
+					<onclick>ActivateWindow(Videos,eclass5)</onclick>
 					<textoffsetx>10</textoffsetx>
 					<textoffsety>8</textoffsety>
 					<onleft>Control.Move(9900,-1)</onleft>
@@ -365,7 +365,8 @@
 					<height>46</height>
 					<font>font11</font>
 					<label>31045</label>
-					<onclick>$VAR[MovieLibEntry]</onclick>
+<!--					<onclick>$VAR[MovieLibEntry]</onclick>-->
+					<onclick>ActivateWindow(Videos,hclass4)</onclick>
 					<textoffsetx>10</textoffsetx>
 					<textoffsety>8</textoffsety>
 
@@ -383,7 +384,8 @@
 					<height>46</height>
 					<font>font11</font>
 					<label>31046</label>
-					<onclick>$VAR[MovieLibEntry]</onclick>
+					<!--<onclick>$VAR[MovieLibEntry]</onclick>-->
+					<onclick>ActivateWindow(Videos,hclass4)</onclick>
 					<textoffsetx>10</textoffsetx>
 					<textoffsety>8</textoffsety>
 
@@ -401,7 +403,8 @@
 					<height>46</height>
 					<font>font11</font>
 					<label>31047</label>
-					<onclick>$VAR[MovieLibEntry]</onclick>
+					<!--<onclick>$VAR[MovieLibEntry]</onclick>-->
+					<onclick>ActivateWindow(Videos,hclass5,return)</onclick>
 					<textoffsetx>10</textoffsetx>
 					<textoffsety>8</textoffsety>
 
@@ -426,7 +429,8 @@
 					<height>46</height>
 					<font>font11</font>
 					<label>31045</label>
-					<onclick>ActivateWindow(PVR)</onclick>
+					<!--<onclick>ActivateWindow(PVR)</onclick>-->
+					<onclick>ActivateWindow(Videos,mclass3,return)</onclick>
 					<textoffsetx>10</textoffsetx>
 					<textoffsety>8</textoffsety>
 					<onleft>Control.Move(9900,-1)</onleft>
@@ -444,7 +448,8 @@
 					<height>46</height>
 					<font>font11</font>
 					<label>31046</label>
-					<onclick>ActivateWindow(PVR)</onclick>
+					<!--<onclick>ActivateWindow(PVR)</onclick>-->
+					<onclick>ActivateWindow(Videos,mclass4)</onclick>
 					<textoffsetx>10</textoffsetx>
 					<textoffsety>8</textoffsety>
 					<onleft>Control.Move(9900,-1)</onleft>
@@ -461,8 +466,9 @@
 					<width>210</width>
 					<height>46</height>
 					<font>font11</font>
-					<label>31047</label>
-					<onclick>ActivateWindow(PVR)</onclick>
+					<label>31047</label>		
+					<!--<onclick>ActivateWindow(PVR)</onclick>-->
+					<onclick>ActivateWindow(Videos,mclass5)</onclick>
 					<textoffsetx>10</textoffsetx>
 					<textoffsety>8</textoffsety>
 					<onleft>Control.Move(9900,-1)</onleft>
@@ -488,7 +494,8 @@
 					<height>46</height>
 					<font>font11</font>
 					<label>31045</label>
-					<onclick>$VAR[MusicLibEntry]</onclick>
+					<!--<onclick>$VAR[MusicLibEntry]</onclick>-->
+					<onclick>ActivateWindow(Videos,cclass3)</onclick>
 					<textoffsetx>10</textoffsetx>
 					<textoffsety>8</textoffsety>
 					<onleft>Control.Move(9900,-1)</onleft>
@@ -505,7 +512,8 @@
 					<height>46</height>
 					<font>font11</font>
 					<label>31046</label>
-					<onclick>$VAR[MusicLibEntry]</onclick>
+					<!--<onclick>$VAR[MusicLibEntry]</onclick>-->
+					<onclick>ActivateWindow(Videos,cclass4)</onclick>
 					<textoffsetx>10</textoffsetx>
 					<textoffsety>8</textoffsety>
 					<onleft>Control.Move(9900,-1)</onleft>
@@ -522,7 +530,8 @@
 					<height>46</height>
 					<font>font11</font>
 					<label>31047</label>
-					<onclick>$VAR[MusicLibEntry]</onclick>
+				<!--<onclick>$VAR[MusicLibEntry]</onclick>-->	
+					<onclick>ActivateWindow(Videos,cclass5)</onclick>	
 					<textoffsetx>10</textoffsetx>
 					<textoffsety>8</textoffsety>
 					<onleft>Control.Move(9900,-1)</onleft>

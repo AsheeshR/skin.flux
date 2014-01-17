@@ -1,0 +1,65 @@
+<sources>
+    <programs>
+        <default pathversion="1"></default>
+    </programs>
+    <video>
+        <default pathversion="1"></default>
+        <source>
+            <name>eclass3</name>
+            <path pathversion="1">/home/xbmc/eclass3/</path>
+        </source>
+        <source>
+            <name>eclass4</name>
+            <path pathversion="1">/home/xbmc/eclass4/</path>
+        </source>
+        <source>
+            <name>eclass5</name>
+            <path pathversion="1">/home/xbmc/eclass5/</path>
+        </source>
+	<source>
+            <name>hclass3</name>
+            <path pathversion="1">/home/xbmc/hclass3/</path>
+        </source>
+        <source>
+            <name>hclass4</name>
+            <path pathversion="1">/home/xbmc/hclass4/</path>
+        </source>
+        <source>
+            <name>hclass5</name>
+            <path pathversion="1">/home/xbmc/hclass5/</path>
+        </source>
+	<source>
+            <name>mclass3</name>
+            <path pathversion="1">/home/xbmc/mclass3/</path>
+        </source>
+        <source>
+            <name>mclass4</name>
+            <path pathversion="1">/home/xbmc/mclass4/</path>
+        </source>
+        <source>
+            <name>mclass5</name>
+            <path pathversion="1">/home/xbmc/mclass5/</path>
+        </source>
+	<source>
+            <name>cclass3</name>
+            <path pathversion="1">/home/xbmc/cclass3/</path>
+        </source>
+        <source>
+            <name>cclass4</name>
+            <path pathversion="1">/home/xbmc/cclass4/</path>
+        </source>
+        <source>
+            <name>cclass5</name>
+            <path pathversion="1">/home/xbmc/cclass5/</path>
+        </source>
+    </video>
+    <music>
+        <default pathversion="1"></default>
+    </music>
+    <pictures>
+        <default pathversion="1"></default>
+    </pictures>
+    <files>
+        <default pathversion="1"></default>
+    </files>
+</sources>

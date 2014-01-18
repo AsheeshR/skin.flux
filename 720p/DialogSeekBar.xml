@@ -270,33 +270,35 @@
 			</control>
 		</control>
 		<!-- Start Progress Control for all Windows Except VideoFullScreen , KaraokeVisualisation, MusicVisualisation, MyMusicPlaylist and PlayerControls-->
-<!--		<control type="group">
+		<control type="group">
 			<visible>![Window.IsActive(FullscreenVideo) | Window.IsActive(karaoke) | Window.IsActive(Visualisation) | Window.IsActive(musicplaylist) | Window.IsActive(PlayerControls)]</visible>
 			<posx>463</posx>
-			<posy>-620</posy>
+			<posy>-640</posy>
 			<control type="image">
 				<description>Popup Volume Dialog Background</description>
 				<posx>0</posx>
 				<posy>2</posy>
 				<width>354</width>
-				<height>87</height>
-				<texture border="8" diffuse="mask-squ.png">button-menu-background.png</texture>
+				<height>60</height>
+				<texture diffuse="mask-squ.png">maroon.png</texture>
+				<bordertexture border="8">dark-red.png</bordertexture>
+				<bordersize>5</bordersize>
 			</control>
 			<control type="label">
 				<description>Elapsed Time Label</description>
 				<posx>146</posx>
-				<posy>25</posy>
+				<posy>5</posy>
 				<font>font12</font>
 				<align>right</align>
-				<info>Player.Time</info>
+				<info>Player.Time</info><bordersize>5</bordersize>
 				<width>177</width>
 				<height>20</height>
 				<visible>!Player.Seeking</visible>
 			</control>
-			<control type="label">
+			<control type="label"><bordersize>5</bordersize>
 				<description>Seek Time Label</description>
 				<posx>146</posx>
-				<posy>25</posy>
+				<posy>5</posy>
 				<font>font12</font>
 				<align>right</align>
 				<info>Player.SeekTime</info>
@@ -307,7 +309,7 @@
 			<control type="label">
 				<description>Duration Label</description>
 				<posx>156</posx>
-				<posy>25</posy>
+				<posy>5</posy>
 				<label>$INFO[Player.Duration,/ ]</label>
 				<font>font12</font>
 				<align>left</align>
@@ -317,21 +319,22 @@
 			<control type="progress">
 				<description>Progressbar Cache</description>
 				<posx>18</posx>
-				<posy>66</posy>
+				<posy>46</posy>
 				<width>300</width>
 				<height>8</height>
 				<info>Player.ProgressCache</info>
-				<colordiffuse>FF777777</colordiffuse>
+				<colordiffuse>FFFFE6B3</colordiffuse>
 			</control>
 			<control type="progress">
 				<description>Progressbar</description>
 				<posx>18</posx>
-				<posy>66</posy>
+				<posy>46</posy>
 				<width>300</width>
 				<height>8</height>
 				<info>Player.Progress</info>
-				<colordiffuse>ProgressBarColor</colordiffuse>
+				<textcolor>info-text</textcolor>
+				<colordiffuse>info-text</colordiffuse>
 			</control>
-		</control>-->
+		</control>
 	</controls>
 </window>

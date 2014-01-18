@@ -10,6 +10,7 @@
 					<posy>352</posy>
 					<width>528</width>
 					<height>76</height>
+					<visible>Control.HasFocus(50)</visible>
 					<texture border="8">default-button.png</texture>
 					<aspectratio>stretch</aspectratio>
 				</control>
@@ -41,7 +42,7 @@
 			<onleft>9000</onleft>
 			<onright>23</onright>
 			<onup>50</onup>
-			<ondown>50</ondown>
+			<ondown>15</ondown>
 			<scrolltime>200</scrolltime>
 			<preloaditems>2</preloaditems>
 			<pagecontrol>23</pagecontrol>

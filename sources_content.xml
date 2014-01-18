@@ -6,15 +6,15 @@
         <default pathversion="1"></default>
         <source>
             <name>eclass3</name>
-            <path pathversion="1">/home/xbmc/eclass3/</path>
+            <path pathversion="1">/home/varun/eclass3/</path>
         </source>
         <source>
             <name>eclass4</name>
-            <path pathversion="1">/home/xbmc/eclass4/</path>
+            <path pathversion="1">/home/varun/eclass4/</path>
         </source>
         <source>
             <name>eclass5</name>
-            <path pathversion="1">/home/xbmc/eclass5/</path>
+            <path pathversion="1">/home/varun/eclass5/</path>
         </source>
 	<source>
             <name>hclass3</name>

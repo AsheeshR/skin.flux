@@ -328,14 +328,14 @@
 				<onclick>SetFocus(214)</onclick>
 				<visible>System.HasMediadvd</visible>
 			</control>-->
-			<control type="button" id="210">
+<!--			<control type="button" id="210">
 				<description>Skip Bwd</description>
 				<width>60</width>
 				<height>60</height>
 				<texturefocus>osd-btn-skipback-focus.png</texturefocus>
 				<texturenofocus>osd-btn-skipback.png</texturenofocus>
 				<onclick>XBMC.PlayerControl(Previous)</onclick>
-			</control>
+			</control>-->
 			<control type="button" id="211">
 				<description>Rewind</description>
 				<width>60</width>
@@ -371,14 +371,14 @@
 				<texturenofocus>osd-btn-fastfwd.png</texturenofocus>
 				<onclick>XBMC.PlayerControl(Forward)</onclick>
 			</control>
-			<control type="button" id="216">
+<!--			<control type="button" id="216">
 				<description>Skip Fwd</description>
 				<width>60</width>
 				<height>60</height>
 				<texturefocus>osd-btn-skipfwd-focus.png</texturefocus>
 				<texturenofocus>osd-btn-skipfwd.png</texturenofocus>
 				<onclick>XBMC.PlayerControl(Next)</onclick>
-			</control>
+			</control>-->
 			<control type="button" id="909">
 				<width>60</width>
 				<height>60</height>

@@ -26,7 +26,7 @@
 					<posy>6</posy>
 					<height>80</height>
 					<width>1359</width>
-					<texture>background.png</texture>
+					<texture>dark-red.png</texture>
 					<colordiffuse>osd-background</colordiffuse>
 					<visible>[Window.IsActive(fullscreenvideo)] + ![Window.IsActive(MusicOSD)] + ![Window.IsVisible(fullscreeninfo)]</visible>
 				</control>
@@ -296,29 +296,29 @@
 			<onright>999</onright>
 			<onup>999</onup>
 			<ondown>999</ondown>
-			<control type="button" id="919">
+<!--			<control type="button" id="919">
 				<description>Bookmarks Menu</description>
 				<width>60</width>
 				<height>60</height>
 				<texturefocus>osd-btn-bookmark-focus.png</texturefocus>
 				<texturenofocus>osd-btn-bookmark.png</texturenofocus>
 				<onclick>XBMC.ActivateWindow(videobookmarks)</onclick>
-			</control>
-			<control type="button" id="918">
+			</control>-->
+<!--			<control type="button" id="918">
 				<description>playlist button</description>
 				<width>60</width>
 				<height>60</height>
 				<texturefocus>osd-btn-playlist-focus.png</texturefocus>
 				<texturenofocus>osd-btn-playlist.png</texturenofocus>
 				<onclick>XBMC.ActivateWindow(videoplaylist)</onclick>
-			</control>
-			<control type="image" id="931">
+			</control>-->
+<!--			<control type="image" id="931">
 				<description>Dummy</description>
 				<width>42</width>
 				<height>60</height>
 				<texture>-</texture>
-			</control>
-			<control type="button" id="217">
+			</control>-->
+<!--			<control type="button" id="217">
 				<description>Eject DVD</description>
 				<width>60</width>
 				<height>60</height>
@@ -327,7 +327,7 @@
 				<onclick>XBMC.EjectTray()</onclick>
 				<onclick>SetFocus(214)</onclick>
 				<visible>System.HasMediadvd</visible>
-			</control>
+			</control>-->
 			<control type="button" id="210">
 				<description>Skip Bwd</description>
 				<width>60</width>
@@ -395,7 +395,7 @@
 				<onclick>PlayerControl(record)</onclick>
 				<visible>Player.CanRecord + Player.Recording</visible>
 			</control>
-			<control type="button" id="208">
+<!--			<control type="button" id="208">
 				<description>DVD Menu</description>
 				<width>60</width>
 				<height>60</height>
@@ -403,7 +403,7 @@
 				<texturenofocus>osd-btn-dvdmenu.png</texturenofocus>
 				<onclick>XBMC.PlayerControl(ShowVideoMenu)</onclick>
 				<visible>VideoPlayer.HasMenu</visible>
-			</control>
+			</control>-->
 			<control type="button" id="950">
 				<description>Subtitles Menu</description>
 				<width>60</width>
@@ -414,12 +414,12 @@
 				<onclick>XBMC.RunScript($INFO[Skin.String(osd-subscriptpath)])</onclick>
 				<visible>Skin.HasSetting(osd-subtitles)</visible>
 			</control>
-			<control type="image" id="940">
+<!--			<control type="image" id="940">
 				<description>Dummy</description>
 				<width>42</width>
 				<height>60</height>
 				<texture>-</texture>
-			</control>
+			</control>-->
 			<control type="button" id="921">
 				<description>Audio Menu</description>
 				<width>60</width>

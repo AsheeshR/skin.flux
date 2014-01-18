@@ -16,7 +16,7 @@
 				<posy>6</posy>
 				<height>80</height>
 				<width>1359</width>
-				<texture>background.png</texture>
+				<texture>dark-red.png</texture>
 				<colordiffuse>osd-background</colordiffuse>
 				<visible>[Window.IsActive(fullscreenvideo)] + ![Window.IsActive(MusicOSD)] + ![Window.IsVisible(fullscreeninfo)]</visible>
 			</control>
@@ -270,7 +270,7 @@
 			</control>
 		</control>
 		<!-- Start Progress Control for all Windows Except VideoFullScreen , KaraokeVisualisation, MusicVisualisation, MyMusicPlaylist and PlayerControls-->
-		<control type="group">
+<!--		<control type="group">
 			<visible>![Window.IsActive(FullscreenVideo) | Window.IsActive(karaoke) | Window.IsActive(Visualisation) | Window.IsActive(musicplaylist) | Window.IsActive(PlayerControls)]</visible>
 			<posx>463</posx>
 			<posy>-620</posy>
@@ -332,6 +332,6 @@
 				<info>Player.Progress</info>
 				<colordiffuse>ProgressBarColor</colordiffuse>
 			</control>
-		</control>
+		</control>-->
 	</controls>
 </window>

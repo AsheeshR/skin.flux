@@ -307,7 +307,9 @@
 					<height>46</height>
 					<font>font11</font>
 					<label>31045</label>
-					<onclick>ActivateWindow(Videos,/home/varun/content/English/eclass3/,return)</onclick>
+
+					<onclick>ActivateWindow(Videos,"/home/xbmc/content/English/Class3",return)</onclick>
+
 					<textoffsetx>10</textoffsetx>
 					<textoffsety>8</textoffsety>
 					<onleft>Control.Move(9900,-1)</onleft>
@@ -323,7 +325,7 @@
 					<height>46</height>
 					<font>font11</font>
 					<label>31046</label>
-					<onclick>ActivateWindow(Videos,eclass4)</onclick>
+					<onclick>ActivateWindow(Videos,"/home/xbmc/content/English/Class4",return)</onclick>
 					<textoffsetx>10</textoffsetx>
 					<textoffsety>8</textoffsety>
 					<onleft>Control.Move(9900,-1)</onleft>
@@ -339,7 +341,7 @@
 					<height>46</height>
 					<font>font11</font>
 					<label>31047</label>
-					<onclick>ActivateWindow(Videos,eclass5)</onclick>
+					<onclick>ActivateWindow(Videos,"/home/xbmc/content/English/Class5",return)</onclick>
 					<textoffsetx>10</textoffsetx>
 					<textoffsety>8</textoffsety>
 					<onleft>Control.Move(9900,-1)</onleft>
@@ -366,7 +368,7 @@
 					<font>font11</font>
 					<label>31045</label>
 <!--					<onclick>$VAR[MovieLibEntry]</onclick>-->
-					<onclick>ActivateWindow(Videos,hclass4)</onclick>
+					<onclick>ActivateWindow(Videos,"/home/xbmc/content/Hindi/Class3",return)</onclick>
 					<textoffsetx>10</textoffsetx>
 					<textoffsety>8</textoffsety>
 
@@ -385,7 +387,7 @@
 					<font>font11</font>
 					<label>31046</label>
 					<!--<onclick>$VAR[MovieLibEntry]</onclick>-->
-					<onclick>ActivateWindow(Videos,hclass4)</onclick>
+					<onclick>ActivateWindow(Videos,"/home/xbmc/content/Hindi/Class4",return)</onclick>
 					<textoffsetx>10</textoffsetx>
 					<textoffsety>8</textoffsety>
 
@@ -404,7 +406,7 @@
 					<font>font11</font>
 					<label>31047</label>
 					<!--<onclick>$VAR[MovieLibEntry]</onclick>-->
-					<onclick>ActivateWindow(Videos,hclass5,return)</onclick>
+					<onclick>ActivateWindow(Videos,"/home/xbmc/content/Hindi/Class5",return)</onclick>
 					<textoffsetx>10</textoffsetx>
 					<textoffsety>8</textoffsety>
 
@@ -430,7 +432,7 @@
 					<font>font11</font>
 					<label>31045</label>
 					<!--<onclick>ActivateWindow(PVR)</onclick>-->
-					<onclick>ActivateWindow(Videos,mclass3,return)</onclick>
+					<onclick>ActivateWindow(Videos,"/home/xbmc/content/Math/Class3",return)</onclick>
 					<textoffsetx>10</textoffsetx>
 					<textoffsety>8</textoffsety>
 					<onleft>Control.Move(9900,-1)</onleft>
@@ -449,7 +451,7 @@
 					<font>font11</font>
 					<label>31046</label>
 					<!--<onclick>ActivateWindow(PVR)</onclick>-->
-					<onclick>ActivateWindow(Videos,mclass4)</onclick>
+					<onclick>ActivateWindow(Videos,"/home/xbmc/content/Math/Class4",return)</onclick>
 					<textoffsetx>10</textoffsetx>
 					<textoffsety>8</textoffsety>
 					<onleft>Control.Move(9900,-1)</onleft>
@@ -468,7 +470,7 @@
 					<font>font11</font>
 					<label>31047</label>		
 					<!--<onclick>ActivateWindow(PVR)</onclick>-->
-					<onclick>ActivateWindow(Videos,mclass5)</onclick>
+					<onclick>ActivateWindow(Videos,"/home/xbmc/content/Math/Class5",return)</onclick>
 					<textoffsetx>10</textoffsetx>
 					<textoffsety>8</textoffsety>
 					<onleft>Control.Move(9900,-1)</onleft>
@@ -495,7 +497,7 @@
 					<font>font11</font>
 					<label>31045</label>
 					<!--<onclick>$VAR[MusicLibEntry]</onclick>-->
-					<onclick>ActivateWindow(Videos,cclass3)</onclick>
+					<onclick>ActivateWindow(Videos,"/home/xbmc/content/Computers/Class3",return)</onclick>
 					<textoffsetx>10</textoffsetx>
 					<textoffsety>8</textoffsety>
 					<onleft>Control.Move(9900,-1)</onleft>
@@ -513,7 +515,7 @@
 					<font>font11</font>
 					<label>31046</label>
 					<!--<onclick>$VAR[MusicLibEntry]</onclick>-->
-					<onclick>ActivateWindow(Videos,cclass4)</onclick>
+					<onclick>ActivateWindow(Videos,"/home/xbmc/content/Computers/Class4",return)</onclick>
 					<textoffsetx>10</textoffsetx>
 					<textoffsety>8</textoffsety>
 					<onleft>Control.Move(9900,-1)</onleft>
@@ -531,7 +533,7 @@
 					<font>font11</font>
 					<label>31047</label>
 				<!--<onclick>$VAR[MusicLibEntry]</onclick>-->	
-					<onclick>ActivateWindow(Videos,cclass5)</onclick>	
+					<onclick>ActivateWindow(Videos,"/home/xbmc/content/Computers/Class5",return)</onclick>	
 					<textoffsetx>10</textoffsetx>
 					<textoffsety>8</textoffsety>
 					<onleft>Control.Move(9900,-1)</onleft>

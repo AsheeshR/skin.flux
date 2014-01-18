@@ -13,8 +13,8 @@
 		<control type="image"> <!-- Show subject image here -->
 			<description>Movies/Video Logo</description>
 			<include>icon-header-commons</include>
-			<!--<texture>icon-video-sml.png</texture>-->
-			<texture>flux-logo-big.png</texture>			
+			<texture>icon-video-sml.png</texture>
+			<!--<texture>flux-logo-big.png</texture>-->
 			<visible>!Container.Content(tvshows) + !Container.Content(seasons) + !Container.Content(episodes) + !Container.Content(musicvideos)</visible>
 		</control>
 		<control type="image">
@@ -50,7 +50,7 @@
 				<wrapmultiline>true</wrapmultiline>
 				<aligny>top</aligny>
 			</control>
-			<control type="label">
+<!--			<control type="label">
 				<description>Number of files</description>
 				<posy>13</posy>
 				<width min="40" max="90">auto</width>
@@ -58,7 +58,7 @@
 				<font>font13</font>
 				<aligny>center</aligny>
 				<label>$INFO[Container.NumItems,(,)]</label>
-			</control>
+			</control>-->
 		</control>
 		
 		<!-- Various Views of Video library node -->

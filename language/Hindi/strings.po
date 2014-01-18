@@ -56,17 +56,17 @@ msgstr ""
 
 msgctxt "#31035"
 msgid "Settings"
-msgstr ""
+msgstr "सेटिंग्स"
 
 msgctxt "#31036"
 msgid "Play Disc"
-msgstr ""
+msgstr "डिस्क खेलते"
 
 #empty string with id 31037
 
 msgctxt "#31038"
 msgid "Quit"
-msgstr ""
+msgstr "छोड़ना"
 
 #empty strings from id 31039 to 31125
 #######################################
@@ -155,7 +155,7 @@ msgstr ""
 
 msgctxt "#31226"
 msgid "CDDB"
-msgstr ""
+msgstr "CDDB"
 
 msgctxt "#31227"
 msgid "Playlist Editor"
@@ -193,17 +193,17 @@ msgstr ""
 
 msgctxt "#31528"
 msgid "Currently"
-msgstr ""
+msgstr "वर्तमान"
 
 #empty string id 31529
 
 msgctxt "#31530"
 msgid "Location"
-msgstr ""
+msgstr "स्थान"
 
 msgctxt "#31531"
 msgid "Last Updated"
-msgstr ""
+msgstr "पिछले अद्यतन"
 
 #empty strings from id 31532 to 31535
 
@@ -221,13 +221,13 @@ msgstr "व्यवस्था"
 
 msgctxt "#31552"
 msgid "File Manager"
-msgstr ""
+msgstr "फ़ाइल प्रबंधक"
 
 #empty strings from id 31553 to 31554
 
 msgctxt "#31555"
 msgid "Profiles"
-msgstr ""
+msgstr "प्रोफाइल्स"
 
 msgctxt "#31556"
 msgid "Skin"

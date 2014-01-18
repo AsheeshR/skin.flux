@@ -50,7 +50,7 @@ msgstr ""
 
 msgctxt "#31033"
 msgid "Files"
-msgstr ""
+msgstr "फाइलें"
 
 #empty string with id 31034
 
@@ -209,7 +209,7 @@ msgstr "पिछले अद्यतन"
 
 msgctxt "#31536"
 msgid "Provider"
-msgstr ""
+msgstr "प्रदाता"
 
 #empty strings from id 31537 to 31550
 #End weather strings
@@ -321,17 +321,17 @@ msgstr "XBMC डिफ़ॉल्ट"
 
 msgctxt "#31651"
 msgid "Muted"
-msgstr ""
+msgstr "म्यूट"
 
 msgctxt "#31652"
 msgid "Favourites"
-msgstr ""
+msgstr "प्रिय"
 
 #empty string with id 31653
 
 msgctxt "#31654"
 msgid "Addon"
-msgstr ""
+msgstr "अतिरिक्त"
 
 msgctxt "#31655"
 msgid "Settings"
@@ -339,15 +339,15 @@ msgstr "सेटिंग्स"
 
 msgctxt "#31656"
 msgid "Lyrics"
-msgstr ""
+msgstr "लिरिक्रस"
 
 msgctxt "#31657"
 msgid "Presets"
-msgstr ""
+msgstr "प्रीसेट"
 
 msgctxt "#31659"
 msgid "Playlist"
-msgstr ""
+msgstr "प्लेलिस्ट"
 
 #empty strings from id 31660 to 31679
 
@@ -711,27 +711,27 @@ msgstr ""
 
 msgctxt "#31941"
 msgid "List"
-msgstr ""
+msgstr "सूची"
 
 msgctxt "#31942"
 msgid "Wrap"
-msgstr ""
+msgstr "लपेटना"
 
 msgctxt "#31943"
 msgid "Icons"
-msgstr ""
+msgstr "आइकॉन"
 
 msgctxt "#31944"
 msgid "Wall"
-msgstr ""
+msgstr "दीवार"
 
 msgctxt "#31945"
 msgid "Coverflow"
-msgstr ""
+msgstr "देखें कवर"
 
 msgctxt "#31946"
 msgid "Banner"
-msgstr ""
+msgstr "बैनर"
 
 #empty strings from id 31947 to 31950
 #Spincontrol options

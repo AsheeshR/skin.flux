@@ -217,7 +217,7 @@ msgstr ""
 
 msgctxt "#31551"
 msgid "System"
-msgstr ""
+msgstr "व्यवस्था"
 
 msgctxt "#31552"
 msgid "File Manager"
@@ -231,17 +231,17 @@ msgstr ""
 
 msgctxt "#31556"
 msgid "Skin"
-msgstr ""
+msgstr "खाल"
 
 #empty string with id 31557
 
 msgctxt "#31558"
 msgid "Power Menu"
-msgstr ""
+msgstr "बिजली मेनू"
 
 msgctxt "#31559"
 msgid "System Info"
-msgstr ""
+msgstr "प्रणाली की जानकारी"
 
 #empty string with id 31560
 
@@ -259,31 +259,31 @@ msgstr ""
 
 msgctxt "#31564"
 msgid "Current Theme:"
-msgstr ""
+msgstr "वर्तमान थीम"
 
 msgctxt "#31565"
 msgid "Screen Mode:"
-msgstr ""
+msgstr "स्क्रीन मोड"
 
 msgctxt "#31566"
 msgid "System Platform:"
-msgstr ""
+msgstr "प्रणाली प्लेटफार्म"
 
 msgctxt "#31567"
 msgid "Linux"
-msgstr ""
+msgstr "लिनक्स"
 
 msgctxt "#31568"
 msgid "MS Windows"
-msgstr ""
+msgstr "MS विंडोज़"
 
 msgctxt "#31569"
 msgid "iOS"
-msgstr ""
+msgstr "iOS"
 
 msgctxt "#31570"
 msgid "Mac OS X"
-msgstr ""
+msgstr "मैक OS X"
 
 msgctxt "#31571"
 msgid "Memory Used:"
@@ -295,17 +295,17 @@ msgstr ""
 
 msgctxt "#31573"
 msgid "AppleTV"
-msgstr ""
+msgstr "एप्प्ल TV"
 
 msgctxt "#31574"
 msgid "Android"
-msgstr ""
+msgstr "एंड्रॉयड"
 
 #Fontset names
 
 msgctxt "#31575"
 msgid "Default"
-msgstr ""
+msgstr "डिफ़ॉल्ट"
 
 msgctxt "#31576"
 msgid "Bold"
@@ -313,7 +313,7 @@ msgstr ""
 
 msgctxt "#31577"
 msgid "XBMC Default"
-msgstr ""
+msgstr "XBMC डिफ़ॉल्ट"
 
 #empty strings from id 31578 to 31650
 #End system strings
@@ -335,7 +335,7 @@ msgstr ""
 
 msgctxt "#31655"
 msgid "Settings"
-msgstr ""
+msgstr "सेटिंग्स"
 
 msgctxt "#31656"
 msgid "Lyrics"
@@ -367,7 +367,7 @@ msgstr ""
 
 msgctxt "#31688"
 msgid "Go Back"
-msgstr ""
+msgstr "वापस जाने"
 
 #empty strings from id 31689 to 31691
 
@@ -462,31 +462,31 @@ msgstr ""
 
 msgctxt "#31801"
 msgid "Startup"
-msgstr ""
+msgstr "स्टार्टअप"
 
 msgctxt "#31802"
 msgid "General"
-msgstr ""
+msgstr "साधारण"
 
 msgctxt "#31803"
 msgid "Home Menu"
-msgstr ""
+msgstr "होम मेनू"
 
 msgctxt "#31804"
 msgid "Background"
-msgstr ""
+msgstr "पृष्ठभूमि"
 
 msgctxt "#31805"
 msgid "Media Sources"
-msgstr ""
+msgstr "मीडिया स्रोतों"
 
 msgctxt "#31806"
 msgid "Custom Favourites"
-msgstr ""
+msgstr "कस्टम पसंदीदा"
 
 msgctxt "#31807"
 msgid "Support"
-msgstr ""
+msgstr "समर्थन"
 
 #empty strings from id 31808 to 31849
 
@@ -738,17 +738,17 @@ msgstr ""
 
 msgctxt "#31951"
 msgid "Vertical"
-msgstr ""
+msgstr "लंबरूप"
 
 msgctxt "#31952"
 msgid "Horizontal"
-msgstr ""
+msgstr "क्षैतिज"
 
 msgctxt "#31953"
 msgid "Icon"
-msgstr ""
+msgstr "आइकॉन"
 
 #for power!no idea why?
 msgctxt "#31003"
 msgid "Power Options"
-msgstr ""
+msgstr "पावर विकल्प"

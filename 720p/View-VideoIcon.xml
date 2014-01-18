@@ -1,5 +1,4 @@
 <includes>
-	<include name="VideoIconView">
 		<control type="panel" id="52">
 			<posx>20</posx>
 			<posy>100</posy>

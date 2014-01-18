@@ -27,7 +27,7 @@
 				<posx>17</posx>
 				<width>354</width>
 				<onup>9000</onup>
-				<ondown>9000</ondown>
+				<ondown>15</ondown>
 				<itemgap>0</itemgap>
 				<control type="button" id="95">
 					<description>Summary</description>
@@ -300,6 +300,78 @@
 				<label>$LOCALIZE[31566] $LOCALIZE[31574]</label>
 				<font>font13</font>
 				<visible>System.Platform.Android</visible>
+			</control>
+		</control>
+		<!-- back button -->
+		<control type="group" >
+			<posx>1150</posx>
+			<posy>20</posy>
+			<animation effect="fade" time="250" condition="Window.Previous(Home)">WindowOpen</animation>
+			<animation effect="fade" time="250" condition="Window.Next(Home)">WindowClose</animation>
+			<!--<visible>system.getbool(input.enablemouse)</visible>-->
+			<visible>true</visible>
+			<control type="button" id="15">
+				<description>Back push button</description>
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>45</width>
+				<height>45</height>
+				<label>back button</label>
+				<font>-</font>
+				<aligny>-</aligny>
+				<onclick>back</onclick>
+				<!--<texturefocus border="5">floor_buttonFO.png</texturefocus>
+				<texturenofocus border="5">floor_button.png</texturenofocus>-->
+				<texturefocus>button-focussed.png</texturefocus>
+				<texturenofocus border="5">darkred.png</texturenofocus>	
+				<onleft>15</onleft>
+				<onright>20</onright>
+				<onup>9000</onup>
+				<ondown>9000</ondown>
+			</control>
+			<control type="image">
+				<description>Back Icon</description>
+				<posx>5</posx>
+				<posy>5</posy>
+				<width>35</width>
+				<height>35</height>
+				<aspectratio>keep</aspectratio>
+				<texture>icon_back.png</texture>
+			</control>
+		</control>
+		<!--home button-->
+		<control type="group" >
+			<posx>1205</posx>
+			<posy>75</posy>
+			<animation effect="fade" time="250" condition="Window.Previous(Home)">WindowOpen</animation>
+			<animation effect="fade" time="250" condition="Window.Next(Home)">WindowClose</animation>
+			<!--<visible>system.getbool(input.enablemouse)</visible>-->
+			<visible>true</visible>
+			<control type="button" id="20">
+				<description>Home push button</description>
+				<width>45</width>
+				<height>45</height>
+				<label>31003</label>
+				<font>-</font>
+				<aligny>-</aligny>
+				<onclick>ActivateWindow(home)</onclick>
+				<!--<texturefocus border="5">floor_buttonFO.png</texturefocus>
+				<texturenofocus border="5">floor_button.png</texturenofocus>-->
+				<texturefocus>button-focussed.png</texturefocus>
+				<texturenofocus border="5">darkred.png</texturenofocus>	
+				<onleft>15</onleft>
+				<onright>20</onright>
+				<onup>9000</onup>
+				<ondown>9000</ondown>
+			</control>
+			<control type="image">
+				<description>Home Icon</description>
+				<posx>5</posx>
+				<posy>5</posy>
+				<width>35</width>
+				<height>35</height>
+				<aspectratio>keep</aspectratio>
+				<texture>icon_home.png</texture>
 			</control>
 		</control>
 	</controls>

@@ -168,7 +168,7 @@
 
 		<!-- back button -->
 		<control type="group" >
-			<posx>1150</posx>
+			<posx>20</posx>
 			<posy>55r</posy>
 			<animation effect="fade" time="250" condition="Window.Previous(Home)">WindowOpen</animation>
 			<animation effect="fade" time="250" condition="Window.Next(Home)">WindowClose</animation>
@@ -205,7 +205,7 @@
 		</control>
 		<!--home button-->
 		<control type="group" >
-			<posx>1205</posx>
+			<posx>75</posx>
 			<posy>55r</posy>
 			<animation effect="fade" time="250" condition="Window.Previous(Home)">WindowOpen</animation>
 			<animation effect="fade" time="250" condition="Window.Next(Home)">WindowClose</animation>
@@ -213,6 +213,8 @@
 			<visible>true</visible>
 			<control type="button" id="20">
 				<description>Home push button</description>
+				<posx>0</posx>
+				<posy>0</posy>
 				<width>45</width>
 				<height>45</height>
 				<label>31003</label>

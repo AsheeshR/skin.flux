@@ -10,7 +10,7 @@
 			<posy>0</posy>
 			<height>80</height>
 			<width>1280</width>
-			<texture>dark-red.png</texture>
+			<texture>white.png</texture>
 			<colordiffuse>osd-background</colordiffuse>
 		</control>
 

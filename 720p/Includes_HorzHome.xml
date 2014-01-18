@@ -307,7 +307,7 @@
 					<height>46</height>
 					<font>font11</font>
 					<label>31045</label>
-					<onclick>ActivateWindow(Videos,eclass3)</onclick>
+					<onclick>ActivateWindow(Videos,/home/varun/content/English/eclass3/,return)</onclick>
 					<textoffsetx>10</textoffsetx>
 					<textoffsety>8</textoffsety>
 					<onleft>Control.Move(9900,-1)</onleft>

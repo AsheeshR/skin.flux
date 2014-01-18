@@ -379,7 +379,7 @@
 				<texturenofocus>osd-btn-skipfwd.png</texturenofocus>
 				<onclick>XBMC.PlayerControl(Next)</onclick>
 			</control>-->
-			<control type="button" id="909">
+<!--			<control type="button" id="909">
 				<width>60</width>
 				<height>60</height>
 				<texturefocus>osd-btn-rec-focus.png</texturefocus>
@@ -394,7 +394,7 @@
 				<texturenofocus>osd-btn-rec-recording.png</texturenofocus>
 				<onclick>PlayerControl(record)</onclick>
 				<visible>Player.CanRecord + Player.Recording</visible>
-			</control>
+			</control>-->
 <!--			<control type="button" id="208">
 				<description>DVD Menu</description>
 				<width>60</width>
@@ -412,7 +412,7 @@
 				<texturefocus>osd-btn-subtitle-focus.png</texturefocus>
 				<onclick>Dialog.Close(VideoOSD)</onclick>
 				<onclick>XBMC.RunScript($INFO[Skin.String(osd-subscriptpath)])</onclick>
-				<visible>Skin.HasSetting(osd-subtitles)</visible>
+				<!--<visible>Skin.HasSetting(osd-subtitles)</visible>-->
 			</control>
 <!--			<control type="image" id="940">
 				<description>Dummy</description>

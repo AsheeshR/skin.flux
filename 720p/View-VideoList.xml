@@ -53,6 +53,7 @@
 					<width>32</width>
 					<height>32</height>
 					<texture>$VAR[Overlay]</texture>
+					<!--<texture>flux-logo-big.png</texture>-->
 					<visible>Skin.HasSetting(watched-overlay) + !IsEmpty(ListItem.Title)</visible>
 				</control>
 				<control type="group">
@@ -411,8 +412,8 @@
 							<posy>120</posy>
 							<width>318</width>
 							<height>318</height>
-			<!--				<texture fallback="DefaultVideo.png" background="true" diffuse="mask-rect.png">$INFO[ListItem.Icon]</texture>-->
-							<texture fallback="DefaultVideo.png" background="true" diffuse="dark-red.png">flux-logo-big.png</texture>
+							<texture fallback="DefaultVideo.png" background="true" diffuse="mask-rect.png">$INFO[ListItem.Icon]</texture>
+			<!--				<texture fallback="DefaultVideo.png" background="true" diffuse="dark-red.png">flux-logo-big.png</texture>-->
 							<aspectratio>keep</aspectratio>
 						</control>
 						<control type="image">
@@ -421,8 +422,8 @@
 							<posy>438</posy>
 							<width>318</width>
 							<height>318</height>
-							<!--<texture fallback="DefaultVideo.png" background="true" flipy="true" diffuse="mask-fade.png">$INFO[ListItem.Icon]</texture>-->
-							<texture fallback="DefaultVideo.png" background="true" flipy="true" diffuse="dark-red.png">flux-logo-big.png</texture>
+							<!--<texture fallback="DefaultVideo.png" background="true" flipy="true" diffuse="mask-fade.png">$INFO[ListItem.Icon]</texture>-->-->
+						<!--	<texture fallback="DefaultVideo.png" background="true" flipy="true" diffuse="dark-red.png">flux-logo-big.png</texture>-->
 							<aspectratio>keep</aspectratio>
 						</control>
 					</control>
@@ -435,7 +436,7 @@
 							<width>318</width>
 							<height>318</height>
 							<!--<texture>DefaultVideo.png</texture>-->
-							<texture>flux-logo-big.png</texture>
+							<texture>icon-video-sml.png</texture>
 							<aspectratio>keep</aspectratio>
 						</control>
 						<control type="image">
@@ -444,8 +445,8 @@
 							<posy>438</posy>
 							<width>318</width>
 							<height>318</height>
-							<!--<texture flipy="true" diffuse="mask-fade.png">DefaultVideo.png</texture>-->
-							<texture flipy="true" diffuse="mask-fade.png">flux-logo-big.png</texture>
+							<texture flipy="true" diffuse="mask-fade.png">DefaultVideo.png</texture>
+							<!--<texture flipy="true" diffuse="mask-fade.png">flux-logo-big.png</texture>-->
 							<aspectratio>keep</aspectratio>
 						</control>
 					</control>

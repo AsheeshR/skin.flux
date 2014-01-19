@@ -50,7 +50,7 @@
 				<width>580</width>
 				<height>550</height>
 				<onup>8999</onup>
-				<ondown>15</ondown>
+				<ondown>20</ondown>
 				<viewtype label="List">list</viewtype>
 				<scrolltime>220</scrolltime>
 				<itemlayout width="560" height="50">

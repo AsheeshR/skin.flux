@@ -280,8 +280,10 @@
 				<posy>2</posy>
 				<width>354</width>
 				<height>60</height>
-				<texture diffuse="mask-squ.png">maroon.png</texture>
-				<bordertexture border="8">dark-red.png</bordertexture>
+				<!--<texture diffuse="mask-squ.png">dark-red.png</texture>
+				<bordertexture border="8">maroon.png</bordertexture>-->
+				<texture>dark-red.png</texture>
+				<colordiffuse>osd-background</colordiffuse>
 				<bordersize>5</bordersize>
 			</control>
 			<control type="label">
@@ -319,21 +321,23 @@
 			<control type="progress">
 				<description>Progressbar Cache</description>
 				<posx>18</posx>
-				<posy>46</posy>
+				<posy>30</posy>
 				<width>300</width>
 				<height>8</height>
 				<info>Player.ProgressCache</info>
-				<colordiffuse>FFFFE6B3</colordiffuse>
+				<visible>true</visible>
+				<colordiffuse>FF777777</colordiffuse>
 			</control>
 			<control type="progress">
 				<description>Progressbar</description>
+				<visible>true</visible>
 				<posx>18</posx>
-				<posy>46</posy>
+				<posy>30</posy>
 				<width>300</width>
 				<height>8</height>
+				<visible>true</visible>
 				<info>Player.Progress</info>
-				<textcolor>info-text</textcolor>
-				<colordiffuse>info-text</colordiffuse>
+				<colordiffuse>ProgressBarColor</colordiffuse>
 			</control>
 		</control>
 	</controls>

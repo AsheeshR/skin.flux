@@ -87,7 +87,7 @@
 				<visible>ControlGroup(9100).HasFocus()</visible>
 				<control type="image">
 					<posx>560</posx>
-					<posy>55</posy>
+					<posy>75</posy>
 					<width>160</width>
 					<height>160</height>
 					<texture>english.png</texture>			
@@ -106,7 +106,7 @@
 				<control type="group">
 					<control type="image">
 						<posx>560</posx>
-						<posy>55</posy>
+						<posy>75</posy>
 						<width>160</width>
 						<height>160</height>
 						<texture>hindi.png</texture>
@@ -127,7 +127,7 @@
 				<control type="group">
 					<control type="image">
 						<posx>560</posx>
-						<posy>55</posy>
+						<posy>75</posy>
 						<width>160</width>
 						<height>160</height>
 						<texture>math.png</texture>
@@ -148,7 +148,7 @@
 				<control type="group">
 					<control type="image">
 						<posx>560</posx>
-						<posy>55</posy>
+						<posy>75</posy>
 						<width>160</width>
 						<height>160</height>
 						<texture>computers.png</texture>
@@ -168,7 +168,7 @@
 				<visible>ControlGroup(9300).HasFocus()</visible> <!--Changed-->
 				<control type="image">
 					<posx>560</posx>
-					<posy>55</posy>
+					<posy>75</posy>
 					<width>160</width>
 					<height>160</height>
 					<texture>icon-settings.png</texture>

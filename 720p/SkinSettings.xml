@@ -157,7 +157,7 @@
 				<textoffsetx>18</textoffsetx>
 				<onfocus>Skin.SetString(skinsettingmenu,support)</onfocus>
 				<onup>987</onup>
-				<ondown>981</ondown>
+				<ondown>20</ondown>
 				<onleft>800</onleft>
 				<onright>1223</onright>
 				<aligny>center</aligny>
@@ -212,7 +212,7 @@
 					<height>542</height>
 					<itemgap>-2</itemgap>
 					<onup>101</onup>
-					<ondown>101</ondown>
+					<ondown>20</ondown>
 					<onleft>1223</onleft>
 					<onright>999</onright>
 					<pagecontrol>1223</pagecontrol>
@@ -304,7 +304,7 @@
 					<height>542</height>
 					<itemgap>-2</itemgap>
 					<onup>200</onup>
-					<ondown>200</ondown>
+					<ondown>20</ondown>
 					<onleft>1223</onleft>
 					<onright>999</onright>
 					<pagecontrol>1223</pagecontrol>
@@ -522,7 +522,7 @@
 					<height>542</height>
 					<itemgap>-2</itemgap>
 					<onup>301</onup>
-					<ondown>301</ondown>
+					<ondown>20</ondown>
 					<onleft>1223</onleft>
 					<onright>999</onright>
 					<pagecontrol>1223</pagecontrol>
@@ -1012,7 +1012,7 @@
 					<height>542</height>
 					<itemgap>-2</itemgap>
 					<onup>401</onup>
-					<ondown>401</ondown>
+					<ondown>20</ondown>
 					<onleft>1223</onleft>
 					<onright>999</onright>
 					<pagecontrol>1223</pagecontrol>
@@ -1307,7 +1307,7 @@
 					<height>542</height>
 					<itemgap>-2</itemgap>
 					<onup>501</onup>
-					<ondown>501</ondown>
+					<ondown>20</ondown>
 					<onleft>1223</onleft>
 					<onright>999</onright>
 					<pagecontrol>1223</pagecontrol>
@@ -1416,7 +1416,7 @@
 					<height>540</height>
 					<itemgap>-2</itemgap>
 					<onup>801</onup>
-					<ondown>801</ondown>
+					<ondown>20</ondown>
 					<onleft>1223</onleft>
 					<onright>999</onright>
 					<pagecontrol>1223</pagecontrol>
@@ -1448,7 +1448,7 @@
 					<control type="image" id="805">
 						<description>Separator Image</description>
 						<width>885</width>
-						<height>6</height>
+						<height>3</height>
 						<texture>separator.png</texture>
 					</control>
 					<control type="radiobutton" id="806">
@@ -1480,7 +1480,7 @@
 					<control type="image" id="808">
 						<description>Separator Image</description>
 						<width>885</width>
-						<height>6</height>
+						<height>3</height>
 						<texture>separator.png</texture>
 					</control>
 					<control type="button" id="809">
@@ -1495,6 +1495,81 @@
 						<textoffsetx>35</textoffsetx>
 					</control>
 				</control>
+			</control>
+		</control>
+
+		<!-- back button -->
+		<control type="group" >
+			<posx>20</posx>
+			<posy>55r</posy>
+			<animation effect="fade" time="250" condition="Window.Previous(Home)">WindowOpen</animation>
+			<animation effect="fade" time="250" condition="Window.Next(Home)">WindowClose</animation>
+			<!--<visible>system.getbool(input.enablemouse)</visible>-->
+			<visible>true</visible>
+			<control type="button" id="15">
+				<description>Back push button</description>
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>45</width>
+				<height>45</height>
+				<label>back button</label>
+				<font>-</font>
+				<aligny>-</aligny>
+				<onclick>back</onclick>
+				<!--<texturefocus border="5">floor_buttonFO.png</texturefocus>
+				<texturenofocus border="5">floor_button.png</texturenofocus>-->
+				<texturefocus>button-focussed.png</texturefocus>
+				<texturenofocus border="5">darkred.png</texturenofocus>	
+				<onleft>15</onleft>
+				<onright>20</onright>
+				<onup>988</onup>
+				<ondown>988</ondown>
+			</control>
+			<control type="image">
+				<description>Back Icon</description>
+				<posx>5</posx>
+				<posy>5</posy>
+				<width>35</width>
+				<height>35</height>
+				<aspectratio>keep</aspectratio>
+				<texture>icon_back.png</texture>
+			</control>
+		</control>
+		<!--home button-->
+		<control type="group" >
+			<posx>75</posx>
+			<posy>55r</posy>
+			<animation effect="fade" time="250" condition="Window.Previous(Home)">WindowOpen</animation>
+			<animation effect="fade" time="250" condition="Window.Next(Home)">WindowClose</animation>
+			<!--<visible>system.getbool(input.enablemouse)</visible>-->
+			<visible>true</visible>
+			<control type="button" id="20">
+				<description>Home push button</description>
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>45</width>
+				<height>45</height>
+				<label>31003</label>
+				<font>-</font>
+				<aligny>-</aligny>
+				<onclick>ActivateWindow(home)</onclick>
+				<!--<texturefocus border="5">floor_buttonFO.png</texturefocus>
+				<texturenofocus border="5">floor_button.png</texturenofocus>-->
+				<texturefocus>button-focussed.png</texturefocus>
+				<texturenofocus border="5">darkred.png</texturenofocus>	
+				<onleft>15</onleft>
+				<onright>20</onright>
+				<onup>988</onup>
+				<ondown>988</ondown>
+			</control>
+			<control type="image">
+				<description>Home Icon</description>
+				<posx>5</posx>
+				<posy>5</posy>
+				<width>35</width>
+				<height>35</height>
+				<aspectratio>keep</aspectratio>
+				<texture>icon_home.png</texture>
 			</control>
 		</control>
 	</controls>

@@ -397,6 +397,8 @@
 			<visible>true</visible>
 			<control type="button" id="20">
 				<description>Home push button</description>
+				<posx>0</posx>
+				<posy>0</posy>
 				<width>45</width>
 				<height>45</height>
 				<label>31003</label>

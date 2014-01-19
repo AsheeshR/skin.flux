@@ -42,7 +42,7 @@
 			<onleft>9000</onleft>
 			<onright>23</onright>
 			<onup>50</onup>
-			<ondown>15</ondown>
+			<ondown>20</ondown>
 			<scrolltime>200</scrolltime>
 			<preloaditems>2</preloaditems>
 			<pagecontrol>23</pagecontrol>

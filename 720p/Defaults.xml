@@ -177,11 +177,11 @@
 		<posy>335</posy>
 		<width>500</width>
 		<height>56</height>
-		<textureradiofocus>check-box.png</textureradiofocus>
-		<textureradionofocus>check-boxnf.png</textureradionofocus>
+		<textureradiofocus>radiobutton-nofocus.png</textureradiofocus>
+		<textureradionofocus>radiobutton-focus.png</textureradionofocus>
 		<texturefocus border="7">default-button.png</texturefocus>
-		<textureradioon>check-box.png</textureradioon>
-		<textureradiooff>check-boxnf.png</textureradiooff>
+		<textureradioon>radiobutton-focus.png</textureradioon>
+		<textureradiooff>radiobutton-nofocus.png</textureradiooff>
 		<label>215</label>
 		<font>font13</font>
 		<textcolor>button-text</textcolor>

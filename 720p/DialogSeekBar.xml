@@ -270,8 +270,9 @@
 			</control>
 		</control>
 		<!-- Start Progress Control for all Windows Except VideoFullScreen , KaraokeVisualisation, MusicVisualisation, MyMusicPlaylist and PlayerControls-->
-		<control type="group">
+		<control type="group" >
 			<visible>![Window.IsActive(FullscreenVideo) | Window.IsActive(karaoke) | Window.IsActive(Visualisation) | Window.IsActive(musicplaylist) | Window.IsActive(PlayerControls)]</visible>
+			<!--<animation effect="fade" start="20" end="100" delay="2000" time="1000">WindowOpen</animation>-->
 			<posx>463</posx>
 			<posy>-640</posy>
 			<control type="image">
@@ -279,10 +280,12 @@
 				<posx>0</posx>
 				<posy>2</posy>
 				<width>354</width>
-				<height>60</height>
+				<height>65</height>
 				<!--<texture diffuse="mask-squ.png">dark-red.png</texture>
 				<bordertexture border="8">maroon.png</bordertexture>-->
 				<texture>dark-red.png</texture>
+				<bordertexture border="3">maroon.png</bordertexture>
+				<bordersize>3</bordersize>
 				<colordiffuse>osd-background</colordiffuse>
 				<bordersize>5</bordersize>
 			</control>
@@ -321,7 +324,7 @@
 			<control type="progress">
 				<description>Progressbar Cache</description>
 				<posx>18</posx>
-				<posy>30</posy>
+				<posy>45</posy>
 				<width>300</width>
 				<height>8</height>
 				<info>Player.ProgressCache</info>
@@ -330,7 +333,7 @@
 			<control type="progress">
 				<description>Progressbar</description>
 				<posx>18</posx>
-				<posy>30</posy>
+				<posy>45</posy>
 				<width>300</width>
 				<height>8</height>
 				<info>Player.Progress</info>

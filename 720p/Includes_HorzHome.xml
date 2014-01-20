@@ -85,6 +85,7 @@
 			<!-- English menu -->
 			<control type="group">
 				<visible>ControlGroup(9100).HasFocus()</visible>
+				<animation effect="fade" time="1000" condition="ControlGroup(9100).HasFocus()" start="20" end="100">Conditional</animation> 
 				<control type="image">
 					<posx>560</posx>
 					<posy>75</posy>
@@ -103,6 +104,7 @@
 			<!-- Hindi menu -->
 			<control type="group" id="9155">
 				<visible>ControlGroup(9150).HasFocus() | Control.HasFocus(9160)</visible>
+				<animation effect="fade" time="1000" condition="ControlGroup(9150).HasFocus()" start="20" end="100">Conditional</animation> 
 				<control type="group">
 					<control type="image">
 						<posx>560</posx>
@@ -124,6 +126,7 @@
 			<!-- Math menu -->
 			<control type="group" id="9205">
 				<visible>ControlGroup(9200).HasFocus() | Control.HasFocus(9210)</visible>
+				<animation effect="fade" time="1000" condition="ControlGroup(9200).HasFocus()" start="20" end="100">Conditional</animation> 
 				<control type="group">
 					<control type="image">
 						<posx>560</posx>
@@ -145,6 +148,7 @@
 			<!-- Computers menu -->
 			<control type="group" id="9255">
 				<visible>ControlGroup(9250).HasFocus() | Control.HasFocus(9260)</visible>
+				<animation effect="fade" time="1000" condition="ControlGroup(9250).HasFocus()" start="20" end="100">Conditional</animation> 	
 				<control type="group">
 					<control type="image">
 						<posx>560</posx>
@@ -166,6 +170,7 @@
 			<!-- Settings icons -->
 			<control type="group" id="9305"> <!--Changed-->
 				<visible>ControlGroup(9300).HasFocus()</visible> <!--Changed-->
+				<animation effect="fade" time="1000" condition="ControlGroup(9300).HasFocus()" start="20" end="100">Conditional</animation> 
 				<control type="image">
 					<posx>560</posx>
 					<posy>75</posy>
@@ -295,7 +300,7 @@
 			
 			<!-- English Sub Menu -->
 			<control type="grouplist" id="9100">
-				<animation condition="!ControlGroup(9100).HasFocus()" effect="fade" start="100" end="0">Conditional</animation>
+				<animation condition="!ControlGroup(9100).HasFocus()" effect="fade" start="100" end="0" time="300">Conditional</animation>
 				<width>210</width>
 				<height>306</height>
 <!--				<onup>noop</onup>-->
@@ -356,7 +361,7 @@
 
 			<!-- Hindi Sub Menu -->
 			<control type="grouplist" id="9150">
-				<animation condition="!ControlGroup(9150).HasFocus() + !Control.HasFocus(9160)" effect="fade" start="100" end="0">Conditional</animation>
+				<animation condition="!ControlGroup(9150).HasFocus() + !Control.HasFocus(9160)" effect="fade" start="100" end="0" time="300">Conditional</animation>
 				<width>210</width>
 				<height>306</height>
 				<onup>9155</onup>
@@ -421,7 +426,7 @@
 			</control>
 			<!-- Maths Sub Menu -->
 			<control type="grouplist" id="9200">
-				<animation condition="!ControlGroup(9200).HasFocus() + !Control.HasFocus(9210)" effect="fade" start="100" end="0">Conditional</animation>
+				<animation condition="!ControlGroup(9200).HasFocus() + !Control.HasFocus(9210)" effect="fade" start="100" end="0" time="300">Conditional</animation>
 				<width>210</width>
 				<height>306</height>
 				<onup>9205</onup>
@@ -485,7 +490,7 @@
 			</control>
 			<!-- Computers Sub menu -->
 			<control type="grouplist" id="9250">
-				<animation condition="!ControlGroup(9250).HasFocus() + !Control.HasFocus(9260)" effect="fade" start="100" end="0">Conditional</animation>
+				<animation condition="!ControlGroup(9250).HasFocus() + !Control.HasFocus(9260)" effect="fade" start="100" end="0" time="300">Conditional</animation>
 				<width>210</width>
 				<height>306</height>
 				<onup>9255</onup>
@@ -548,7 +553,7 @@
 			
 	 		<!-- Settings Sub menu -->
 			<control type="grouplist" id="9300">
-				<animation condition="!ControlGroup(9300).HasFocus()" effect="fade" start="100" end="0">Conditional</animation>
+				<animation condition="!ControlGroup(9300).HasFocus()" effect="fade" start="100" end="0" time="300">Conditional</animation>
 				<width>210</width>
 				<height>306</height>
 				<onup>9305</onup>

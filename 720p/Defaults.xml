@@ -74,6 +74,15 @@
 		<pauseatend>4000</pauseatend>
 		<scrollsuffix> • </scrollsuffix>
 	</default>
+	<default type="progress">
+		<posx>100</posx>
+		<posy>325</posy>
+		<texturebg border="6,0,6,0">OSDProgressBack.png</texturebg>
+		<lefttexture>-</lefttexture>
+		<midtexture border="6,0,6,0">OSDProgressMid.png</midtexture>
+		<righttexture>-</righttexture>
+		<overlaytexture>-</overlaytexture>
+	</default>
 	<default type="textbox">
 		<posx>389</posx>
 		<posy>412</posy>

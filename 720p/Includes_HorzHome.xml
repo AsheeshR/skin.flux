@@ -60,7 +60,7 @@
 		<!-- Show time on home screen -->
 		<control type="label">
 			<description>Time and Date</description>
-			<posx>1150</posx>
+			<posx>1130</posx>
 			<posy>10</posy>
 			<width>150</width>
 			<height>50</height>

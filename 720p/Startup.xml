@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <window>
-	<defaultcontrol always="true">10</defaultcontrol>
+        <defaultcontrol always="true">10</defaultcontrol>
 	<controls>
 		<control type="image">
 			<description>solid background</description>
@@ -11,20 +11,24 @@
 			<texture>dark-red.png</texture>
 		</control>
 		<control type="button" id="10">
-			<description>Play the startup video if required</description>
+			<description>To start the home screen</description>
 			<posx>-12</posx>
 			<posy>-12</posy>
 			<width>1</width>
 			<height>1</height>
-			<onfocus condition="Skin.HasSetting(intro-vid)">PlayMedia($ESCINFO[Skin.String(intro-vid-location)])</onfocus>
+			<!--<onfocus condition="Skin.HasSetting(intro-vid)">PlayMedia($ESCINFO[Skin.String(intro-vid-location)])</onfocus>-->
 			<onfocus>ReplaceWindow(Home)</onfocus>
 			<texturenofocus>-</texturenofocus>
 			<texturefocus>-</texturefocus>
-			<animation effect="fade" delay="1000" end="100">Focus</animation>
+			<animation effect="fade" delay="4000" end="100">Focus</animation> <!-- This delay controls entire display-->
+			<animation effect="fade" delay="1000" end="100">WindowClose</animation> <!-- This delay extends the display time-->
 		</control>
+
+		<!-- Animation Sequence Starts Here-->
+
 		<control type="group">
-			<visible>!Skin.HasSetting(intro-vid)</visible>
-			<!--<animation effect="fade" end="0" delay="1500" time="500">WindowClose</animation>-->
+       			<animation effect="fade" start="20" delay="500" time="1000">WindowOpen</animation>
+			<animation effect="fade" end="0" delay="500" time="500">WindowClose</animation>
 			<control type="image">
 				<description>LumenEd Logo</description>
 				<posx>384</posx>
@@ -35,9 +39,23 @@
 				<texture>lumened-logo.png</texture>
 			</control>
 		</control>
+
 		<control type="group">
-		        <animation effect="fade" start="20" delay="500" time="500" pulse="true">WindowOpen</animation>
-		        <animation effect="fade" start="100" delay="1000" time="500" pulse="true">WindowClose</animation>
+		        <animation effect="fade" start="100" end="100" delay="0" time="0" pulse="true">WindowOpen</animation> <!-- First-->
+			<animation effect="fade" end="0" delay="500" time="500">WindowClose</animation> <!--Last-->
+			<control type="image">
+				<description>Flux Logo</description>
+				<posx>600</posx>
+				<posy>550</posy>
+				<width>100</width>
+				<height>100</height>
+				<aspectratio>keep</aspectratio>
+				<texture diffuse="dark-red.png">flux-logo-big.png</texture>
+			</control>
+		</control>
+		<control type="group">
+       		        <animation effect="fade" start="100" end="100" delay="2000" time="0" pulse="true">WindowOpen</animation> <!--Second-->
+			<animation effect="fade" end="0" delay="500" time="500">WindowClose</animation> <!--Last-->
 			<control type="image">
 				<description>Flux Logo</description>
 				<posx>600</posx>
@@ -48,17 +66,5 @@
 				<texture>flux-logo-big.png</texture>
 			</control>
 		</control>
-		<!--<control type="group">
-			<animation effect="fade" end="0" delay="1600" time="400">WindowClose</animation>
-			<control type="image">
-				<description>Flux Logo</description>
-				<posx>600</posx>
-				<posy>550</posy>
-				<width>100</width>
-				<height>100</height>
-				<aspectratio>keep</aspectratio>
-				<texture>flux-logo-big.png</texture>
-			</control>
-		</control>-->
 	</controls>
 </window>

@@ -34,6 +34,7 @@
 			<height>31</height>
 			<label>31558</label>
 			<align>center</align>
+			<aligny>center</aligny>
 			<font>font13</font>
 		</control>
 		<control type="image">
@@ -60,7 +61,7 @@
 				<width>360</width>
 				<height>50</height>
 				<align>center</align>
-				<aligny>top</aligny>
+				<aligny>center</aligny>
 				<textoffsety>6</textoffsety>
 				<textwidth>330</textwidth>
 				<onclick>XBMC.Quit()</onclick>
@@ -73,7 +74,7 @@
 				<width>360</width>
 				<height>50</height>
 				<align>center</align>
-				<aligny>top</aligny>
+				<aligny>center</aligny>
 				<textoffsety>6</textoffsety>
 				<textwidth>330</textwidth>
 				<onclick>XBMC.Powerdown()</onclick>
@@ -86,7 +87,7 @@
 				<width>360</width>
 				<height>50</height>
 				<align>center</align>
-				<aligny>top</aligny>
+				<aligny>center</aligny>
 				<textoffsety>6</textoffsety>
 				<textwidth>330</textwidth>
 				<onclick>XBMC.Suspend()</onclick>
@@ -99,7 +100,7 @@
 				<width>360</width>
 				<height>50</height>
 				<align>center</align>
-				<aligny>top</aligny>
+				<aligny>center</aligny>
 				<textoffsety>6</textoffsety>
 				<textwidth>330</textwidth>
 				<onclick>XBMC.Hibernate()</onclick>
@@ -112,7 +113,7 @@
 				<width>360</width>
 				<height>50</height>
 				<align>center</align>
-				<aligny>top</aligny>
+				<aligny>center</aligny>
 				<textoffsety>6</textoffsety>
 				<textwidth>330</textwidth>
 				<onclick>XBMC.Reset()</onclick>
@@ -127,7 +128,7 @@
 				<label>20046</label>
 				<altlabel>20045</altlabel>
 				<align>center</align>
-				<aligny>top</aligny>
+				<aligny>center</aligny>
 				<textoffsety>6</textoffsety>
 				<textwidth>330</textwidth>
 				<usealttexture>!System.IsMaster</usealttexture>
@@ -140,7 +141,7 @@
 				<width>360</width>
 				<height>50</height>
 				<align>center</align>
-				<aligny>top</aligny>
+				<aligny>center</aligny>
 				<textoffsety>6</textoffsety>
 				<textwidth>330</textwidth>
 				<onclick>XBMC.InhibitIdleShutdown(true)</onclick>
@@ -153,7 +154,7 @@
 				<width>360</width>
 				<height>50</height>
 				<align>center</align>
-				<aligny>top</aligny>
+				<aligny>center</aligny>
 				<textoffsety>6</textoffsety>
 				<textwidth>330</textwidth>
 				<onclick>XBMC.InhibitIdleShutdown(false)</onclick>

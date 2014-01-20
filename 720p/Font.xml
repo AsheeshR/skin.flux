@@ -3,42 +3,42 @@
 	<fontset id="Default" idloc="31575" unicode="true">
 		<font>
 			<name>rss20</name>
-			<filename>mangal.ttf</filename>
+			<filename>chandas.ttf</filename>
 			<size>21</size>
 		</font>
 		<font>
 			<name>font11</name>
-			<filename>mangal.ttf</filename>
+			<filename>chandas.ttf</filename>
 			<size>22</size>
 		</font>
 		<font>
 			<name>font12</name>
-			<filename>mangal.ttf</filename>
+			<filename>chandas.ttf</filename>
 			<size>23</size>
 		</font>
 		<font>
 			<name>font13</name>
-			<filename>mangal.ttf</filename>
+			<filename>chandas.ttf</filename>
 			<size>25</size>
 		</font>
 		<font>
 			<name>font18</name>
-			<filename>mangal.ttf</filename>
+			<filename>chandas.ttf</filename>
 			<size>31</size>
 		</font>
 		<font>
 			<name>font20</name>
-			<filename>mangal.ttf</filename>
+			<filename>chandas.ttf</filename>
 			<size>36</size>
 		</font>
 		<font>
 			<name>font22</name>
-			<filename>mangal.ttf</filename>
+			<filename>chandas.ttf</filename>
 			<size>38</size>
 		</font>
 		<font>
 			<name>font28</name>
-			<filename>mangal.ttf</filename>
+			<filename>chandas.ttf</filename>
 			<size>48</size>
 		</font>
 	</fontset>

@@ -301,7 +301,7 @@
 <!--				<onup>noop</onup>-->
 				<onup>9105</onup>	
 				<ondown>20</ondown>
-
+				
 				<control type="button" id="9120">
 					<width>210</width>
 					<height>46</height>
@@ -318,7 +318,7 @@
 					<onright>9150</onright>
 
 					<align>center</align>
-					<aligny>top</aligny>
+					<aligny>center</aligny>
 				</control>
 				<control type="button" id="9122">
 					<width>210</width>
@@ -334,7 +334,7 @@
 					<onright>9150</onright>
 
 					<align>center</align>
-					<aligny>top</aligny>
+					<aligny>center</aligny>
 				</control>
 				<control type="button" id="9124">
 					<width>210</width>
@@ -350,7 +350,7 @@
 					<onright>9150</onright>
 
 					<align>center</align>
-					<aligny>top</aligny>
+					<aligny>center</aligny>
 				</control>
 			</control>
 
@@ -378,7 +378,7 @@
 					<onright>9200</onright>
 
 					<align>center</align>
-					<aligny>top</aligny>
+					<aligny>center</aligny>
 				</control>
 
 				<control type="button" id="9172">
@@ -397,7 +397,7 @@
 					<onright>9200</onright>
 
 					<align>center</align>
-					<aligny>top</aligny>
+					<aligny>center</aligny>
 				</control>
 
 				<control type="button" id="9174">
@@ -416,7 +416,7 @@
 					<onright>9200</onright>
 
 					<align>center</align>
-					<aligny>top</aligny>
+					<aligny>center</aligny>
 				</control>
 			</control>
 			<!-- Maths Sub Menu -->
@@ -440,7 +440,7 @@
 					<onright>Control.Move(9900,1)</onright>
 					<onright>9250</onright>
 					<align>center</align>
-					<aligny>top</aligny>
+					<aligny>center</aligny>
 <!--					<visible>System.GetBool(pvrmanager.enabled)</visible>-->
 					<visible>true</visible>
 				</control>
@@ -459,7 +459,7 @@
 					<onright>Control.Move(9900,1)</onright>
 					<onright>9250</onright>
 					<align>center</align>
-					<aligny>top</aligny>
+					<aligny>center</aligny>
 <!--					<visible>System.GetBool(pvrmanager.enabled)</visible>-->
 					<visible>true</visible>
 				</control>
@@ -478,7 +478,7 @@
 					<onright>Control.Move(9900,1)</onright>
 					<onright>9250</onright>
 					<align>center</align>
-					<aligny>top</aligny>
+					<aligny>center</aligny>
 <!--					<visible>System.GetBool(pvrmanager.enabled)</visible>-->
 					<visible>true</visible>
 				</control>
@@ -505,7 +505,7 @@
 					<onright>Control.Move(9900,1)</onright>
 					<onright>9300</onright>
 					<align>center</align>
-					<aligny>top</aligny>
+					<aligny>center</aligny>
 					<visible>true</visible>
 				</control>
 
@@ -523,7 +523,7 @@
 					<onright>Control.Move(9900,1)</onright>
 					<onright>9300</onright>
 					<align>center</align>
-					<aligny>top</aligny>
+					<aligny>center</aligny>
 					<visible>true</visible>
 				</control>	
 
@@ -541,7 +541,7 @@
 					<onright>Control.Move(9900,1)</onright>
 					<onright>9300</onright>
 					<align>center</align>
-					<aligny>top</aligny>
+					<aligny>center</aligny>
 					<visible>true</visible>
 				</control>
 			</control>
@@ -566,7 +566,7 @@
 					<onright>Control.Move(9900,1)</onright>
 					<onright>9100</onright>
 					<align>center</align>
-					<aligny>top</aligny>
+					<aligny>center</aligny>
 				</control>
 				<control type="button" id="9322">
 					<width>210</width>
@@ -581,7 +581,7 @@
 					<onright>Control.Move(9900,1)</onright>
 					<onright>9100</onright>
 					<align>center</align>
-					<aligny>top</aligny>
+					<aligny>center</aligny>
 				</control>
 			</control>
 		</control>

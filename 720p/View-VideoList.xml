@@ -435,7 +435,7 @@
 							<width>318</width>
 							<height>318</height>
 							<!--<texture>DefaultVideo.png</texture>-->
-							<texture>flux-logo-big.png</texture>
+							<!--<texture>flux-logo-big.png</texture>-->
 							<aspectratio>keep</aspectratio>
 						</control>
 						<control type="image">

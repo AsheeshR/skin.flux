@@ -262,6 +262,7 @@
 					<item id="1">
 						<description>English</description>
 						<label>31040</label>
+						<animation condition="ControlGroup(9100).HasFocus() + !Control.HasFocus(9110)" effect="fade" start="20" end="100" time="500">Conditional</animation>
 						<onclick>Control.SetFocus(9100)</onclick>
 					</item>
 					<item id="2">
@@ -300,7 +301,8 @@
 			
 			<!-- English Sub Menu -->
 			<control type="grouplist" id="9100">
-				<animation condition="!ControlGroup(9100).HasFocus()" effect="fade" start="100" end="0" time="300">Conditional</animation>
+				<animation condition="ControlGroup(9100).HasFocus() + !Control.HasFocus(9110)" effect="fade" start="20" end="100" time="500">Conditional</animation>	
+				<animation condition="!ControlGroup(9100).HasFocus() + !Control.HasFocus(9110)" effect="fade" start="100" end="0" time="300">Conditional</animation>
 				<width>210</width>
 				<height>306</height>
 <!--				<onup>noop</onup>-->
@@ -361,6 +363,7 @@
 
 			<!-- Hindi Sub Menu -->
 			<control type="grouplist" id="9150">
+				<animation condition="ControlGroup(9150).HasFocus() + !Control.HasFocus(9160)" effect="fade" start="20" end="100" time="500">Conditional</animation>
 				<animation condition="!ControlGroup(9150).HasFocus() + !Control.HasFocus(9160)" effect="fade" start="100" end="0" time="300">Conditional</animation>
 				<width>210</width>
 				<height>306</height>
@@ -426,6 +429,7 @@
 			</control>
 			<!-- Maths Sub Menu -->
 			<control type="grouplist" id="9200">
+				<animation condition="ControlGroup(9200).HasFocus() + !Control.HasFocus(9210)" effect="fade" start="20" end="100" time="500">Conditional</animation>
 				<animation condition="!ControlGroup(9200).HasFocus() + !Control.HasFocus(9210)" effect="fade" start="100" end="0" time="300">Conditional</animation>
 				<width>210</width>
 				<height>306</height>
@@ -490,6 +494,7 @@
 			</control>
 			<!-- Computers Sub menu -->
 			<control type="grouplist" id="9250">
+				<animation condition="ControlGroup(9250).HasFocus() + !Control.HasFocus(9260)" effect="fade" start="20" end="100" time="500">Conditional</animation>	
 				<animation condition="!ControlGroup(9250).HasFocus() + !Control.HasFocus(9260)" effect="fade" start="100" end="0" time="300">Conditional</animation>
 				<width>210</width>
 				<height>306</height>
@@ -553,7 +558,8 @@
 			
 	 		<!-- Settings Sub menu -->
 			<control type="grouplist" id="9300">
-				<animation condition="!ControlGroup(9300).HasFocus()" effect="fade" start="100" end="0" time="300">Conditional</animation>
+				<animation condition="ControlGroup(9300).HasFocus() + !Control.HasFocus(9310)" effect="fade" start="20" end="100" time="500">Conditional</animation>	
+				<animation condition="!ControlGroup(9300).HasFocus() + !Control.HasFocus(9310)" effect="fade" start="100" end="0" time="300">Conditional</animation>
 				<width>210</width>
 				<height>306</height>
 				<onup>9305</onup>

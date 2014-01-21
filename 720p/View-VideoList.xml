@@ -404,14 +404,16 @@
 				</animation>
 				<control type="group">
 					<visible>!Container.Content(movies) + !Container.Content(tvshows) + !Container.Content(seasons) + !Container.Content(episodes) + !Container.Content(musicvideos) + !Container.Content(studios) + !Window.IsVisible(progressdialog)</visible>
-					<control type="group">
+					<control type="group" id="2000">
 						<visible>!SubString(ListItem.Icon,DefaultFolder.png,Left) + !IsEmpty(ListItem.Label)</visible>
-							<control type="image">
+						<animation effect="fade" time="1000" condition="!SubString(ListItem.Icon,DefaultFolder.png,Left) + !IsEmpty(ListItem.Label)" start="20" end="100">Conditional</animation> 			
+						<control type="image" id="2001">
 							<description>list item icon</description>
 							<posx>230</posx>
 							<posy>120</posy>
 							<width>318</width>
 							<height>318</height>
+										
 							<texture fallback="DefaultVideo.png" background="true" diffuse="mask-rect.png">$INFO[ListItem.Icon]</texture>
 			<!--				<texture fallback="DefaultVideo.png" background="true" diffuse="dark-red.png">flux-logo-big.png</texture>-->
 							<aspectratio>keep</aspectratio>
@@ -429,6 +431,7 @@
 					</control>
 					<control type="group">
 						<visible>SubString(ListItem.Icon,DefaultFolder.png,Left)</visible>
+						<animation effect="fade" time="1000" condition="SubString(ListItem.Icon,DefaultFolder.png,Left)" start="20" end="100">Conditional</animation> 
 						<control type="image">
 							<description>list item icon</description>
 							<posx>230</posx>

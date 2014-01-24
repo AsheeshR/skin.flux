@@ -80,6 +80,7 @@
 			</control>
 			<control type="button" id="984">
 				<description>Background Settings Button</description>
+				<enable>false</enable> <!-- Menu option not needed -->
 				<font>font12</font>
 				<posx>940</posx>
 				<posy>273</posy>
@@ -96,6 +97,7 @@
 			</control>
 			<control type="button" id="985">
 				<description>Media Sources Settings Button</description>
+				<enable>false</enable> <!-- Menu option not needed -->
 				<font>font12</font>
 				<posx>940</posx>
 				<posy>327</posy>
@@ -112,6 +114,7 @@
 			</control>
 			<control type="button" id="987">
 				<description>Custom Settings Button</description>
+				<enable>false</enable> <!-- Menu option not needed -->
 				<posx>940</posx>
 				<posy>381</posy>
 				<width>320</width>
@@ -526,7 +529,7 @@
 					<onleft>1223</onleft>
 					<onright>999</onright>
 					<pagecontrol>1223</pagecontrol>
-					<control type="group" id="320">
+					<!--<control type="group" id="320">
 						<height>56</height>
 						<width>885</width>
 						<control type="list" id="321">
@@ -646,7 +649,7 @@
 								</item>
 							</content>
 						</control>
-					</control>
+					</control>-->
 					<control type="radiobutton" id="303">
 						<description>English On Home toggle</description>
 						<font>font12</font>
@@ -654,60 +657,60 @@
 						<label>31901</label>
 						<textwidth>750</textwidth>
 						<onclick>Skin.ToggleSetting(home-english)</onclick>
-						<selected>Skin.HasSetting(home-english)</selected> <!-- Configured from SkinSettings.xml -->
+						<selected>Skin.HasSetting(home-english)</selected> 
 						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
 						<radioposx>830</radioposx>
 					</control>
 					<control type="radiobutton" id="304">
-						<description>Movies On Home toggle</description>
+						<description>Hindi On Home toggle</description>
 						<font>font12</font>
 						<width>885</width>
 						<label>31902</label>
 						<textwidth>750</textwidth>
-						<onclick>Skin.ToggleSetting(home-movie)</onclick>
-						<selected>!Skin.HasSetting(home-movie)</selected>
+						<onclick>Skin.ToggleSetting(home-hindi)</onclick>
+						<selected>Skin.HasSetting(home-hindi)</selected>
 						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
 						<radioposx>830</radioposx>
 					</control>
 					<control type="radiobutton" id="305">
-						<description>TV Shows On Home toggle</description>
+						<description>Math On Home toggle</description>
 						<font>font12</font>
 						<width>885</width>
 						<label>31903</label>
 						<textwidth>750</textwidth>
-						<onclick>Skin.ToggleSetting(home-tv)</onclick>
-						<selected>!Skin.HasSetting(home-tv)</selected>
+						<onclick>Skin.ToggleSetting(home-math)</onclick>
+						<selected>Skin.HasSetting(home-math)</selected>
 						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
 						<radioposx>830</radioposx>
 					</control>
 					<control type="radiobutton" id="306">
-						<description>Music Videos On Home toggle</description>
+						<description>Computers On Home toggle</description>
 						<font>font12</font>
 						<width>885</width>
 						<label>31904</label>
 						<textwidth>750</textwidth>
-						<onclick>Skin.ToggleSetting(home-musicvideo)</onclick>
-						<selected>Skin.HasSetting(home-musicvideo)</selected>
+						<onclick>Skin.ToggleSetting(home-computers)</onclick>
+						<selected>Skin.HasSetting(home-computers)</selected>
 						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
 						<radioposx>830</radioposx>
 					</control>
 					<control type="radiobutton" id="307">
-						<description>Music On Home toggle</description>
+						<description>Settings On Home toggle</description>
 						<font>font12</font>
 						<width>885</width>
 						<label>31905</label>
 						<textwidth>750</textwidth>
-						<onclick>Skin.ToggleSetting(home-music)</onclick>
-						<selected>!Skin.HasSetting(home-music)</selected>
+						<onclick>Skin.ToggleSetting(home-settings)</onclick>
+						<selected>Skin.HasSetting(home-settings)</selected>
 						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
 						<radioposx>830</radioposx>
 					</control>
-					<control type="radiobutton" id="308">
+					<!--<control type="radiobutton" id="308">
 						<description>Addons On Home toggle</description>
 						<font>font12</font>
 						<width>885</width>
@@ -720,13 +723,13 @@
 						<radioposx>830</radioposx>
 					</control>
 					<control type="radiobutton" id="309">
-						<description>Pictures On Home toggle</description>
+						<description>Settings On Home toggle</description>
 						<font>font12</font>
 						<width>885</width>
 						<label>31907</label>
 						<textwidth>750</textwidth>
-						<onclick>Skin.ToggleSetting(home-photos)</onclick>
-						<selected>Skin.HasSetting(home-photos)</selected>
+						<onclick>Skin.ToggleSetting(home-settings)</onclick>
+						<selected>Skin.HasSetting(home-settings)</selected>
 						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
 						<radioposx>830</radioposx>
@@ -790,9 +793,10 @@
 						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
 						<radioposx>830</radioposx>
-					</control>
-					<control type="radiobutton" id="315">
+					</control>-->
+<!--					<control type="radiobutton" id="315">
 						<description>Shutdown From Home toggle</description>
+						<visible>false</visible>
 						<font>font12</font>
 						<width>885</width>
 						<label>31913</label>
@@ -807,6 +811,7 @@
 						<height>56</height>
 						<width>885</width>
 						<control type="list" id="317">
+						        <visible>false</visible>
 							<posx>0</posx>
 							<posy>0</posy>
 							<height>56</height>
@@ -971,7 +976,7 @@
 								</item>
 							</content>
 						</control>
-					</control>
+					</control>-->
 				</control>
 			</control>
 			<!--Background-->

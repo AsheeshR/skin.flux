@@ -243,7 +243,7 @@
     <variable name="VideoLogo">
         <value condition="!IsEmpty(ListItem.Art(clearlogo)) + [Container.Content(tvshows) | Container.Content(movies)]">$INFO[ListItem.Art(clearlogo)]</value>
         <value condition="IsEmpty(ListItem.Art(clearlogo)) + [Container.Content(tvshows) | Container.Content(movies)]">$INFO[ListItem.path,,logo.png]</value>
-		<value>blank.png</value>
+	<value>blank.png</value>
     </variable>
     <variable name="ListViewVideoLogo">
         <value condition="!IsEmpty(ListItem.Art(clearlogo)) + [Container.Content(tvshows) | Container.Content(seasons) | Container.Content(movies)]">$INFO[ListItem.Art(clearlogo)]</value>
@@ -258,6 +258,6 @@
         <value condition="StringCompare(Skin.String(home-quitaction),$LOCALIZE[13010])">XBMC.hibernate()</value>
         <value condition="StringCompare(Skin.String(home-quitaction),$LOCALIZE[13011])">XBMC.suspend()</value>
         <value condition="StringCompare(Skin.String(home-quitaction),$LOCALIZE[31558])">ActivateWindow(shutdownmenu)</value>
-		<value>XBMC.quit()</value>
+	<value>XBMC.quit()</value>
     </variable>
 </includes>

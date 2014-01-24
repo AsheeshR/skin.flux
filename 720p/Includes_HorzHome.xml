@@ -93,13 +93,6 @@
 					<height>160</height>
 					<texture>english.png</texture>			
 				</control>
-				<!--<control type="image">
-					<posx>560</posx>
-					<posy>215</posy>
-					<width>160</width>
-					<height>160</height>
-					<texture flipy="true" diffuse="mask-fade.png">english.png</texture>
-				</control>-->
 			</control>
 			<!-- Hindi menu -->
 			<control type="group" id="9155">
@@ -113,13 +106,6 @@
 						<height>160</height>
 						<texture>hindi.png</texture>
 					</control>
-				<!--	<control type="image">
-						<posx>560</posx>
-						<posy>215</posy>
-						<width>160</width>
-						<height>160</height>
-						<texture flipy="true" diffuse="mask-fade.png">hindi.png</texture>
-					</control>-->
 				</control>
 			</control>
 
@@ -135,13 +121,6 @@
 						<height>160</height>
 						<texture>math.png</texture>
 					</control>
-					<!--<control type="image">
-						<posx>560</posx>
-						<posy>215</posy>
-						<width>160</width>
-						<height>160</height>
-						<texture flipy="true" diffuse="mask-fade.png">math.png</texture>
-					</control>-->
 				</control>
 			</control>
 
@@ -157,13 +136,6 @@
 						<height>160</height>
 						<texture>computers.png</texture>
 					</control>
-					<!--<control type="image">
-						<posx>560</posx>
-						<posy>215</posy>
-						<width>160</width>
-						<height>160</height>
-						<texture flipy="true" diffuse="mask-fade.png">computers.png</texture>
-					</control>-->
 				</control>
 			</control>
 
@@ -178,13 +150,6 @@
 					<height>160</height>
 					<texture>icon-settings.png</texture>
 				</control>
-				<!--<control type="image">
-					<posx>560</posx>
-					<posy>215</posy>
-					<width>160</width>
-					<height>160</height>
-					<texture flipy="true" diffuse="mask-fade.png">icon-settings.png</texture>
-				</control>-->
 			</control>
 		</control>
 
@@ -268,21 +233,25 @@
 					<item id="2">
 						<description>Hindi</description>
 						<label>31041</label>
+						<visible>Skin.HasSetting(home-hindi)</visible>
 						<onclick>Control.SetFocus(9150)</onclick>
 					</item>
 					<item id="3">
 						<description>Math</description>
 						<label>31042</label>
+						<visible>Skin.HasSetting(home-math)</visible>
 						<onclick>Control.SetFocus(9200)</onclick>
 					</item>
 					<item id="4">
 						<description>Computers</description>
 						<label>31043</label>
+						<visible>Skin.HasSetting(home-computers)</visible>
 						<onclick>Control.SetFocus(9250)</onclick>
 					</item>
 					<item id="5">
 						<description>System Menu</description>
 						<label>13000</label>
+<!--						<visible>Skin.HasSetting(home-settings)</visible>						-->
 						<onclick>Control.SetFocus(9300)</onclick>
 					</item>
 				</content>
@@ -369,7 +338,7 @@
 				<height>306</height>
 				<onup>9155</onup>
 				<ondown>20</ondown>
-				
+				<visible>Skin.HasSetting(home-hindi)</visible>				
 				<control type="button" id="9170">
 					<width>210</width>
 					<height>46</height>
@@ -435,6 +404,7 @@
 				<height>306</height>
 				<onup>9205</onup>
 				<ondown>20</ondown>
+				<visible>Skin.HasSetting(home-math)</visible>				
 				<control type="button" id="9220">
 					<width>210</width>
 					<height>46</height>
@@ -500,7 +470,7 @@
 				<height>306</height>
 				<onup>9255</onup>
 				<ondown>20</ondown>
-				
+				<visible>Skin.HasSetting(home-computers)</visible>								
 				<control type="button" id="9270">
 					<width>210</width>
 					<height>46</height>
@@ -564,6 +534,7 @@
 				<height>306</height>
 				<onup>9305</onup>
 				<ondown>20</ondown>
+<!--				<visible>Skin.HasSetting(home-settings)</visible>	-->
 				<control type="button" id="9320">
 					<width>210</width>
 					<height>46</height>

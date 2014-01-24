@@ -627,7 +627,7 @@ msgid "Computers in Home menu"
 msgstr ""
 
 msgctxt "#31905"
-msgid "Music in Home menu"
+msgid "Settings in Home menu"
 msgstr ""
 
 msgctxt "#31906"

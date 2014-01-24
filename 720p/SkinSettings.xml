@@ -648,13 +648,13 @@
 						</control>
 					</control>
 					<control type="radiobutton" id="303">
-						<description>Video On Home toggle</description>
+						<description>English On Home toggle</description>
 						<font>font12</font>
 						<width>885</width>
 						<label>31901</label>
 						<textwidth>750</textwidth>
-						<onclick>Skin.ToggleSetting(home-video)</onclick>
-						<selected>!Skin.HasSetting(home-video)</selected>
+						<onclick>Skin.ToggleSetting(home-english)</onclick>
+						<selected>Skin.HasSetting(home-english)</selected> <!-- Configured from SkinSettings.xml -->
 						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
 						<radioposx>830</radioposx>

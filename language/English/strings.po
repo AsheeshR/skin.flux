@@ -611,19 +611,19 @@ msgid "Home menu type"
 msgstr ""
 
 msgctxt "#31901"
-msgid "Videos in Home menu"
+msgid "English in Home menu"
 msgstr ""
 
 msgctxt "#31902"
-msgid "Movies in Home menu"
+msgid "Hindi in Home menu"
 msgstr ""
 
 msgctxt "#31903"
-msgid "TV Shows in Home menu"
+msgid "Math in Home menu"
 msgstr ""
 
 msgctxt "#31904"
-msgid "Music Videos in Home menu"
+msgid "Computers in Home menu"
 msgstr ""
 
 msgctxt "#31905"

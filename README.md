@@ -32,4 +32,4 @@ For running videos, the following conditions have to be adhered to:
 
 
 
-For any feedback and problems, please post on https://github.com/AsheeshR/skin.flux/issues
+For any feedback and problems, please post on https://github.com/LumenEd/skin.flux/issues

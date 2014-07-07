@@ -705,7 +705,7 @@
 						<label>31905</label>
 						<textwidth>750</textwidth>
 						<onclick>Skin.ToggleSetting(home-settings)</onclick>
-						<selected>Skin.HasSetting(home-settings)</selected>
+						<selected>!Skin.HasSetting(home-settings)</selected>
 						<aligny>center</aligny>
 						<textoffsetx>35</textoffsetx>
 						<radioposx>830</radioposx>

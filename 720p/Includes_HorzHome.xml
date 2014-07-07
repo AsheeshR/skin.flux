@@ -284,7 +284,7 @@
 					<font>font11</font>
 					<label>31045</label>
 
-					<onclick>ActivateWindow(Videos,"/media/VIDEOS/content/English/Class3",return)</onclick>
+					<onclick>ActivateWindow(FileManager,"/media/VIDEOS/content/English/Class3",return)</onclick>
 
 					<textoffsetx>10</textoffsetx>
 					<textoffsety>8</textoffsety>
@@ -301,7 +301,7 @@
 					<height>46</height>
 					<font>font11</font>
 					<label>31046</label>
-					<onclick>ActivateWindow(Videos,"/media/VIDEOS/content/English/Class4",return)</onclick>
+					<onclick>ActivateWindow(FileManager,"/media/VIDEOS/content/English/Class4",return)</onclick>
 					<textoffsetx>10</textoffsetx>
 					<textoffsety>8</textoffsety>
 					<onleft>Control.Move(9900,-1)</onleft>

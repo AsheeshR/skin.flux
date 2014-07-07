@@ -181,27 +181,67 @@
 			<width>477</width>
 			<font>font12</font>
 		</control>
-		<control type="fadelabel" id="102">
+<!--		<control type="fadelabel" id="102">
 			<description>current Directory text label right</description>
 			<align>left</align>
 			<posx>678</posx>
 			<posy>128</posy>
 			<width>477</width>
 			<font>font12</font>
-		</control>
-		<control type="label" id="12">
+		</control>-->
+<!--		<control type="label" id="12">
 			<description>number of files in left list text label</description>
 			<posx>160</posx>
 			<posy>628</posy>
 			<label>-</label>
 			<font>font12</font>
-		</control>
-		<control type="label" id="13">
-			<description>number of files in right list text label</description>
+		</control>-->
+<!--		<control type="label" id="13">
+			<description>number of files in right list text label</descr
+iption>
 			<posx>678</posx>
 			<posy>628</posy>
 			<label>-</label>
 			<font>font12</font>
-		</control>
+		</control>-->
+
+
+                <!--home button-->
+                <control type="group" >
+                        <posx>75</posx>
+                        <posy>55r</posy>
+                        <animation effect="fade" time="250" condition="Window.Previous(Home)">WindowOpen</animation>
+                        <animation effect="fade" time="250" condition="Window.Next(Home)">WindowClose</animation>
+                        <!--<visible>system.getbool(input.enablemouse)</visible>-->
+                        <visible>true</visible>
+                        <control type="button" id="20">
+                                <description>Home push button</description>
+                                <posx>0</posx>
+                                <posy>0</posy>
+                                <width>45</width>
+                                <height>45</height>
+                                <label>31003</label>
+                                <font>-</font>
+                                <aligny>-</aligny>
+                                <onclick>ActivateWindow(home)</onclick>
+                                <!--<texturefocus border="5">floor_buttonFO.png</texturefocus>
+                                <texturenofocus border="5">floor_button.png</texturenofocus>-->
+                                <texturefocus>button-focussed.png</texturefocus>
+                                <texturenofocus border="5">darkred.png</texturenofocus>
+                                <onleft>15</onleft>
+                                <onright>20</onright>
+                                <onup>50</onup>
+                                <ondown>50</ondown>
+                        </control>
+                        <control type="image">
+                                <description>Home Icon</description>
+                                <posx>5</posx>
+                                <posy>5</posy>
+                                <width>35</width>
+                                <height>35</height>
+                                <aspectratio>keep</aspectratio>
+                                <texture>icon_home.png</texture>
+                        </control>
+                </control>
 	</controls>
 </window>

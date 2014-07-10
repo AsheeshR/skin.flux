@@ -421,40 +421,76 @@
 			  
 		
 			<!--Language Toggle : Will allow switching between English and local language-->
-			<control type="togglebutton" id="9120">
-<!--			  <include>Window_OpenClose_Animation</include>-->
+			<control type="group" id="9120">
+			  <!--			  <include>Window_OpenClose_Animation</include>-->
 			  
-			  <description>Language Toggle</description>
-			  <posx>47%</posx>
-			  <posy>60r</posy>
-			  <width>100</width>
-			  <height>30</height>
-			  <visible>true</visible>
-			  <!--
-			      <texturefocus>myfocustexture.png</texturefocus>
-			      <texturenofocus>mynormaltexture.png</texturenofocus>
-			      <alttexturefocus>myselectedTexture.png</alttexturefocus>
-			      <alttexturenofocus>myselectedTexture_nf.png</alttexturenofocus>
-			  -->
-			  <!--<usealttexture>!Player.IsPaused</usealttexture>-->
-			  <label>English</label>
-			  <altlabel>Hindi</altlabel>
-			  <font>font12</font>
-			  <textcolor>button-text</textcolor>
-			  <disabledcolor>80FFFFFF</disabledcolor>
-			  <align>left</align>
-			  <aligny>center</aligny>
-			  <textoffsetx>4</textoffsetx>
-			  <textoffsety>5</textoffsety>
-			  <pulseonselect>false</pulseonselect>
-			  <!--<onclick>SetGUILanguage(English)</onclick>
-			      <onclick>XBMC.executebuiltin()</onclick>--> <!--Language setting through skin not supported in v12-->
-			  <onfocus></onfocus>
-			  <onunfocus></onunfocus>
-			  <onup>9000</onup>
-			  <ondown>9000</ondown>
-			  <onleft>9110</onleft>
-			  <onright>9130</onright>
+			  <control type="button" id="9121">
+			    <description>Language Toggle</description>
+			    <posx>47%</posx>
+			    <posy>60r</posy>
+			    <width>100</width>
+			    <height>30</height>
+			    <enable>Skin.HasSetting(LangState)</enable>
+			    <visible>Skin.HasSetting(LangState)</visible>
+			    <!--
+				<texturefocus>myfocustexture.png</texturefocus>
+				<texturenofocus>mynormaltexture.png</texturenofocus>
+				<alttexturefocus>myselectedTexture.png</alttexturefocus>
+				<alttexturenofocus>myselectedTexture_nf.png</alttexturenofocus>
+			    -->
+			    <!--<usealttexture>!Player.IsPaused</usealttexture>-->
+			    <label>English</label>
+
+			    <font>font12</font>
+			    <textcolor>button-text</textcolor>
+			    <align>left</align>
+			    <aligny>center</aligny>
+			    <textoffsetx>4</textoffsetx>
+			    <textoffsety>5</textoffsety>
+			    <pulseonselect>false</pulseonselect>
+			    <onclick>SetGUILanguage(LangState)</onclick>
+			    <onclick>ActivateWindow(home)</onclick>
+			    <onclick>Skin.ReSetBool(LangState)</onclick>
+			    <onfocus></onfocus>
+			    <onunfocus></onunfocus>
+			    <onup>9000</onup>
+			    <ondown>9000</ondown>
+			    <onleft>9110</onleft>
+			    <onright>9130</onright>
+			  </control>
+			  <control type="button" id="9122">
+			    <description>Language Toggle</description>
+			    <posx>47%</posx>
+			    <posy>60r</posy>
+			    <width>100</width>
+			    <height>30</height>
+			    <enable>!Skin.HasSetting(LangState)</enable>
+			    <visible>!Skin.HasSetting(LangState)</visible>
+			    <!--
+				<texturefocus>myfocustexture.png</texturefocus>
+				<texturenofocus>mynormaltexture.png</texturenofocus>
+				<alttexturefocus>myselectedTexture.png</alttexturefocus>
+				<alttexturenofocus>myselectedTexture_nf.png</alttexturenofocus>
+			    -->
+			    <!--<usealttexture>!Player.IsPaused</usealttexture>-->
+			    <label>Hindi</label>
+			    <font>font12</font>
+			    <textcolor>button-text</textcolor>
+			    <align>left</align>
+			    <aligny>center</aligny>
+			    <textoffsetx>4</textoffsetx>
+			    <textoffsety>5</textoffsety>
+			    <pulseonselect>false</pulseonselect>
+			    <onclick>SetGUILanguage(Hindi (Devanagiri))</onclick>
+			    <onclick>ActivateWindow(home)</onclick>
+			    <onclick>Skin.SetBool(LangState)</onclick>
+			    <onfocus></onfocus>
+			    <onunfocus></onunfocus>
+			    <onup>9000</onup>
+			    <ondown>9000</ondown>
+			    <onleft>9110</onleft>
+			    <onright>9130</onright>
+			  </control>
 			</control>
 		</control>		
 		<!--<control type="image">

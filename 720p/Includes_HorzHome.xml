@@ -19,13 +19,14 @@
 			<posy>-12</posy>
 			<width>1</width>
 			<height>1</height>
-			<onfocus condition="Skin.HasSetting(startup-playlist) + Window.Previous(startup)">PlayMedia($ESCINFO[Skin.String(Startup_Playlist_Path)],isdir)</onfocus>
+			<onfocus>Control.SetFocus(9110)</onfocus>
+			<!--<onfocus condition="Skin.HasSetting(startup-playlist) + Window.Previous(startup)">PlayMedia($ESCINFO[Skin.String(Startup_Playlist_Path)],isdir)</onfocus>
 			<onfocus condition="Window.Previous(settings) | Window.Previous(systeminfo)">Control.SetFocus(9900,8)</onfocus>
 			<onfocus>noop</onfocus>
 			<onfocus condition="Window.Previous(settings) | Window.Previous(systeminfo)">Control.SetFocus(9300)</onfocus>
-			<onfocus condition="![Window.Previous(settings) | Window.Previous(systeminfo)]">Control.SetFocus(9900)</onfocus>
-			<onfocus>noop</onfocus>
 			<onfocus condition="![Window.Previous(settings) | Window.Previous(systeminfo)]">Control.SetFocus(9000)</onfocus>
+			<onfocus>noop</onfocus>
+			<onfocus condition="![Window.Previous(settings) | Window.Previous(systeminfo)]">Control.SetFocus(9000)</onfocus>-->
 		</control>
 
 		<control type="group">
@@ -107,10 +108,11 @@
 
 		<!--Home NavBar-->
 		<control type="group" id="9000">
-		  <ondown>9110</ondown>
-		  <onup>9110</onup>
+		  <ondown>9120</ondown>
+		  <onup>9120</onup>
 			<include>horizontalhome-center</include>
-			<control type="list">
+			<control type="list" id="9010">
+			  <pagecontrol>9000</pagecontrol>
 				<posx>10</posx>
 				<posy>295</posy>
 				<width>1260</width>
@@ -134,7 +136,9 @@
 					</control>
 				</itemlayout>
 				<focusedlayout height="66" width="210"> <!-- This defines the menu highlighting-->
+				  <visible>Control.HasFocus(9010)</visible>
 					<control type="image">
+				  <visible>Control.HasFocus(9010)</visible>
 						<posx>0</posx>
 						<posy>0</posy>
 						<width>210</width>
@@ -248,7 +252,7 @@
 			<aspectratio align="center" aligny="center">keep</aspectratio>
 			<colordiffuse>UnFocusedPosters</colordiffuse>
 			<texture background="true" fallback="blank.png">homelogo.png</texture>
-			<animation condition="Container(9900).Position(5)" effect="fade" start="100" end="0" time="0" reversible="true">Conditional</animation>
+			<animation condition="Container(9000).Position(5)" effect="fade" start="100" end="0" time="0" reversible="true">Conditional</animation>
 		</control>
 		<!-- media infos (music) -->
 		<control type="group">

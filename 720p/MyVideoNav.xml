@@ -387,6 +387,7 @@
 				<texture>icon_back.png</texture>
 			</control>
 		</control>
+
 		<!--home button-->
 		<control type="group" >
 			<posx>75</posx>

@@ -19,7 +19,7 @@
 			<posy>-12</posy>
 			<width>1</width>
 			<height>1</height>
-			<onfocus>Control.SetFocus(9110)</onfocus>
+			<onfocus>Control.SetFocus(9000)</onfocus>
 			<!--<onfocus condition="Skin.HasSetting(startup-playlist) + Window.Previous(startup)">PlayMedia($ESCINFO[Skin.String(Startup_Playlist_Path)],isdir)</onfocus>
 			<onfocus condition="Window.Previous(settings) | Window.Previous(systeminfo)">Control.SetFocus(9900,8)</onfocus>
 			<onfocus>noop</onfocus>
@@ -118,8 +118,8 @@
 				<width>1260</width>
 				<height>66</height>
 				<scrolltime>200</scrolltime>
-				<ondown>9110</ondown>
-				<onup>9110</onup>
+				<ondown>9100</ondown>
+				<onup>9100</onup>
 				<itemgap>0</itemgap>
 				<viewtype label="List">List</viewtype>
 				<orientation>horizontal</orientation>
@@ -359,9 +359,9 @@
 			</control>
 		</control>
 		<!--Power button-->
-<!--		<control type="group" id="9100">
+		<control type="group" id="9100">
 			<posx>0</posx>
-			<posy>55r</posy>
+<!--			<posy>55r</posy>-->
 			<width>100%</width>-->
 <!--			<include>Window_OpenClose_Animation</include>-->
 			<control type="button" id="9110">
@@ -404,8 +404,8 @@
 			  <onclick>ActivateWindow(Settings)</onclick>
 			  <texturefocus>button-focussed.png</texturefocus>
 			  <texturenofocus border="5">darkred.png</texturenofocus>
-			  <onleft>9110</onleft>
-			  <onright>9130</onright>
+			  <onleft>9120</onleft>
+			  <onright>9110</onright>
 			  <onup>9000</onup>
 			  <ondown>9000</ondown>
 			</control>
@@ -453,11 +453,10 @@
 			  <onunfocus></onunfocus>
 			  <onup>9000</onup>
 			  <ondown>9000</ondown>
-			  <onleft>9120</onleft>
-			  <onright>9110</onright>
+			  <onleft>9110</onleft>
+			  <onright>9130</onright>
 			</control>
-<!--		</control>-->
-		
+		</control>		
 		<!--<control type="image">
 			<posx>0</posx>
 			<posy>660</posy>

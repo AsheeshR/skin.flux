@@ -78,80 +78,7 @@
 			<height>2</height>
 			<texture>dark-red.png</texture>
 		</control>-->
-		
 
-		<!-- Shelf icons-->
-		<control type="group">
-			<!-- English menu -->
-			<control type="group">
-				<visible>ControlGroup(9100).HasFocus()</visible>
-				<animation effect="fade" time="1000" condition="ControlGroup(9100).HasFocus()" start="20" end="100">Conditional</animation> 
-				<control type="image">
-					<posx>560</posx>
-					<posy>75</posy>
-					<width>160</width>
-					<height>160</height>
-					<texture>english.png</texture>			
-				</control>
-			</control>
-			<!-- Hindi menu -->
-			<control type="group" id="9155">
-				<visible>ControlGroup(9150).HasFocus() | Control.HasFocus(9160)</visible>
-				<animation effect="fade" time="1000" condition="ControlGroup(9150).HasFocus()" start="20" end="100">Conditional</animation> 
-				<control type="group">
-					<control type="image">
-						<posx>560</posx>
-						<posy>75</posy>
-						<width>160</width>
-						<height>160</height>
-						<texture>hindi.png</texture>
-					</control>
-				</control>
-			</control>
-
-			<!-- Math menu -->
-			<control type="group" id="9205">
-				<visible>ControlGroup(9200).HasFocus() | Control.HasFocus(9210)</visible>
-				<animation effect="fade" time="1000" condition="ControlGroup(9200).HasFocus()" start="20" end="100">Conditional</animation> 
-				<control type="group">
-					<control type="image">
-						<posx>560</posx>
-						<posy>75</posy>
-						<width>160</width>
-						<height>160</height>
-						<texture>math.png</texture>
-					</control>
-				</control>
-			</control>
-
-			<!-- Computers menu -->
-			<control type="group" id="9255">
-				<visible>ControlGroup(9250).HasFocus() | Control.HasFocus(9260)</visible>
-				<animation effect="fade" time="1000" condition="ControlGroup(9250).HasFocus()" start="20" end="100">Conditional</animation> 	
-				<control type="group">
-					<control type="image">
-						<posx>560</posx>
-						<posy>75</posy>
-						<width>160</width>
-						<height>160</height>
-						<texture>computers.png</texture>
-					</control>
-				</control>
-			</control>
-
-			<!-- Settings icons -->
-			<control type="group" id="9305"> <!--Changed-->
-				<visible>ControlGroup(9300).HasFocus()</visible> <!--Changed-->
-				<animation effect="fade" time="1000" condition="ControlGroup(9300).HasFocus()" start="20" end="100">Conditional</animation> 
-				<control type="image">
-					<posx>560</posx>
-					<posy>75</posy>
-					<width>160</width>
-					<height>160</height>
-					<texture>icon-settings.png</texture>
-				</control>
-			</control>
-		</control>
 
 		<!-- Main Horizontal menu bar -->
 		<control type="image">
@@ -179,15 +106,18 @@
 		</control>-->
 
 		<!--Home NavBar-->
-		<control type="group">
+		<control type="group" id="9000">
+		  <ondown>9110</ondown>
+		  <onup>9110</onup>
 			<include>horizontalhome-center</include>
-			<control type="list" id="9000">
+			<control type="list">
 				<posx>10</posx>
 				<posy>295</posy>
 				<width>1260</width>
 				<height>66</height>
 				<scrolltime>200</scrolltime>
-				<ondown>9000</ondown>
+				<ondown>9110</ondown>
+				<onup>9110</onup>
 				<itemgap>0</itemgap>
 				<viewtype label="List">List</viewtype>
 				<orientation>horizontal</orientation>
@@ -224,43 +154,12 @@
 					</control>
 				</focusedlayout>
 				<content target="filemanager">/media/VIDEOS/content/</content>
-<!--					<item id="1">
-						<description>English</description>
-						<label>31040</label>
-						<visible>Skin.HasSetting(home-english)</visible>
-						<onclick>Control.SetFocus(9100)</onclick>
-					</item>
-					<item id="2">
-						<description>Hindi</description>
-						<label>31041</label>
-						<visible>Skin.HasSetting(home-hindi)</visible>
-						<onclick>Control.SetFocus(9150)</onclick>
-					</item>
-					<item id="3">
-						<description>Math</description>
-						<label>31042</label>
-						<visible>Skin.HasSetting(home-math)</visible>
-						<onclick>Control.SetFocus(9200)</onclick>
-					</item>
-					<item id="4">
-						<description>Computers</description>
-						<label>31043</label>
-						<visible>Skin.HasSetting(home-computers)</visible>
-						<onclick>Control.SetFocus(9250)</onclick>
-					</item>
-					<item id="5">
-						<description>System Menu</description>
-						<label>13000</label>
-						<visible>Skin.HasSetting(home-settings)</visible>						
-						<onclick>Control.SetFocus(9300)</onclick>
-					</item>
-				</content>-->
 			</control>
 		</control>
 
 		<!-- Mask controls if more item top or bottom of displayed list -->
-		<control type="group">
-			<!-- Movie Sub menu -->
+<!--		<control type="group">
+			Movie Sub menu
 			<visible>ControlGroup(9150).HasFocus()</visible>
 			<control type="image">
 				<posx>10</posx>
@@ -280,7 +179,7 @@
 			</control>
 		</control>
 		<control type="group">
-			<!-- TV Sub menu -->
+			
 			<visible>ControlGroup(9200).HasFocus()</visible>
 			<control type="image">
 				<posx>10</posx>
@@ -300,7 +199,7 @@
 			</control>
 		</control>
 		<control type="group">
-			<!-- Music Sub menu -->
+			
 			<visible>ControlGroup(9250).HasFocus()</visible>
 			<control type="image">
 				<posx>10</posx>
@@ -320,7 +219,7 @@
 			</control>
 		</control>
 		<control type="group">
-			<!-- Settings Sub menu -->
+			
 			<visible>ControlGroup(9300).HasFocus()</visible>
 			<control type="image">
 				<posx>10</posx>
@@ -338,7 +237,7 @@
 				<texture flipy="true">mask-menu.png</texture>
 				<visible>Container(9300).HasNext</visible>
 			</control>
-		</control>
+		</control>-->
 		
 		<!-- Horizontal Home menu logo -->
 		<control type="image">
@@ -456,14 +355,15 @@
 			</control>
 		</control>
 		<!--Power button-->
-		<control type="group" id="10">
-			<posx>10</posx>
+<!--		<control type="group" id="9100">
+			<posx>0</posx>
 			<posy>55r</posy>
-			<include>Window_OpenClose_Animation</include>
-			<control type="button" id="20">
+			<width>100%</width>-->
+<!--			<include>Window_OpenClose_Animation</include>-->
+			<control type="button" id="9110">
 				<description>Power push button</description>
-				<posx>0</posx>
-				<posy>0</posy>
+				<posx>10</posx>
+				<posy>55r</posy>
 				<width>45</width>
 				<height>45</height>
 				<label>31003</label>
@@ -472,39 +372,65 @@
 				<onclick>ActivateWindow(ShutdownMenu)</onclick>
 				<texturefocus>button-focussed.png</texturefocus>
 				<texturenofocus border="5">darkred.png</texturenofocus>
-				<onleft>9400</onleft>
-				<onright>9400</onright>
+				<onleft>9130</onleft>
+				<onright>9120</onright>
 				<onup>9000</onup>
 				<ondown>9000</ondown>
 			</control>
 			<control type="image">
 				<description>Power Icon</description>
-				<posx>5</posx>
-				<posy>5</posy>
+				<posx>10</posx>
+				<posy>55r</posy>
 				<width>35</width>
 				<height>35</height>
 				<aspectratio>keep</aspectratio>
 				<texture>icon_power.png</texture>
 			</control>
-		</control>
 		
-		<!--Language Toggle : Will allow switching between English and local language-->
-		<control type="group" id="9400">
-			<posx>1160</posx>
-			<posy>55r</posy>
-			<include>Window_OpenClose_Animation</include>
-			<control type="togglebutton" id="9410">
+			<!-- Setting Icon -->
+			<control type="button" id="9130">
+			  <description>Settings</description>
+			  <posx>55r</posx>
+			  <posy>55r</posy>
+			  <width>45</width>
+			  <height>45</height>
+			  <label>31003</label>
+			  <font>-</font>
+			  <aligny>-</aligny>
+			  <onclick>ActivateWindow(Settings)</onclick>
+			  <texturefocus>button-focussed.png</texturefocus>
+			  <texturenofocus border="5">darkred.png</texturenofocus>
+			  <onleft>9110</onleft>
+			  <onright>9130</onright>
+			  <onup>9000</onup>
+			  <ondown>9000</ondown>
+			</control>
+			<control type="image">
+			  <description>Settings Icon</description>
+			  <posx>55r</posx>
+			  <posy>55r</posy>
+			  <width>35</width>
+			  <height>35</height>
+			  <aspectratio>keep</aspectratio>
+			  <texture>icon-settings.png</texture>
+			</control>
+			  
+		
+			<!--Language Toggle : Will allow switching between English and local language-->
+			<control type="togglebutton" id="9120">
+<!--			  <include>Window_OpenClose_Animation</include>-->
+			  
 			  <description>Language Toggle</description>
-			  <posx>0</posx>
-			  <posy>0</posy>
+			  <posx>47%</posx>
+			  <posy>55r</posy>
 			  <width>100</width>
 			  <height>30</height>
 			  <visible>true</visible>
 			  <!--
-			  <texturefocus>myfocustexture.png</texturefocus>
-			  <texturenofocus>mynormaltexture.png</texturenofocus>
-			  <alttexturefocus>myselectedTexture.png</alttexturefocus>
-			  <alttexturenofocus>myselectedTexture_nf.png</alttexturenofocus>
+			      <texturefocus>myfocustexture.png</texturefocus>
+			      <texturenofocus>mynormaltexture.png</texturenofocus>
+			      <alttexturefocus>myselectedTexture.png</alttexturefocus>
+			      <alttexturenofocus>myselectedTexture_nf.png</alttexturenofocus>
 			  -->
 			  <!--<usealttexture>!Player.IsPaused</usealttexture>-->
 			  <label>English</label>
@@ -518,24 +444,21 @@
 			  <textoffsety>5</textoffsety>
 			  <pulseonselect>false</pulseonselect>
 			  <!--<onclick>SetGUILanguage(English)</onclick>
-			  <onclick>XBMC.executebuiltin()</onclick>--> <!--Language setting through skin not supported in v12-->
-			  <onfocus>-</onfocus>
-			  <onunfocus>-</onunfocus>
+			      <onclick>XBMC.executebuiltin()</onclick>--> <!--Language setting through skin not supported in v12-->
+			  <onfocus></onfocus>
+			  <onunfocus></onunfocus>
 			  <onup>9000</onup>
 			  <ondown>9000</ondown>
-			  <onleft>10</onleft>
-			  <onright>10</onright>
+			  <onleft>9120</onleft>
+			  <onright>9110</onright>
 			</control>
-		</control>
+<!--		</control>-->
 		
 		<!--<control type="image">
 			<posx>0</posx>
 			<posy>660</posy>
 			<width>1280</width>
 			<height>4</height>
-			<texture>separator.png</texture>
-		</control>-->
-		
-
+			<texture>separator.png</texture>-->
 	</include>
 </includes>

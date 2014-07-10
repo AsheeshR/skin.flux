@@ -367,9 +367,9 @@
 			<control type="button" id="9110">
 				<description>Power push button</description>
 				<posx>10</posx>
-				<posy>55r</posy>
-				<width>45</width>
-				<height>45</height>
+				<posy>60r</posy>
+				<width>50</width>
+				<height>50</height>
 				<label>31003</label>
 				<font>-</font>
 				<aligny>-</aligny>
@@ -384,9 +384,9 @@
 			<control type="image">
 				<description>Power Icon</description>
 				<posx>10</posx>
-				<posy>55r</posy>
-				<width>35</width>
-				<height>35</height>
+				<posy>60r</posy>
+				<width>50</width>
+				<height>50</height>
 				<aspectratio>keep</aspectratio>
 				<texture>icon_power.png</texture>
 			</control>
@@ -394,10 +394,10 @@
 			<!-- Setting Icon -->
 			<control type="button" id="9130">
 			  <description>Settings</description>
-			  <posx>55r</posx>
-			  <posy>55r</posy>
-			  <width>45</width>
-			  <height>45</height>
+			  <posx>60r</posx>
+			  <posy>60r</posy>
+			  <width>50</width>
+			  <height>50</height>
 			  <label>31003</label>
 			  <font>-</font>
 			  <aligny>-</aligny>
@@ -411,10 +411,10 @@
 			</control>
 			<control type="image">
 			  <description>Settings Icon</description>
-			  <posx>55r</posx>
-			  <posy>55r</posy>
-			  <width>35</width>
-			  <height>35</height>
+			  <posx>60r</posx>
+			  <posy>60r</posy>
+			  <width>50</width>
+			  <height>50</height>
 			  <aspectratio>keep</aspectratio>
 			  <texture>icon-settings.png</texture>
 			</control>
@@ -426,7 +426,7 @@
 			  
 			  <description>Language Toggle</description>
 			  <posx>47%</posx>
-			  <posy>55r</posy>
+			  <posy>60r</posy>
 			  <width>100</width>
 			  <height>30</height>
 			  <visible>true</visible>

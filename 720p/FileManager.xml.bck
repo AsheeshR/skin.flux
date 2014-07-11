@@ -3,9 +3,8 @@
 	<backgroundcolor>0</backgroundcolor>
 	<allowoverlay>no</allowoverlay>
 	<controls>
-		
 		<include>background</include>
-		<!--<control type="image">
+		<control type="image">
 			<description>Settings Logo</description>
 			<include>icon-header-commons</include>
 			<texture>icon-settings.png</texture>
@@ -18,7 +17,7 @@
 			<height>31</height>
 			<label>10003</label>
 			<font>font20</font>
-		</control>-->
+		</control>
 		
 		<control type="image">
 			<description>filemanager grid image</description>
@@ -36,8 +35,8 @@
 			<height>438</height>
 			<onleft>21</onleft>
 			<onright>21</onright>
-			<onup>21</onup>
-			<ondown>21</ondown>
+			<onup>20</onup>
+			<ondown>20</ondown>
 			<scrolltime>1</scrolltime>
 			<itemlayout height="34">
 				<control type="image">
@@ -69,13 +68,6 @@
 				</control>
 			</itemlayout>
 			<focusedlayout height="34">
-			  <control type="image">
-			    <posx>500</posx>
-			    <posy>100</posy>
-			    <width>40</width>
-			    <height>40</height>
-			    <info>ListItem.Icon</info>
-			  </control>
 				<control type="image">
 					<width>495</width>
 					<height>46</height>
@@ -108,7 +100,7 @@
 				</control>
 			</focusedlayout>
 		</control>
-		<!--<control type="list" id="21">
+		<control type="list" id="21">
 			<posx>652</posx>
 			<posy>175</posy>
 			<width>495</width>
@@ -179,16 +171,16 @@
 					<info>ListItem.Label2</info>
 				</control>
 			</focusedlayout>
-		</control>-->
+		</control>
 
-<!--		<control type="fadelabel" id="101">
+		<control type="fadelabel" id="101">
 			<description>current Directory text label left</description>
 			<align>left</align>
 			<posx>160</posx>
 			<posy>128</posy>
 			<width>477</width>
 			<font>font12</font>
-		</control>-->
+		</control>
 <!--		<control type="fadelabel" id="102">
 			<description>current Directory text label right</description>
 			<align>left</align>
@@ -213,58 +205,17 @@ iption>
 			<font>font12</font>
 		</control>-->
 
-		<!-- back button -->
-		<control type="group" >
-			<posx>20</posx>
-			<posy>55r</posy>
-			<onup>20</onup>
-			<animation effect="fade" time="250" condition="Window.Previous(Home)">WindowOpen</animation>
-			<animation effect="fade" time="250" condition="Window.Next(Home)">WindowClose</animation>
-			<!--<visible>system.getbool(input.enablemouse)</visible>-->
-			<visible>true</visible>
-			<control type="button" id="15">
-				<description>Back push button</description>
-				<onup>20</onup>
-				<posx>0</posx>
-				<posy>0</posy>
-				<width>45</width>
-				<height>45</height>
-				<label>back button</label>
-				<font>-</font>
-				<aligny>-</aligny>
-				<onclick>back</onclick>
-				<!--<texturefocus border="5">floor_buttonFO.png</texturefocus>
-				<texturenofocus border="5">floor_button.png</texturenofocus>-->
-				<texturefocus>button-focussed.png</texturefocus>
-				<texturenofocus border="5">darkred.png</texturenofocus>	
-				<onleft>15</onleft>
-				<onright>20</onright>
-				<onup>50</onup>
-				<ondown>50</ondown>
-			</control>
-			<control type="image">
-				<description>Back Icon</description>
-				<posx>5</posx>
-				<posy>5</posy>
-				<width>35</width>
-				<height>35</height>
-				<aspectratio>keep</aspectratio>
-				<texture>icon_back.png</texture>
-			</control>
-		</control>
 
                 <!--home button-->
                 <control type="group" >
                         <posx>75</posx>
                         <posy>55r</posy>
-			<onup>20</onup>
                         <animation effect="fade" time="250" condition="Window.Previous(Home)">WindowOpen</animation>
                         <animation effect="fade" time="250" condition="Window.Next(Home)">WindowClose</animation>
                         <!--<visible>system.getbool(input.enablemouse)</visible>-->
                         <visible>true</visible>
-                        <control type="button" id="21">
+                        <control type="button" id="20">
                                 <description>Home push button</description>
-				<onup>20</onup>
                                 <posx>0</posx>
                                 <posy>0</posy>
                                 <width>45</width>

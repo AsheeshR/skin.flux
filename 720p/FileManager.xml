@@ -225,6 +225,7 @@ iption>
 			<control type="button" id="15">
 				<description>Back push button</description>
 				<onup>20</onup>
+				<ondown>20</ondown>
 				<posx>0</posx>
 				<posy>0</posy>
 				<width>45</width>
@@ -265,6 +266,7 @@ iption>
                         <control type="button" id="21">
                                 <description>Home push button</description>
 				<onup>20</onup>
+				<ondown>20</ondown>
                                 <posx>0</posx>
                                 <posy>0</posy>
                                 <width>45</width>

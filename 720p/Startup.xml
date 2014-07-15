@@ -31,18 +31,18 @@
 			<animation effect="fade" end="0" delay="500" time="500">WindowClose</animation>
 			<control type="image">
 				<description>LumenEd Logo</description>
-				<posx>384</posx>
-				<posy>200</posy>
-				<width>512</width>
-				<height>256</height>
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>1280</width>
+				<height>720</height>
 				<aspectratio>keep</aspectratio>
 				<texture>lumened-logo.png</texture>
 			</control>
 		</control>
-
+		<!--
 		<control type="group">
-		        <animation effect="fade" start="100" end="100" delay="0" time="0" pulse="true">WindowOpen</animation> <!-- First-->
-			<animation effect="fade" end="0" delay="500" time="500">WindowClose</animation> <!--Last-->
+		        <animation effect="fade" start="100" end="100" delay="0" time="0" pulse="true">WindowOpen</animation> 
+			<animation effect="fade" end="0" delay="500" time="500">WindowClose</animation> 
 			<control type="image">
 				<description>Flux Logo</description>
 				<posx>600</posx>
@@ -54,8 +54,8 @@
 			</control>
 		</control>
 		<control type="group">
-       		        <animation effect="fade" start="100" end="100" delay="2000" time="0" pulse="true">WindowOpen</animation> <!--Second-->
-			<animation effect="fade" end="0" delay="500" time="500">WindowClose</animation> <!--Last-->
+       		        <animation effect="fade" start="100" end="100" delay="2000" time="0" pulse="true">WindowOpen</animation>
+			<animation effect="fade" end="0" delay="500" time="500">WindowClose</animation> 
 			<control type="image">
 				<description>Flux Logo</description>
 				<posx>600</posx>
@@ -66,5 +66,6 @@
 				<texture>flux-logo-big.png</texture>
 			</control>
 		</control>
+		-->
 	</controls>
 </window>

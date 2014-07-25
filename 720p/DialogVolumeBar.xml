@@ -24,7 +24,7 @@
 			<info>Player.Volume</info>
 			<colordiffuse>ProgressBarColor</colordiffuse>
 			<texturebg>blank.png</texturebg>
-			<midtexture>volume-back.png</midtexture>
+			<!--<midtexture>white.png</midtexture>-->
 			<animation effect="fade" start="50" end="50" time="0" condition="Player.Passthrough">Conditional</animation>
 			<visible>IntegerGreaterThan(Player.Volume,-60)</visible>
 		</control>
@@ -34,7 +34,7 @@
 			<posy>75</posy>
 			<width>226</width>
 			<height>40</height>
-			<texture>volume-overlay.png</texture>
+			<!--<texture>white.png</texture>-->
 		</control>
 		<control type="label" id="0">
 			<description>Volume Label</description>
